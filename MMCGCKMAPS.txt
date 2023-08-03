@@ -1,0 +1,5 @@
+The planet maps are not included as actual world files due to size limitations. Instead, check the planets folder for the worldpainter files and export on your own device.
+
+Planet maps made by Arkysaw
+
+- https://earth.motfe.net/map-downloads/ Earth 1:500 scale 1.17.1 map by DerMattinger
