@@ -1,9 +1,0 @@
-# Do you want to generate CrackShotPlus's changelog since 1.01 version?
-Generate_Changelog: true
-
-# Do you want to generate CrackShotPlus's resource pack into plugins/CrackShotPlus folder? 
-Generate_Resource_Pack: true
-
-# Do you want to generate CrackShotPlus' default configurations into zip file inside plugins/CrackShotPlus folder?
-# This can be used incase you wish to update your configurations to newer ones because zip always contains newest configurations.
-Generate_Default_Configurations_Always_Into_Zip: true
