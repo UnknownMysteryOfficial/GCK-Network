@@ -1,0 +1,238 @@
+crates:
+  SUPPLY_CRATE:
+    items-rolls: 3 #The number of items it will give player upon opening this crate
+    commands-rolls: 0 #The number of commands it will run upon opening this crate
+    re-roll: false #Wheather a loot can have multiple of the same items
+    crate-item: #The virtual crate item
+      material: CHEST
+      amount: 1
+      name: "&eSupply Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    items: #Items in the crate
+      PEARL:
+        material: ENDER_PEARL
+        amount: 1
+        chance: 25
+      APPLES:
+        material: GOLDEN_APPLE
+        amount: 3
+        name: "&fGolden Apple"
+        chance: 15
+      DIAMONDS:
+        material: DIAMOND
+        amount: 2
+        chance: 30
+      GOLD:
+        material: GOLD_INGOT
+        amount: 4
+        chance: 35
+      LAPIS:
+        material: LAPIS_LAZULI
+        amount: 8
+        chance: 30
+      OBBY:
+        material: OBSIDIAN
+        amount: 4
+        chance: 30
+      REDSTONE:
+        material: DIAMOND
+        amount: 8
+        chance: 40
+      PRISMARINESHARD:
+        material: PRISMARINE_SHARD
+        amount: 32
+        chance: 40
+      PRISMARINECRYSTAL:
+        material: PRISMARINE_CRYSTALS
+        amount: 16
+        chance: 40
+      QUARTZ:
+        material: QUARTZ
+        amount: 32
+        chance: 40
+      GLOWSTONE:
+        material: GLOWSTONE_DUST
+        amount: 32
+        chance: 40
+      BLAZEROD:
+        material: BLAZE_ROD
+        amount: 3
+        chance: 10
+      SHULK:
+        material: SHULKER_SHELL
+        amount: 1
+        chance: 5
+      TRIDENT:
+        material: TRIDENT
+        amount: 1
+        chance: 1
+    commands: #Commands in the crate
+      EC020:
+        command: "eco give %player_name% 20" #Use %player_name% for the player
+        chance: 100
+    commands-on-open: #Commands to run upon opening this crate
+      - "eco give %player_name% 20"
+  MILITARY_CRATE:
+    items-rolls: 0
+    commands-rolls: 1
+    re-roll: false
+    crate-item:
+      material: CHEST
+      amount: 1
+      name: "&eMilitary Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    items:
+      APPLES:
+        material: GOLDEN_APPLE
+        amount: 3
+        name: "&fGolden Apple"
+        chance: 0
+    commands:
+      AKGIVE:
+        command: "csp give AK-47_CSP %player_name%"
+        chance: 20
+      M4GIVE:
+        command: "csp give M4A1_CSP %player_name%"
+        chance: 20
+      TYPE95GIVE:
+        command: "csp give Type95_CSP %player_name%"
+        chance: 20
+      CARBGIVE:
+        command: "csp give Carbine_CSP %player_name%"
+        chance: 15
+      DEAGGIVE:
+        command: "csp give Desert_Eagle_CSP %player_name%"
+        chance: 30
+      PYGIVE:
+        command: "csp give python_CSP %player_name%"
+        chance: 15
+      OlYMPIAGIVE:
+        command: "csp give Olympia_CSP %player_name%"
+        chance: 20
+      P90GIVE:
+        command: "csp give P90_CSP %player_name%"
+        chance: 15
+      PUMPGIVE:
+        command: "csp give Pump_Shotgun_CSP %player_name%"
+        chance: 20
+      SPASGIVE:
+        command: "csp give SPAS_CSP %player_name%"
+        chance: 15
+      HUNTINGGIVE:
+        command: "csp give Hunting_CSP %player_name%"
+        chance: 4
+      GRENREVOLVEGIVE:
+        command: "csp give Grenade_Revolver_CSP %player_name%"
+        chance: 4
+      BAZOOKAGIVE:
+        command: "csp give BAZOOKA_CSP %player_name%"
+        chance: 4
+      FLASHGIVE:
+        command: "csp give Flashbang_CSP %player_name%"
+        chance: 20
+      GRENGIVE:
+        command: "csp give Grenade_CSP %player_name%"
+        chance: 20
+      MONKGIVE:
+        command: "csp give Monkey_Bomb_CSP %player_name%"
+        chance: 15
+      COCOGIVE:
+        command: "csp give CocoPops_CSP %player_name%"
+        chance: 20
+      PUTTYGIVE:
+        command: "csp give Putty_CSP %player_name%"
+        chance: 20
+    commands-on-open:
+      - "eco give %player_name% 50"
+      
+  VOTE_CRATE:
+    items-rolls: 3 #The number of items it will give player upon opening this crate
+    commands-rolls: 1 #The number of commands it will run upon opening this crate
+    re-roll: false #Wheather a loot can have multiple of the same items
+    crate-item: #The virtual crate item
+      material: CHEST
+      amount: 1
+      name: "&eVote Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    items: #Items in the crate
+      PEARL:
+        material: ENDER_PEARL
+        amount: 1
+        chance: 25
+      APPLES:
+        material: GOLDEN_APPLE
+        amount: 3
+        name: "&fGolden Apple"
+        chance: 15
+      DIAMONDS:
+        material: DIAMOND
+        amount: 2
+        chance: 30
+      GOLD:
+        material: GOLD_INGOT
+        amount: 4
+        chance: 35
+      LAPIS:
+        material: LAPIS_LAZULI
+        amount: 8
+        chance: 30
+      OBBY:
+        material: OBSIDIAN
+        amount: 4
+        chance: 30
+      REDSTONE:
+        material: DIAMOND
+        amount: 8
+        chance: 40
+      PRISMARINESHARD:
+        material: PRISMARINE_SHARD
+        amount: 32
+        chance: 40
+      PRISMARINECRYSTAL:
+        material: PRISMARINE_CRYSTALS
+        amount: 16
+        chance: 40
+      QUARTZ:
+        material: QUARTZ
+        amount: 32
+        chance: 40
+      GLOWSTONE:
+        material: GLOWSTONE_DUST
+        amount: 32
+        chance: 40
+      BLAZEROD:
+        material: BLAZE_ROD
+        amount: 3
+        chance: 10
+      SHULK:
+        material: SHULKER_SHELL
+        amount: 2
+        chance: 5
+      ZOMBIEVILLAGER:
+        material: ZOMBIE_VILLAGER_SPAWN_EGG
+        amount: 1
+        chance: 1
+    commands: #Commands in the crate
+      ECO50:
+        command: "eco give %player_name% 50" #Use %player_name% for the player
+        chance: 40
+      EC0100:
+        command: "eco give %player_name% 100" #Use %player_name% for the player
+        chance: 15
+      EC02000:
+        command: "eco give %player_name% 150" #Use %player_name% for the player
+        chance: 10
+      EC070:
+        command: "eco give %player_name% 70" #Use %player_name% for the player
+        chance: 20
+      EC020:
+        command: "eco give %player_name% 20" #Use %player_name% for the player
+        chance: 70
+    commands-on-open: #Commands to run upon opening this crate
+      - "eco give %player_name% 50"
