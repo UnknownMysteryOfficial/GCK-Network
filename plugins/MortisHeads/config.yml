@@ -1,0 +1,187 @@
+heads:
+  NOTCH: #Head-ID
+    name: "&aNotch" #The display name of the Head. #Use "&" for color codes.
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2MDc2MzI4N2E3Zjk4NzE1MmMxYTM3NDA4Y2JmMzRlYmNlMDg0YzM3MTM2NmFmMmE3M2Y3ZjY5Mzc3ZDk3OSJ9fX0=
+    lore: #The lore of the Head.
+      - "&7Notch Head"
+    effects:
+      NIGHT_VISION: #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+        duration: 10 #This option is to avoid the screen flickering when potion effect like night vision is running out although every potion effect is for infinite time until the head is unworn.
+        amplifier: 0 #The amplifier of this effect.
+        ambient: true #Wheather to make potion effect produce more, translucent, particles.
+        particles: true #Wheather to show particles.
+        icon: true #Wheather to show icon of the potion effect on client.
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true #Wheather the wearer of this head keeps this head after dying.
+  Martian:
+    name: "§cMartian Head"
+    lore:
+    - "Creatures from mars that never hunger."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1M2RlYTU4MzExZWViNGFlMWY2MmQxZWEwYjlkNzRkNTA5ODU0YzE3MmUxZTMxOTI1NjY3OTUyNGE2ZDE5In19fQ==
+    effects:
+      SATURATION:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Drone:
+    name: "§cDrone Head"
+    lore:
+    - "Defenders of the little life left on Venus."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAwZDE4ODI1MmIzMTJhMDkxZGFiYzliOTM4NGIwOWFkYTRlNWUwYjk5ODQwNzJmNjY3ZjA3MDhkNTY4ZWU2MiJ9fX0=
+    effects:
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+      SPEED:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      JUMP:
+        duration: 3
+        amplifier: 2
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Alien:
+    name: "§aAlien Head"
+    lore:
+    - "Surprisingly agile lunar aliens."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RlN2I4YmFmNzg1ODdiNzQ0MjdlYjBjNzMxMzc0N2Y1OGM0MTgzMDVhMTQ3Mjc4Yjc3MzE1YTljOTdmZDkifX19
+    effects:
+      SPEED:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      JUMP:
+        duration: 3
+        amplifier: 2
+        ambient: true
+        particles: true
+        icon: true
+      SLOW_FALLING:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Biter:
+    name: "§4Biter Head"
+    lore:
+    - "Crawly creatures under the martian sand."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0=
+    effects:
+      NIGHT_VISION:
+        duration: 15
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+      FAST_DIGGING:
+        duration: 3
+        amplifier: 2
+        ambient: true
+        particles: true
+        icon: true
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Guardian:
+    name: "§9Guardian Head"
+    lore:
+    - "Aquatic creatures under the europa ice."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjIxMDI1NDM0MDQ1YmRhNzAyNWIzZTUxNGIzMTZhNGI3NzBjNmZhYTRiYTlhZGI0YmUzODA5NTI2ZGI3N2Y5ZCJ9fX0=
+    effects:
+      INCREASE_DAMAGE:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      CONDUIT_POWER:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+      DOLPHINS_GRACE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Meddler:
+    name: "§3Meddler Head"
+    lore:
+    - "Foreigners from an unknown world."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIwY2ZjZGYxMzEzYzE2YjhkMmE2Y2E1NWMwYzUzNGYxMmQ5YWU3ZjZhMzYyNTIxMWZkZjE2MDI4NDIxYTg5MyJ9fX0=
+    effects:
+      SPEED:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      DAMAGE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+      INCREASE_DAMAGE:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
+  Amogus:
+    name: "§3Sus Head"
+    lore:
+    - "Found in some random vent."
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdkNWViMGFlYTVkNjFiYTNmZjQ5OTY0MTZhOTAwOTZhOWQ3NzYwOWViY2QzYjMwOGY5MDZhZTg4OGE0NWY2ZCJ9fX0=
+    effects:
+      SPEED:
+        duration: 3
+        amplifier: 1
+        ambient: true
+        particles: true
+        icon: true
+      INCREASE_DAMAGE:
+        duration: 3
+        amplifier: 9
+        ambient: true
+        particles: true
+        icon: true
+      INVISIBILITY:
+        duration: 3
+        amplifier: 0
+    stays-on-after-death: false
+S
