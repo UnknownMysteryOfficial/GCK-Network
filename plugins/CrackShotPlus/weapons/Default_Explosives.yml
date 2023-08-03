@@ -1,0 +1,357 @@
+CocoPops_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 4
+  Damage:
+    Damage_Increase_Based_On_Armor:
+      Helmet:
+        DIAMOND_HELMET: 1
+      Chestplate:
+        DIAMOND_CHESTPLATE: 2
+      Leggings:
+        DIAMOND_LEGGINGS: 2
+      Boots:
+        DIAMOND_BOOTS: 1
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Flame_Gun"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Putty_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 6
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Flashbang_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Flame_Gun"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+
+Grenade_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Hit_Block:
+    Break_Blocks:
+      Regen_Blocks_After_Milliseconds: 10000
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Flame_Gun"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Flashbang_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Flame_Gun"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Monkey_Bomb_CSP:
+  Shoot:
+    Trails:
+      Default_Trail: "Default_Crit_Explosive"
+      Trail: "Blue_Explosive,Pink_Explosive,Red_Explosive"
+  Held:
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        #- "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Explode:
+    Monkey_Bomb:
+      Entity_Type: "GUARDIAN"
+      Lasts_Before_Dying: 100
+      Radius: 18
+      Works_For_Mobs: true
+      Works_For_Animals: true
+      Explosion_End:
+        Exploding_Weapon_Name: "CSP_Monkey_Bomb_Explosion"
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+
+CSP_Monkey_Bomb_Explosion:
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 6

@@ -1,0 +1,554 @@
+AK-47_CSP:
+  Item_Information:
+    Item_Name: "&7AK-47"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 2
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 70
+    Projectile_Damage: 7
+    Bullet_Spread: 1
+  Sneak:
+    Enable: true
+    No_Recoil: true
+  Fully_Automatic:
+    Enable: true
+    Fire_Rate: 4
+  Reload:
+    Enable: true
+    Reload_Amount: 30
+    Reload_Duration: 50
+    Sounds_Out_Of_Ammo: ENTITY_ITEM_BREAK-1-1-0
+    Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: false
+
+M4A1_CSP:
+  Item_Information:
+    Item_Name: "&7M4A1"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 1
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 70
+    Projectile_Damage: 4
+    Bullet_Spread: 1
+  Sneak:
+    Enable: true
+    No_Recoil: true
+  Fully_Automatic:
+    Enable: true
+    Fire_Rate: 5
+  Reload:
+    Enable: true
+    Reload_Amount: 30
+    Reload_Duration: 40
+    Sounds_Out_Of_Ammo: ENTITY_ITEM_BREAK-1-1-0
+    Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Headshot:
+    Enable: true
+    Bonus_Damage: 1
+  Backstab:
+    Enable: true
+    Bonus_Damage: 1
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+P90_CSP:
+  Item_Information:
+    Item_Name: "&7P90"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 1
+    Recoil_Amount: 0
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 50
+    Projectile_Damage: 3
+    Bullet_Spread: 2
+  Fully_Automatic:
+   Enable: true
+   Fire_Rate: 6
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 2
+  Reload:
+    Enable: true
+    Reload_Amount: 40
+    Reload_Duration: 70
+    Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-0,ITEM_FLINTANDSTEEL_USE-1-1-14,BLOCK_WOODEN_DOOR_OPEN-1-2-16,ITEM_FLINTANDSTEEL_USE-1-1-26,ENTITY_PLAYER_HURT-1-0-27,BLOCK_WOODEN_DOOR_CLOSE-1-2-28
+  Headshot:
+    Enable: true
+    Bonus_Damage: 1
+  Backstab:
+    Enable: true
+    Bonus_Damage: 2
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+Carbine_CSP:
+  Item_Information:
+    Item_Name: "&7Carbine"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+    Attachments:
+      Type: main
+      Info: "Grenade_Launcher_CSP"
+      Toggle_Delay: 5
+      Sounds_Toggle: BLOCK_NOTE_HAT-1-2-0
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 10
+    Recoil_Amount: 1
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 70
+    Projectile_Damage: 10
+    Bullet_Spread: 0.3
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 0.1
+  Reload:
+    Enable: true
+    Reload_Amount: 12
+    Reload_Duration: 30
+    Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-0,ITEM_FLINTANDSTEEL_USE-1-1-14,BLOCK_WOODEN_DOOR_OPEN-1-2-16,ITEM_FLINTANDSTEEL_USE-1-1-26,ENTITY_PLAYER_HURT-1-0-27,BLOCK_WOODEN_DOOR_CLOSE-1-2-28
+  Headshot:
+    Enable: true
+    Bonus_Damage: 3
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+Grenade_Revolver_CSP:
+  Item_Information:
+    Item_Name: "&7Milkor MGL"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 28
+    Recoil_Amount: 4
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Projectile_Speed: 25
+    Projectile_Damage: 6
+    Bullet_Spread: 0.6
+    Sounds_Shoot: ENTITY_GENERIC_EXPLODE-1-2-0
+  Sneak:
+    Enable: true
+    No_Recoil: false
+  Particles:
+    Enable: true
+    Particle_Impact_Anything: BLOCK_BREAK-24
+  Explosions:
+    Enable: true
+    Damage_Multiplier: 3
+    Explosion_No_Grief: true
+    Explosion_Radius: 14
+    On_Impact_With_Anything: true
+    Projectile_Activation_Time: 2
+    Sounds_Shooter: ENTITY_SKELETON_SHOOT-2-2-0
+  Scope:
+    Enable: true
+    Zoom_Amount: 5
+    Night_Vision: true
+    Zoom_Bullet_Spread: 0.0
+  Reload:
+    Enable: true
+    Reload_Amount: 6
+    Reload_Bullets_Individually: true
+    Reload_Duration: 45
+    Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-10,BLOCK_PISTON_EXTEND-1-0-28,ENTITY_SKELETON_STEP-1-0-48
+  Firearm_Action:
+    Type: revolver
+    Open_Duration: 14
+    Close_Duration: 10
+    Sound_Open: BLOCK_WOODEN_DOOR_OPEN-1-2-0
+    Sound_Close: BLOCK_WOODEN_DOOR_CLOSE-1-2-0
+  Extras:
+    Disable_Underwater: true
+
+Bazooka_CSP:
+  Item_Information:
+    Item_Name: "&7Bazooka"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 2
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Remove_Bullet_Drop: true
+    Removal_Or_Drag_Delay: 120-true
+    Projectile_Speed: 15
+  Sneak:
+    Enable: true
+    No_Recoil: true
+  Reload:
+    Enable: true
+    Reload_Amount: 1
+    Reload_Duration: 55
+    Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-10,BLOCK_PISTON_EXTEND-1-0-28,ENTITY_SKELETON_STEP-1-0-48
+  Explosions:
+    Enable: true
+    Knockback: 5
+    Damage_Multiplier: 30
+    Enable_Owner_Immunity: true
+    Explosion_No_Grief: true
+    Explosion_Radius: 6
+    On_Impact_With_Anything: true
+    Sounds_Shooter: ENTITY_SKELETON_SHOOT-1-2-0
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+Olympia_CSP:
+  Item_Information:
+    Item_Name: "&7Olympia"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Removal_Or_Drag_Delay: 5-false
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 10
+    Recoil_Amount: 3
+    Projectile_Amount: 8
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Removal_Or_Drag_Delay: 4-false
+    Projectile_Speed: 25
+    Projectile_Damage: 7
+    Bullet_Spread: 3.5
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 1
+  Headshot:
+    Enable: false
+    Bonus_Damage: 2
+  Reload:
+    Enable: true
+    Reload_Amount: 2
+    Reload_Bullets_Individually: true
+    Reload_Duration: 20
+    Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0,BLOCK_NOTE_SNARE-1-6-1
+  Firearm_Action:
+    Type: break
+    Open_Duration: 10
+    Close_Duration: 15
+    Sound_Open: BLOCK_WOODEN_DOOR_OPEN-1-2-0
+    Sound_Close: BLOCK_WOODEN_DOOR_CLOSE-1-2-0
+  Damage_Based_On_Flight_Time:
+    Enable: true
+    Bonus_Damage_Per_Tick: -1
+    Maximum_Damage: -4
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+SPAS_CSP:
+  Item_Information:
+    Item_Name: "&7Spas-12"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Removal_Or_Drag_Delay: 5-false
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 6
+    Recoil_Amount: 2
+    Projectile_Amount: 6
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Removal_Or_Drag_Delay: 4-false
+    Projectile_Speed: 45
+    Projectile_Damage: 5
+    Bullet_Spread: 1
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 1
+  Headshot:
+    Enable: false
+    Bonus_Damage: 2
+  Reload:
+    Enable: true
+    Reload_Amount: 6
+    Reload_Bullets_Individually: true
+    Reload_Duration: 15
+    Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0,BLOCK_NOTE_SNARE-1-6-1
+  Damage_Based_On_Flight_Time:
+    Enable: true
+    Bonus_Damage_Per_Tick: -1
+    Maximum_Damage: -4
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+Pump_Shotgun_CSP:
+  Item_Information:
+    Item_Name: "&7Trench Broom"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Removal_Or_Drag_Delay: 5-false
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 7
+    Projectile_Amount: 5
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Removal_Or_Drag_Delay: 4-false
+    Projectile_Speed: 45
+    Projectile_Damage: 6
+    Bullet_Spread: 1.5
+  Firearm_Action:
+    Type: pump
+    Open_Duration: 8
+    Close_Duration: 12
+    Close_Shoot_Delay: 
+    Reload_Open_Delay: 6
+    Reload_Close_Delay: 8
+    Sound_Open: BLOCK_NOTE_HAT-1-1-0
+    Sound_Close: BLOCK_NOTE_SNARE-1-6-1
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 1
+  Headshot:
+    Enable: true
+    Bonus_Damage: 2
+  Reload:
+    Enable: true
+    Reload_Amount: 6
+    Reload_Bullets_Individually: true
+    Reload_Duration: 15
+    Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0,BLOCK_NOTE_SNARE-1-6-1
+  Damage_Based_On_Flight_Time:
+    Enable: true
+    Bonus_Damage_Per_Tick: -1
+    Maximum_Damage: -4
+  Abilities:
+    Reset_Hit_Cooldown: true
+    Knockback: 3
+  Extras:
+    Disable_Underwater: true
+
+Python_CSP:
+  Item_Information:
+    Item_Name: "&7Python"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 19
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 70
+    Projectile_Damage: 8
+    Bullet_Spread: 0.5
+  Reload:
+    Enable: true
+    Reload_Amount: 6
+    Reload_Duration: 32
+    Sounds_Reloading: ENTITY_PLAYER_LEVELUP-1-1-10,ITEM_FLINTANDSTEEL_USE-1-2-28
+  Firearm_Action:
+    Type: revolver
+    Open_Duration: 5
+    Close_Duration: 5
+    Sound_Open: BLOCK_WOODEN_DOOR_OPEN-1-2-0
+    Sound_Close: BLOCK_WOODEN_DOOR_CLOSE-1-2-0
+  Headshot:
+    Enable: true
+    Bonus_Damage: 7
+  Backstab:
+    Enable: true
+    Bonus_Damage: 3
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: false
+
+Type95_CSP:
+  Item_Information:
+    Item_Name: "&7Type95"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 6
+    Recoil_Amount: 1
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 60
+    Projectile_Damage: 5
+    Bullet_Spread: 1
+  Sneak:
+    Enable: true
+    No_Recoil: true
+    Bullet_Spread: 0
+  Burstfire:
+    Enable: true
+    Shots_Per_Burst: 3
+    Delay_Between_Shots_In_Burst: 1
+  Headshot:
+    Enable: true
+    Bonus_Damage: 1
+  Backstab:
+    Enable: true
+    Bonus_Damage: 1
+  Reload:
+    Enable: true
+    Reload_Amount: 30
+    Reload_Duration: 32
+    Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+Hunting_CSP:
+  Item_Information:
+    Item_Name: "&7Hunting"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 150
+    Projectile_Damage: 16
+    Bullet_Spread: 3
+  Reload:
+    Enable: true
+    Reload_Amount: 5
+    Reload_Bullets_Individually: true
+    Reload_Duration: 10
+    Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0
+  Firearm_Action:
+    Type: bolt
+    Open_Duration: 12
+    Close_Duration: 9
+    Close_Shoot_Delay: 9
+    Sound_Open: BLOCK_NOTE_HAT-1-0-0,BLOCK_PISTON_CONTRACT-1-2-2
+    Sound_Close: BLOCK_PISTON_EXTEND-1-2-0
+  Sneak:
+    Enable: true
+    Bullet_Spread: 1
+  Headshot:
+    Enable: true
+    Bonus_Damage: 8
+  Scope:
+    Enable: true
+    Zoom_Amount: 10
+    Night_Vision: true
+    Zoom_Bullet_Spread: 0.0
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+    Knockback: 2
+  Extras:
+    Disable_Underwater: false
+
+Desert_Eagle_CSP:
+  Item_Information:
+    Item_Name: "&7Desert Eagle"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Remove_Arrows_On_Impact: true
+    Dual_Wield: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 2
+    Projectile_Amount: 1
+    Projectile_Type: arrow
+    Projectile_Speed: 70
+    Projectile_Damage: 5
+    Bullet_Spread: 0.6
+  Reload:
+    Enable: true
+    Reload_Amount: 7
+    Reload_Duration: 40
+    Sounds_Out_Of_Ammo: UI_BUTTON_CLICK-1-1-0
+    Sounds_Reloading: BLOCK_WOODEN_DOOR_OPEN-1-2-4,BLOCK_WOODEN_DOOR_OPEN-1-2-8,BLOCK_WOODEN_DOOR_CLOSE-1-2-23,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+    Dual_Wield:
+      Single_Reload_Duration: 25
+      Sounds_Single_Reload: BLOCK_WOODEN_DOOR_OPEN-1-2-4,BLOCK_WOODEN_DOOR_CLOSE-1-2-23
+      Sounds_Shoot_With_No_Ammo: UI_BUTTON_CLICK-1-2-0
+  Headshot:
+    Enable: true
+    Bonus_Damage: 1
+  Backstab:
+    Enable: true
+    Bonus_Damage: 1
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+
+#Not implment
+
+#WIP WEAPONS

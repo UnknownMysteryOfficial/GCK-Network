@@ -1,0 +1,32 @@
+Random_Test:
+  Left_Color: "&7"
+  Right_Color: "&c"
+  Symbol: "░"
+  Symbol_Amount: 7
+  Reload_Message:
+    Action_Bar: "&7Reloading... #BAR# &7#TIME#s"
+    Title: "&7Reloading... #BAR# &7#TIME#s"
+    Subtitle: "&7Reloading... #BAR# &7#TIME#s"
+    Exp: true
+    Exp_Level: true
+    Boss_Bar:
+      Progress: true
+      Title: "&7Reloading... #BAR# &7#TIME#s"
+      Settings:
+        Color: "RED"
+        Style: "SEGMENTED_20"
+  Reload_Complete_Message:
+    Action_Bar: "&7Reload completed&c!"
+    Title: "&7Reload completed&c!"
+    Subtitle: "&7Reload completed&c!"
+    Boss_Bar:
+      Title: "&7Reload completed&c!"
+      Settings:
+        Time: 20
+        Color: "WHITE"
+        Style: "SEGMENTED_20"
+  Item:
+    Item_Type: "SHEARS"
+    Item_Name: "&7░░░░&c░░░"
+    Item_Lore:
+      - "&c- &7Reload colors &c- &7░░░░&c░░░"

@@ -1,0 +1,21 @@
+#######################
+# Items for every GUI #
+#######################
+
+Next_Page_Item:
+  Item_Type: "ARROW"
+  Item_Name: "&c<-> &7Open next page &c<->"
+  Click_Sound: "BLOCK_NOTE_BLOCK_HAT-1-1"
+
+Previous_Page_Item:
+  Item_Type: "ARROW"
+  Item_Name: "&c<-> &7Open previous page &c<->"
+  Click_Sound: "BLOCK_NOTE_BLOCK_HAT-1-1"
+
+Page_Changing_Row_Fill_Item:
+  Item_Type: "GRAY_STAINED_GLASS_PANE"
+  Item_Name: "&c<&7-&c>"
+
+Fill_Remaining_Slots_Item:
+  Item_Type: "GRAY_STAINED_GLASS_PANE"
+  Item_Name: "&c<&7-&c>"
