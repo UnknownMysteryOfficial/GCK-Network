@@ -1,0 +1,1408 @@
+AK-47_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.ak-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+    Custom_Bullet_Spread:
+      Maxium_Y_Spread_Lower: 0.5
+      Maxium_Y_Spread_Higher: 0.5
+      Minium_Starting_Y_Spread: 0.002
+      Maxium_Starting_Y_Spread: 0.004
+      Decrease_Spread_Back_to_Normal:
+        Minium_Milliseconds: 1200
+        Maxium_Milliseconds: 1800
+      While_Zooming:
+        ZX_Spread: 0.03
+        Increase_Y_Spread_Per_Shot: 0.005
+      While_Sneaking:
+        ZX_Spread: 0.05
+        Increase_Y_Spread_Per_Shot: 0.007
+      While_Standing_Or_Walking:
+        ZX_Spread: 0.07
+        Increase_Y_Spread_Per_Shot: 0.009
+      While_Sprinting:
+        ZX_Spread: 0.09
+        Increase_Y_Spread_Per_Shot: 0.02
+      While_Not_Touching_Ground:
+        ZX_Spread: 0.2
+        Increase_Y_Spread_Per_Shot: 0.013
+  Damage:
+      No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+      Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 3
+      Maxium_Crack: 5
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.01
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Disable_Using_CS_Attachment_Without_CSP_Attachment: true
+    Unable_To_Change_To_CS_Attachment_Message: "&7You have to add grenade launcher attachment&c!"
+    Attachments: "Extended_Clip,Lightweight,FMJ,Rapid_Fire"
+    Maxium_Amount_Of_Attachments: 2
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+M4A1_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.ak-47-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+    Custom_Bullet_Spread:
+      Maxium_Y_Spread_Lower: 0.2
+      Maxium_Y_Spread_Higher: 0.3
+      Minium_Starting_Y_Spread: 0.001
+      Maxium_Starting_Y_Spread: 0.003
+      Decrease_Spread_Back_to_Normal:
+        Minium_Milliseconds: 1200
+        Maxium_Milliseconds: 1800
+      While_Zooming:
+        ZX_Spread: 0.02
+        Increase_Y_Spread_Per_Shot: 0.004
+      While_Sneaking:
+        ZX_Spread: 0.04
+        Increase_Y_Spread_Per_Shot: 0.006
+  Damage:
+    No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 3
+      Maxium_Crack: 5
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.01
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Disable_Using_CS_Attachment_Without_CSP_Attachment: true
+    Unable_To_Change_To_CS_Attachment_Message: "&7You have to add grenade launcher attachment&c!"
+    Attachments: "Extended_Clip,Lightweight,FMJ,Grenade_Launcher,Rapid_Fire"
+    Maxium_Amount_Of_Attachments: 2
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Bazooka_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.bazooka-3-1"
+    Trails:
+      Default_Trail: "Pierced_Smoke,Pierced_Crit"
+    Camera_Recoil:
+      Upwards:
+        Minium: 7.0
+        Maxium: 10.0
+      Sideways:
+        Minium: 4.0
+        Maxium: 7.0
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 8
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.03
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Lightweight,Flame_Gun"
+    Maxium_Amount_Of_Attachments: 2
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Carbine_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.carbine-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 5
+      Maxium_Crack: 8
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.01
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Homing_Projectiles,Flame_Gun,Bouncing_Gun,Grip"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Grenade_Revolver_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Skin:
+    Default_Skin: "NoSkin"
+  Scope:
+    Custom_Scope_Sound: "scope.start_scope-1-1"
+    Custom_Scope_End_Sound: "scope.end_scope-1-1"
+    Delay_Bar:
+      Left_Color: "&7"
+      Right_Color: "&c"
+      Symbol: "░"
+      Symbol_Amount: 7
+      Action_Bar: "&7Delay... #BAR# &7#TIME#s"
+      End_Action_Bar: "&7#WEAPON# at slot #SLOT# is ready to shoot!"
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 2
+  Held:
+    Weapon_Weight: -0.06
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Bazooka_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.bazooka-3-1"
+    Trails:
+      Default_Trail: "Pierced_Smoke,Pierced_Crit"
+    Camera_Recoil:
+      Upwards:
+        Minium: 7.0
+        Maxium: 10.0
+      Sideways:
+        Minium: 4.0
+        Maxium: 7.0
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+      Explosion:
+        Radius: 6
+  Damage:
+    Spawn_Firework:
+      Shape: "BALL"
+      Color: "5-5-5"
+      Flicker: false
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.03
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        #- "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        #- "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        - "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Lightweight,Flame_Gun"
+    Maxium_Amount_Of_Attachments: 2
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Gauss_CSP:
+  Shoot:
+    Custom_Pre_Shoot_Sound: "shoot.gauss-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Energy"
+      Trail: "Blue_Energy,Pink_Energy,Red_Energy"
+    Increasing_Fire_Rate:
+      Starting_Rate: 1
+      Add_Rate_Per_Shot: 1
+      Minium_Rate_For_Shot: 1
+      Maxium_Rate_For_Shot: 3
+      Decrease_Back_to_Starting_Rate:
+        Minium_Milliseconds: 700
+        Maxium_Milliseconds: 1000
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+    Damage_Increase_Based_On_Armor:
+      Helmet:
+        LEATHER_HELMET: 1
+        IRON_HELMET: 2
+        CHAINMAIL_HELMET: 3
+        GOLD_HELMET: 4
+        DIAMOND_HELMET: 5
+      Chestplate:
+        LEATHER_CHESTPLATE: 1
+        IRON_CHESTPLATE: 2
+        CHAINMAIL_CHESTPLATE: 4
+        GOLD_CHESTPLATE: 5
+        DIAMOND_CHESTPLATE: 7
+      Leggings:
+        LEATHER_LEGGINGS: 1
+        IRON_LEGGINGS: 2
+        CHAINMAIL_LEGGINGS: 3
+        GOLD_LEGGINGS: 4
+        DIAMOND_LEGGINGS: 5
+      Boots:
+        LEATHER_BOOTS: 1
+        IRON_BOOTS: 2
+        CHAINMAIL_BOOTS: 3
+        GOLD_BOOTS: 4
+        DIAMOND_BOOTS: 5
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: 0.01
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        #- "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Flame_Gun,FMJ"
+    Maxium_Amount_Of_Attachments: 2
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Olympia_CSP:
+  Shoot:
+    Custom_Pre_Shoot_Sound: "shoot.olympia-3-1"
+    Invisible_Projectiles: true
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 3
+      Maxium_Crack: 4
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: 0.013
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        - "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "StatTrak,Flame_Gun,Lightweight,FMJ,Backstabber,High_Caliber_Rounds"
+    Maxium_Amount_Of_Attachments: 1
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Pump_Shotgun_CSP:
+  Shoot:
+    Custom_Pre_Shoot_Sound: "shoot.olympia-3-1"
+    Invisible_Projectiles: true
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    Life_Steal: 0.1
+    No_Knockback:
+      Affect_Players: false
+      Affect_Mobs_And_Animals: false
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 3
+      Maxium_Crack: 4
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.012
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        - "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "StatTrak,Flame_Gun,Lightweight,FMJ,Backstabber,High_Caliber_Rounds"
+    Maxium_Amount_Of_Attachments: 1
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+SPAS_CSP:
+  Skin:
+    Default_Skin: "NoSkin"
+  Shoot:
+    Custom_Pre_Shoot_Sound: "shoot.olympia-3-1"
+    Invisible_Projectiles: true
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    No_Knockback:
+      Affect_Players: true
+      Affect_Mobs_And_Animals: true
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 3
+      Maxium_Crack: 4
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: 0.013
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        - "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "StatTrak,Flame_Gun,Lightweight,FMJ,Backstabber,High_Caliber_Rounds"
+    Maxium_Amount_Of_Attachments: 1
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+P90_CSP:
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Skin:
+    Default_Skin: "NoSkin"
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.python-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+    Bouncing_Projectiles:
+      Decrese_Velocity_Per_Bounce: 0.8
+      Minium_Velocity: 0.6
+      Bounce_Amount: 1
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 6
+      Maxium_Crack: 8
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.013
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Python_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.python-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+    Bouncing_Projectiles:
+      Decrese_Velocity_Per_Bounce: 0.8
+      Minium_Velocity: 0.6
+      Bounce_Amount: 1
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 6
+      Maxium_Crack: 8
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.013
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Type95_CSP:
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.type95-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Held:
+    Weapon_Weight: -0.013
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments &c⟹ &7#ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Hunting_CSP:
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.hunting-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+  Scope:
+    Pumpkin_On_Zoom: true
+    Fog: true
+    Custom_Scope_Sound: "scope.start_scope-1-1"
+    Custom_Scope_End_Sound: "scope.end_scope-1-1"
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+    Damage_Increase_Based_On_Armor:
+      Helmet:
+        DIAMOND_HELMET: 0
+      Chestplate:
+        DIAMOND_CHESTPLATE: 0
+      Leggings:
+        DIAMOND_LEGGINGS: 0
+      Boots:
+        DIAMOND_BOOTS: 0
+  Hit_Block:
+    Block_Crack_Animation:
+      Minium_Crack: 7
+      Maxium_Crack: 9
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Held:
+    Weapon_Weight: -0.01
+    Hide_Attributes: true
+    Update_Lore:
+      Maxium_Attachments_Per_Line: 2
+      New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        - "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        #- "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        #- "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Attachment:
+    Attachments: "Silencer_For_Hunting,Zoom_Increase"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"
+
+Desert_Eagle_CSP:
+  Damage:
+    Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+  Shoot:
+    Invisible_Projectiles: true
+    Custom_Pre_Shoot_Sound: "shoot.deserteagle-3-1"
+    Trails:
+      Default_Trail: "Default_Crit_Projectile"
+      Trail: "Blue_Projectile,Pink_Projectile,Red_Projectile"
+    Require_Both_Hands: true
+    Require_Both_Hands_Message: "&7You need to have both hands available to shoot!"
+  Hit_Block:
+    Break_Blocks:
+      Blacklist: false
+      Regen_Blocks_After_Milliseconds: 10000
+      Blocks_List:
+        - "GLASS"
+        - "WHITE_STAINED_GLASS"
+        - "ORANGE_STAINED_GLASS"
+        - "MAGENTA_STAINED_GLASS"
+        - "LIGHT_BLUE_STAINED_GLASS"
+        - "YELLOW_STAINED_GLASS"
+        - "LIME_STAINED_GLASS"
+        - "PINK_STAINED_GLASS"
+        - "GRAY_STAINED_GLASS"
+        - "BLUE_STAINED_GLASS"
+        - "LIGHT_GRAY_STAINED_GLASS"
+        - "CYAN_STAINED_GLASS"
+        - "PURPLE_STAINED_GLASS"
+        - "BROWN_STAINED_GLASS"
+        - "GREEN_STAINED_GLASS"
+        - "RED_STAINED_GLASS"
+        - "BLACK_STAINED_GLASS"
+        - "GLASS_PANE"
+        - "WHITE_STAINED_GLASS_PANE"
+        - "ORANGE_STAINED_GLASS_PANE"
+        - "MAGENTA_STAINED_GLASS_PANE"
+        - "LIGHT_BLUE_STAINED_GLASS_PANE"
+        - "YELLOW_STAINED_GLASS_PANE"
+        - "LIME_STAINED_GLASS_PANE"
+        - "PINK_STAINED_GLASS_PANE"
+        - "GRAY_STAINED_GLASS_PANE"
+        - "BLUE_STAINED_GLASS_PANE"
+        - "LIGHT_GRAY_STAINED_GLASS_PANE"
+        - "CYAN_STAINED_GLASS_PANE"
+        - "PURPLE_STAINED_GLASS_PANE"
+        - "BROWN_STAINED_GLASS_PANE"
+        - "GREEN_STAINED_GLASS_PANE"
+        - "RED_STAINED_GLASS_PANE"
+        - "BLACK_STAINED_GLASS_PANE"
+  Held:
+    Copy_Weapon_To_Off_Hand: true
+    Weapon_Weight: -0.005
+    Hide_Attributes: true
+    Update_Lore:
+      #Maxium_Attachments_Per_Line: 2
+      #New_Line_Format: "&7✴   &c➣ &7#ATTACHMENTS#"
+      Lore:
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+        #- "&7✴ &c➣ &7Attachments #ATTACHMENTS#"
+        - "&7✴ &c➣ &7Skin &c⟹ &7#SKIN#"
+        #- "&7✴ &c➣ &7StatTrak &c⟹ &7#STATTRAK#"
+        - "&7✴ &c➣ &7#DAMAGE# &c&l⟸&r &7Damage"
+        - "&7✴ &c➣ &7#WEIGHT# &c&l⟸&r &7Weight"
+        - "&7✴ &c➣ &7#SPREAD# &c&l⟸&r &7Spread"
+        - "&7✴ &c➣ &7#PROJECTILE_SPEED# &c&l⟸&r &7Projectile Speed"
+        - "&7✴ &c➣ &7#RELOAD_DURATION# &c&l⟸&r &7Reload Duration"
+        - "&7✴ &c➣ &7#RELOAD_AMOUNT# &c&l⟸&r &7Reload Amount"
+        #- "&7✴ &c➣ &7#EXPLOSION_RADIUS# &c&l⟸&r &7Explosion Radius"
+        - "&7✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴ ✴  "
+  Reload:
+    Visual_Reload:
+      Default_Visual_Reload: "Default_Reload"
+      Visual_Reload: "Blue_Reload,Pink_Reload,Red_Reload"
+  Skin:
+    Default_Skin: "NoSkin"
+    Skins: "Blue,Pink,Red"
+  Variables:
+    Weapon_Weight: "BAR~-0.05~0.05"
+    Damage: "BAR~2~17"
+    Spread: "BAR~0.3~2.2"
+    Projectile_Speed: "BAR~5~130"
+    Reload_Duration: "BAR~0~80"
+    Reload_Amount: "BAR~0~40"
+    Explosion_Radius: "BAR~0~10"

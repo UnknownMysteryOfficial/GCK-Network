@@ -1,0 +1,133 @@
+AK-47_CSP_NoSkin:
+  Custom_Model_Data: 1
+  Reload:
+    Custom_Model_Data: 2
+AK-47_CSP_Blue:
+  Durability: 1
+  Change_Item_Type: "STONE_AXE"
+  Reload:
+    Durability: 2
+    Change_Item_Type: "STONE_AXE"
+AK-47_CSP_Pink:
+  Durability: 1
+  Change_Item_Type: "STONE_PICKAXE"
+  Reload:
+    Durability: 2
+    Change_Item_Type: "STONE_PICKAXE"
+AK-47_CSP_Red:
+  Durability: 1
+  Change_Item_Type: "STONE_SHOVEL"
+  Reload:
+    Durability: 2
+    Change_Item_Type: "STONE_SHOVEL"
+
+M4A1_CSP_NoSkin:
+  Custom_Model_Data: 16
+  Reload:
+    Custom_Model_Data: 22
+
+SPAS_CSP_NoSkin:
+  Custom_Model_Data: 14
+
+P90_CSP_NoSkin:
+  Custom_Model_Data: 13
+
+Grenade_Revolver_CSP_NoSkin:
+  Custom_Model_Data: 25
+ 
+Bazooka_CSP_NoSkin:
+  Custom_Model_Data: 3
+
+Carbine_CSP_NoSkin:
+  Custom_Model_Data: 4
+Carbine_CSP_Blue:
+  Durability: 4
+  Change_Item_Type: "STONE_AXE"
+Carbine_CSP_Pink:
+  Durability: 4
+  Change_Item_Type: "STONE_PICKAXE"
+Carbine_CSP_Red:
+  Durability: 4
+  Change_Item_Type: "STONE_SHOVEL"
+
+Desert_Eagle_CSP_NoSkin:
+  Custom_Model_Data: 5
+  Reload:
+    Custom_Model_Data: 20
+Desert_Eagle_CSP_Blue:
+  Durability: 5
+  Change_Item_Type: "STONE_AXE"
+Desert_Eagle_CSP_Pink:
+  Durability: 5
+  Change_Item_Type: "STONE_PICKAXE"
+Desert_Eagle_CSP_Red:
+  Durability: 5
+  Change_Item_Type: "STONE_SHOVEL"
+
+Pump_Shotgun_CSP_NoSkin:
+  Custom_Model_Data: 6
+  Reload:
+    Custom_Model_Data: 17
+Gauss_CSP_Blue:
+  Durability: 6
+  Change_Item_Type: "STONE_AXE"
+Gauss_CSP_Pink:
+  Durability: 6
+  Change_Item_Type: "STONE_PICKAXE"
+Gauss_CSP_Red:
+  Durability: 6
+  Change_Item_Type: "STONE_SHOVEL"
+
+Olympia_CSP_NoSkin:
+  Custom_Model_Data: 19
+  Reload:
+    Custom_Model_Data: 18
+Olympia_CSP_Blue:
+  Durability: 7
+  Change_Item_Type: "STONE_AXE"
+Olympia_CSP_Pink:
+  Durability: 7
+  Change_Item_Type: "STONE_PICKAXE"
+Olympia_CSP_Red:
+  Durability: 7
+  Change_Item_Type: "STONE_SHOVEL"
+
+Python_CSP_NoSkin:
+  Custom_Model_Data: 8
+  Reload:
+    Custom_Model_Data: 23
+Python_CSP_Blue:
+  Durability: 8
+  Change_Item_Type: "STONE_AXE"
+Python_CSP_Pink:
+  Durability: 8
+  Change_Item_Type: "STONE_PICKAXE"
+Python_CSP_Red:
+  Durability: 8
+  Change_Item_Type: "STONE_SHOVEL"
+
+Type95_CSP_NoSkin:
+  Custom_Model_Data: 9
+Type95_CSP_Blue:
+  Durability: 9
+  Change_Item_Type: "STONE_AXE"
+Type95_CSP_Pink:
+  Durability: 9
+  Change_Item_Type: "STONE_PICKAXE"
+Type95_CSP_Red:
+  Durability: 9
+  Change_Item_Type: "STONE_SHOVEL"
+
+Hunting_CSP_NoSkin:
+  Custom_Model_Data: 11
+  Reload:
+    Custom_Model_Data: 24
+Hunting_CSP_Blue:
+  Durability: 10
+  Change_Item_Type: "STONE_AXE"
+Hunting_CSP_Pink:
+  Durability: 10
+  Change_Item_Type: "STONE_PICKAXE"
+Hunting_CSP_Red:
+  Durability: 10
+  Change_Item_Type: "STONE_SHOVEL"

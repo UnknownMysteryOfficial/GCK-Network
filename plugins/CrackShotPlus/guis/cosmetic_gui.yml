@@ -1,0 +1,87 @@
+############
+# Database #
+############
+
+# Where the skin, visual reload and trail selections should be saved
+Database:
+  # JSON, MYSQL or SQLITE 
+  Type: "JSON"
+  JSON:
+    Path: "plugins/CrackShotPlus/JSON_Database_Folder/"
+  MySQL:
+    Host: "localhost"
+    Port: 3306
+    Database: "crackshotplus"
+    Username: "root"
+    Password: ""
+  SQLite:
+    Path: "plugins/CrackShotPlus/"
+
+############
+# Main GUI #
+############
+
+# Main GUI the GUI where all weapons are listed and by clicking them you can open weapon specific GUI
+Main_GUI:
+  Enable: true
+  Commands:
+    - "weaponsettings"
+    - "weapon"
+    - "skin"
+    - "visualreload"
+    - "trail"
+  # Name variables #CURRENT_PAGE# and #PAGES#.
+  Name: "&c<-> &7All weapons #CURRENT_PAGE#&c/&7#PAGES# &c<->"
+  Click_Weapon_Sound: "BLOCK_NOTE_BLOCK_HAT-1-1"
+
+Info_Item:
+  Item_Type: "BOOK"
+  Item_Name: "&c<-> &7Information &c<->"
+  Item_Lore:
+    - "&7Click weapon to modify its settings!"
+    - "&7Click arrow to iterate through pages."
+
+#######################
+# Weapon specific GUI #
+#######################
+
+Weapon_Specific_GUI:
+  Use_Weapon_Specific_Commands: true # Opens weapon specific GUI based on weapon in hand
+  # Subword means the word after the main gui command
+  # For example when using default configurations its commands like these:
+  # /weaponsettings hand
+  # /weapon hand
+  # /skin hand
+  # /visualreload hand
+  # /trail hand
+  Weapon_Specific_Subwords:
+    - "hand"
+  # GUI name variable #WEAPON#
+  Skin_GUI_Name: "&c<-> &c#WEAPON# &7skin &c<->"
+  Visual_Reload_GUI_Name: "&c<-> &c#WEAPON# &7visual reload &c<->"
+  Trail_GUI_Name: "&c<-> &c#WEAPON# &7trail &c<->"
+  No_Permission_To_Select_Sound: "ENTITY_VILLAGER_NO-1-1"
+  New_Selection_Made_Sound: "ENTITY_PLAYER_LEVELUP-1-1"
+
+Skin_Info_Item:
+  Item_Type: "BOOK"
+  Item_Name: "&c<-> &7Information &c<->"
+  Item_Lore:
+    - "&7Click skin to change your weapon skin to it!"
+
+Visual_Reload_Info_Item:
+  Item_Type: "BOOK"
+  Item_Name: "&c<-> &7Information &c<->"
+  Item_Lore:
+    - "&7Click visual reload to change your weapon visual reload to it!"
+
+Trail_Info_Item:
+  Item_Type: "BOOK"
+  Item_Name: "&c<-> &7Information &c<->"
+  Item_Lore:
+    - "&7Click trail to change your weapon trail to it!"
+
+Back_To_All_Weapons_Item:
+  Item_Type: "ARROW"
+  Item_Name: "&c<-> &7Open all weapons page &c<->"
+  Click_Sound: "BLOCK_NOTE_BLOCK_HAT-1-1"

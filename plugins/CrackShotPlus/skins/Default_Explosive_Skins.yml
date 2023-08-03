@@ -1,0 +1,38 @@
+CocoPops_CSP_NoSkin:
+  Custom_Model_Data: 2
+CocoPops_CSP_Blue:
+  Durability: 2
+CocoPops_CSP_Pink:
+  Durability: 3
+CocoPops_CSP_Red:
+  Durability: 4
+
+Grenade_CSP_NoSkin:
+  Custom_Model_Data: 1
+Grenade_CSP_Blue:
+  Durability: 10
+Grenade_CSP_Pink:
+  Durability: 11
+Grenade_CSP_Red:
+  Durability: 12
+
+Flashbang_CSP_NoSkin:
+  Custom_Model_Data: 5
+
+Putty_CSP_NoSkin:
+  Custom_Model_Data: 4
+Putty_CSP_Blue:
+  Durability: 14
+Putty_CSP_Pink:
+  Durability: 15
+Putty_CSP_Red:
+  Durability: 16
+
+Monkey_Bomb_CSP_NoSkin:
+  Custom_Model_Data: 3
+Monkey_Bomb_CSP_Blue:
+  Durability: 18
+Monkey_Bomb_CSP_Pink:
+  Durability: 19
+Monkey_Bomb_CSP_Red:
+  Durability: 20

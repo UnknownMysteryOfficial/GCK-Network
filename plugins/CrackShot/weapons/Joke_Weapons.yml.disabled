@@ -1,0 +1,130 @@
+Eoka_CSP:
+  Item_Information:
+    Item_Name: "&7Eokaa"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Remove_Arrows_On_Impact: true
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Delay_Between_Shots: 4
+    Projectile_Amount: 25
+    Projectile_Type: arrow
+    Projectile_Speed: 75
+    Projectile_Damage: 5
+    Bullet_Spread: 2
+  Reload:
+    Enable: true
+    Reload_Amount: 1
+    Reload_Duration: 40
+    Sounds_Out_Of_Ammo: UI_BUTTON_CLICK-1-1-0
+    Sounds_Reloading: BLOCK_WOODEN_DOOR_OPEN-1-2-4,BLOCK_WOODEN_DOOR_OPEN-1-2-8,BLOCK_WOODEN_DOOR_CLOSE-1-2-23,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Sneak:
+    Enable: true
+    Bullet_Spread: 0
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: true
+
+    
+ADMIN1_CSP:
+  Item_Information:
+    Item_Name: "&7ADMIN LOL"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 0
+    Projectile_Amount: 10
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 50
+    Projectile_Damage: 1
+    Bullet_Spread: 2
+  Explosions:
+    Enable: false
+    Knockback: -10
+    Damage_Multiplier: 1
+    Enable_Owner_Immunity: true
+    Explosion_No_Grief: true
+    Explosion_Radius: 1
+    On_Impact_With_Anything: true
+    Sounds_Shooter: ENTITY_SKELETON_SHOOT-1-2-0
+  Sneak:
+    Enable: true
+    No_Recoil: true
+  Fully_Automatic:
+    Enable: true
+    Fire_Rate: 1
+  Reload:
+    Enable: true
+    Reload_Amount: 500
+    Reload_Duration: 69
+    Sounds_Out_Of_Ammo: ENTITY_ITEM_BREAK-1-1-0
+    Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Headshot:
+    Enable: false
+    Bonus_Damage: 3
+  Backstab:
+    Enable: false
+    Bonus_Damage: 2
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: false
+
+
+ADMIN2_CSP:
+  Item_Information:
+    Item_Name: "&7ADMIN2"
+    Item_Type: STONE_HOE
+    Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+    Remove_Unused_Tag: true
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Recoil_Amount: 0
+    Projectile_Amount: 5
+    Projectile_Type: arrow
+    Remove_Arrows_On_Impact: true
+    Projectile_Speed: 100
+    Projectile_Damage: 1
+    Bullet_Spread: 2
+  Explosions:
+    Enable: true
+    Knockback: -10
+    Damage_Multiplier: 6
+    Enable_Owner_Immunity: true
+    Explosion_No_Grief: false
+    Explosion_Radius: 4
+    On_Impact_With_Anything: true
+    Sounds_Shooter: ENTITY_SKELETON_SHOOT-1-2-0
+  Sneak:
+    Enable: true
+    No_Recoil: true
+  Fully_Automatic:
+    Enable: true
+    Fire_Rate: 4
+  Reload:
+    Enable: false
+    Reload_Amount: 500
+    Reload_Duration: 69
+    Sounds_Out_Of_Ammo: ENTITY_ITEM_BREAK-1-1-0
+    Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+  Headshot:
+    Enable: false
+    Bonus_Damage: 3
+  Backstab:
+    Enable: false
+    Bonus_Damage: 2
+  Abilities:
+    Reset_Hit_Cooldown: true
+    No_Vertical_Recoil: true
+  Extras:
+    Disable_Underwater: false

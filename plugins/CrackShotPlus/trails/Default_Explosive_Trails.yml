@@ -1,0 +1,42 @@
+Default_Crit_Explosive:
+  Trail: "CRIT"
+  Item:
+    Item_Type: "GRAY_WOOL"
+    Item_Name: "&7CRIT"
+    Item_Lore:
+      - "&7Click to change explosive trail!"
+      - "&7Trail type &c- &7CRIT"
+      - "&7Trail color &c- &7Default crit color"
+
+Blue_Explosive:
+  Trail: "REDSTONE"
+  Trail_Color: "0-0-255"
+  Item:
+    Item_Type: "LIGHT_BLUE_WOOL"
+    Item_Name: "&bBLUE"
+    Item_Lore:
+      - "&7Click to change explosive trail!"
+      - "&7Trail type &c- &bREDSTONE"
+      - "&7Trail color &c- &bBLUE"
+
+Pink_Explosive:
+  Trail: "REDSTONE"
+  Trail_Color: "255-0-255"
+  Item:
+    Item_Type: "PINK_WOOL"
+    Item_Name: "&dPINK"
+    Item_Lore:
+      - "&7Click to change explosive trail!"
+      - "&7Trail type &c- &dREDSTONE"
+      - "&7Trail color &c- &dPINK"
+
+Red_Explosive:
+  Trail: "REDSTONE"
+  Trail_Color: "255-0-0"
+  Item:
+    Item_Type: "RED_WOOL"
+    Item_Name: "&4RED"
+    Item_Lore:
+      - "&7Click to change explosive trail!"
+      - "&7Trail type &c- &4REDSTONE"
+      - "&7Trail color &c- &4RED"
