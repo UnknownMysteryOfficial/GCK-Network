@@ -1,0 +1,51 @@
+#############################
+#   General Configuration   #
+#############################
+
+# Debug : true/false
+# Will print some messages in your console and/or chat of specified player(s)
+debug:
+    enable: false
+    player: Dzious
+
+
+##################################
+#   Enchantments Configuration   #
+##################################
+
+# Enable or Disable the enchantments update in inventory
+# THIS MAY CAUSE A LOT OF UPDATES AND SO SOME LAGS.
+# SERVER THAT NEVER EVER HAD ENCHANTMENTS SHALL NOT ACTIVATE THIS
+update_inventory: false
+
+# Enable or Disable the abilty to repair your stuff using mending enchantment
+# Mending has to be disable in order for this to work
+mending_repair: true
+
+# Enable or Disable the ability to go over minecraft vanilla enchantments levels
+bypass_levels: false
+
+ignore_conflict: false
+
+# Enchantment that have to be controlled. 
+# Enchantment that aren't there will be kept on their default values
+# enchantments.<sourceName>.<enchantmentName>: <maxLevel>
+# Source Name       is the origin of the enchantments.      Example : minecraft
+# Enchantment Name  is the name of the enchantments.        Example : protection
+# Max Level         is the maximum enchantment level
+#                   you want on your server. To disable
+#                   an enchantment set level to 0.
+#                   level range is between 0-2147483647     Example : 4
+enchantments:
+    minecraft:
+        # Disable Mending, Infinity, and set Riptide max lvl to 1 and BaneOfAthropods to 6
+        # mending: 0
+        # infinity: 0
+         riptide: 0
+         protection: 0
+         blast_protection: 0
+         fire_protection: 0
+         projectile_protection: 0
+         depth_strider: 1
+         thorns: 0
+        # bane_of_arthropods: 6
