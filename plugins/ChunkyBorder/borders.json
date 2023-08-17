@@ -1,0 +1,47 @@
+{
+  "world": {
+    "world": "world",
+    "centerX": -0.5,
+    "centerZ": -0.5,
+    "radiusX": 36831.5,
+    "radiusZ": 18399.5,
+    "shape": "rectangle",
+    "wrap": "earth"
+  },
+  "mars": {
+    "world": "mars",
+    "centerX": 6143.5,
+    "centerZ": 3071.5,
+    "radiusX": 6111.5,
+    "radiusZ": 3039.5,
+    "shape": "rectangle",
+    "wrap": "earth"
+  },
+  "venus": {
+    "world": "venus",
+    "centerX": 5119.5,
+    "centerZ": 2559.5,
+    "radiusX": 5087.5,
+    "radiusZ": 2527.5,
+    "shape": "rectangle",
+    "wrap": "earth"
+  },
+  "moon": {
+    "world": "moon",
+    "centerX": 4863.5,
+    "centerZ": 2431.5,
+    "radiusX": 4831.5,
+    "radiusZ": 2399.5,
+    "shape": "rectangle",
+    "wrap": "earth"
+  },
+  "europa": {
+    "world": "europa",
+    "centerX": 4711.5,
+    "centerZ": 2359.5,
+    "radiusX": 4679.5,
+    "radiusZ": 2327.5,
+    "shape": "rectangle",
+    "wrap": "earth"
+  }
+}
