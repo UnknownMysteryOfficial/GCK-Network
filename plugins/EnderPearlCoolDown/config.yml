@@ -1,0 +1,15 @@
+# cooldown in milliseconds
+cooldown: 15000
+
+# price per throw of enderpearl (requires Vault and an economy plugin)
+price: 0
+
+# show messages to player
+showMessage: true
+
+# messages sent to players.
+# values in {braces} are variables and will be replaced with actual values.
+messages:
+  money: "§cNot enough money to throw pearl. Need at least {price}."
+  cooldown: "§cEnderpearl cooldown remaining: {seconds} seconds."
+  notallowed: "§cYou may not use ender pearls."
