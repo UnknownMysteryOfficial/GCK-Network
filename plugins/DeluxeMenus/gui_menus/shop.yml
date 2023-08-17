@@ -1,0 +1,63 @@
+open_command: shop
+registered_command: true
+# Size
+#
+# This allows you to set the size of the menu inventory. Range from 9-54.
+# If this option is not present in the menu configuration, it will default to 54.
+#
+size: 9
+
+# Menu title
+#
+# This is the title of the menu. You can change it with your custom name
+# Color codes and placeholders are supported
+#
+menu_title: 'Shop menu'
+
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.guns
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  'GUNS':
+    material: STONE_HOE
+    slot: 2
+    nbt_int: CustomModelData:1
+    display_name: '&2Gun Shop'
+    lore:
+    - ''
+    - "&8• &7Guns here, can also be opened with /guns"
+    - ''
+    left_click_commands:
+    - '[player] dm open guns'
+    - '[message] &2>Opening Gun shop'
+    
+  'EXPLOSIVES':
+    material: STONE_SWORD
+    slot: 4
+    nbt_int: CustomModelData:1
+    display_name: '&2Explosives Shop'
+    lore:
+    - ''
+    - "&8• &7Explosives here, can also be opened with /explosives"
+    - ''
+    left_click_commands:
+    - '[player] dm open explosives'
+    - '[message] &2>Opening Explosives shop'
+    
+  'VEHICLES':
+    material: RABBIT_HIDE
+    slot: 6
+    nbt_int: CustomModelData:8
+    display_name: '&2Vehicles Shop'
+    lore:
+    - ''
+    - "&8• &7Vehicles here, can also be opened with /vehicles"
+    - ''
+    left_click_commands:
+    - '[player] qualityarmoryvehicles shop'
+    - '[message] &2>Opening Vehicles shop'
