@@ -1,0 +1,40 @@
+INKSAC:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: INK_SAC
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - CHARCOAL
+  - COAL
+  - null
+  - COAL
+  - CHARCOAL
+  - null
+  - null
+  - null
+  - null
+  permission: null
+  page: -1
+  slot: -1
+  shapeless: true
+GLOWINKSAC:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: GLOW_INK_SAC
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - GLOWSTONE_DUST
+  - null
+  - null
+  - null
+  - GLOW_INK_SAC
+  - null
+  - null
+  - null
+  - GLOWSTONE_DUST
+  permission: null
+  page: -1
+  slot: -1
+  shapeless: true
