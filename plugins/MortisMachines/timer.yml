@@ -1,0 +1,29 @@
+timer-machine:
+  enabled: true
+  messages:
+    machine-build: "&aThe timer machine has been created"
+    invalid-time: "&aPlease enter a valid time"
+    timer-set: "&aThe time has been changed for this machine"
+    set-timer: "&aPlease enter the time you want to set (Use ##:## OR 10s)"
+    set-timer-expired: "&aThe timer setting time has been expired"
+    time-less-output: "&cYou cannot set the timer less than the output time"
+    output-greater-time: "&cYou cannot set the output time greater than the timer"
+    output-timer-set: "&aThe output time has been changed for this machine"
+    set-output-timer: "&aPlease enter a time you want to set (Use ##:## OR 10s)"
+    set-output-timer-expired: "&aThe output timer setting time has been expired"
+    constant-mode: "&aThe machine has been set to constant mode"
+    pulse-mode: "&aThe machine has been set to pulse mode"
+    switch: "&6[Towny] &cOutsiders aren't allowed to Switch"
+  menu:
+    title: "&aTimer Machine"
+    filter: FILTER
+    pulse-mode: PULSE_MODE
+    constant-mode: CONSTANT_MODE
+    timer: TIMER
+    output-timer: OUTPUT_TIMER
+  machine:
+    pulse: 3 # in ticks
+    default-time: 5 # in seconds
+    default-output-time: 3 # in seconds
+    structures:
+      - TIMER

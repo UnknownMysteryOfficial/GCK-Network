@@ -1,0 +1,637 @@
+settings:
+  radiusX: 3
+  radiusY: 3
+  radiusZ: 3
+structures:
+  DIAMOND_AUTOCRAFTER:
+    core-block:
+      strict: false
+      material: CRAFTING_TABLE
+      data: minecraft:crafting_table
+      vector: 0, 0, 0
+    61e9d429-790c-4fc0-b060-acb1031464d0:
+      strict: false
+      material: DIAMOND_BLOCK
+      data: minecraft:diamond_block
+      vector: -1, -1, -1
+    29a0e966-aff6-44fe-a0b5-f96f950f76b8:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, -1, 0
+    2d69ce8b-2f31-4e52-b53f-6c41cab0f368:
+      strict: false
+      material: DIAMOND_BLOCK
+      data: minecraft:diamond_block
+      vector: -1, -1, 1
+    15906af6-b936-4bb3-8afe-899b959ce21d:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, -1
+    ec437b6a-5529-4d77-be45-7a2b0688e95e:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, 1
+    da8b22cb-a5da-4011-acb5-134d6efb2bd3:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, -1
+    a588c112-40e7-427a-af21-bc85b039d783:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 0
+    8db32382-601d-4759-bd97-3cc8345d5aec:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 1
+    0d18280e-87b6-4212-b274-bfa41904a01c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, -1
+    3ba6b7bb-b90e-4f22-9225-f818e53a5c07:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    8f87e007-093c-4df8-a813-51f146c628f2:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 1
+    4aab8e4a-5331-4785-8eac-9e39293b8088:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, -1
+    b1023b3b-eeb9-405c-bdc8-e1318d35b480:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 0
+    143a29cd-33c7-4038-99c7-ede5c2677a3c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 1
+    5ae0fdd8-7a94-4d9e-a102-9cfbd3e9229d:
+      strict: false
+      material: DIAMOND_BLOCK
+      data: minecraft:diamond_block
+      vector: 1, -1, -1
+    765c25c4-3cbc-45eb-8d1e-22afc75bf3ff:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, -1, 0
+    87d6eb0e-3a0e-4a3a-bbca-e00e49b12984:
+      strict: false
+      material: DIAMOND_BLOCK
+      data: minecraft:diamond_block
+      vector: 1, -1, 1
+    e300475f-7622-46fe-b55d-e7d995aa9a2f:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, -1
+    a8ad479d-5995-4c95-ab8d-699bf166a50e:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, 1
+    6fd2b175-2d1c-4627-9919-5f980938a6b6:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, -1
+    2ad7efb1-7289-4561-af31-82e45dd02bdd:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 0
+    e6b9bbbf-381e-40c4-a86c-48b37087efe4:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 1
+  GOLD_AUTOCRAFTER:
+    core-block:
+      strict: false
+      material: CRAFTING_TABLE
+      data: minecraft:crafting_table
+      vector: 0, 0, 0
+    23f368da-27a0-4a38-90a3-0ecd7fddf23c:
+      strict: false
+      material: GOLD_BLOCK
+      data: minecraft:gold_block
+      vector: -1, -1, -1
+    ca4512ff-e8b5-4427-b5ca-c7e70a71ca89:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, -1, 0
+    229892f7-b380-456d-b532-766569a4221a:
+      strict: false
+      material: GOLD_BLOCK
+      data: minecraft:gold_block
+      vector: -1, -1, 1
+    1e362e93-b20d-4adc-8880-d7a844200fec:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, -1
+    28160dcb-3894-440d-88c1-96ecfd1f5c03:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, 1
+    32398e04-bb01-4c56-8ea5-1adca8f45633:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, -1
+    224edd48-d937-4180-988b-54386108d409:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 0
+    e3d94652-9791-4684-9fa8-c7f8cb8b862b:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 1
+    8a7ec4ad-d8b2-42a2-9bd9-8c9f1b82e22c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, -1
+    a0052b83-1722-4e0d-9b98-84b4b1293188:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    d8269003-878a-4245-bad2-5df51c842de4:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 1
+    863834a2-85cc-48b6-8880-5a3110b703a6:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, -1
+    4d556c90-6174-416e-b38d-aef4a957b884:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 0
+    a9aa2aed-26a8-491b-9b19-36fbb3f2907d:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 1
+    f4c0ad91-e9a5-4ed7-852e-5ef7d670ff22:
+      strict: false
+      material: GOLD_BLOCK
+      data: minecraft:gold_block
+      vector: 1, -1, -1
+    83c3a832-2272-4982-93f7-26afcc80e1d5:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, -1, 0
+    aa5d59fc-09b2-43a1-9968-9501ba55e2e7:
+      strict: false
+      material: GOLD_BLOCK
+      data: minecraft:gold_block
+      vector: 1, -1, 1
+    2a45c6cc-3fa2-4df3-8620-530e981bff94:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, -1
+    bd319e87-8bd9-4e6d-bbde-00114468d4d1:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, 1
+    86736822-08f7-42a7-ac8e-00fd6e2cc500:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, -1
+    a9d37848-058b-4a28-8f42-51a539e6c4c4:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 0
+    f6b2f966-b162-41d3-899e-9128e0df1c78:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 1
+  EMERALD_AUTOCRAFTER:
+    core-block:
+      strict: false
+      material: CRAFTING_TABLE
+      data: minecraft:crafting_table
+      vector: 0, 0, 0
+    cffce26f-2dda-44a5-a009-eb06e8251e14:
+      strict: false
+      material: EMERALD_BLOCK
+      data: minecraft:emerald_block
+      vector: -1, -1, -1
+    5c280637-c449-486c-a27a-d0692dce4fd5:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, -1, 0
+    e3af3c2c-bd55-467f-8d88-c47a179f06ee:
+      strict: false
+      material: EMERALD_BLOCK
+      data: minecraft:emerald_block
+      vector: -1, -1, 1
+    03a69851-c6d1-42e8-b353-806ba0b7d649:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, -1
+    dc7330d5-a1d7-48b4-8f83-6e3e0e255915:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, 1
+    1e5543bd-2bc0-47a4-8e92-6b9bb3bb9958:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, -1
+    b64dc1ff-e6c9-4283-bf07-9482ccc2ffeb:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 0
+    aa049d74-fa36-4035-8c73-b1de14bb7b65:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 1
+    8bb9b6bc-9d7c-42d9-bfc3-e83bcfe9e7ce:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, -1
+    bedc8ada-6fec-4ede-bb59-02c62c45ea50:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    db7263d8-d025-4e29-84cc-a3a528ba7f47:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 1
+    578fe686-2656-4ae3-97b8-726ce5205aac:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, -1
+    2ae40991-4206-4954-b07d-f0accd29389d:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 0
+    6d99d2b2-4afc-4905-8de3-3e332c942efb:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 1
+    72a2275c-f385-4c1b-802e-ecc4e00bd096:
+      strict: false
+      material: EMERALD_BLOCK
+      data: minecraft:emerald_block
+      vector: 1, -1, -1
+    2f03c492-05a9-41a6-bd1a-45ed6d5f9d05:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, -1, 0
+    bd43bfb0-c944-4532-8c94-8a3ba0d4beb1:
+      strict: false
+      material: EMERALD_BLOCK
+      data: minecraft:emerald_block
+      vector: 1, -1, 1
+    af96948f-d482-4f23-b5d1-f8589948f8cb:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, -1
+    340812a0-0650-432c-a230-9fe54dc56184:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, 1
+    5f003aa7-77bb-461c-9231-b23c4972235f:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, -1
+    ae6744c3-a988-4bdf-981e-41a5f9098aea:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 0
+    c0394cb7-051b-4d56-a89b-fcc6e8f01f8c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 1
+  QUARTZ_SOUND:
+    core-block:
+      strict: false
+      material: NOTE_BLOCK
+      data: minecraft:note_block[instrument=basedrum,note=0,powered=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachines
+      - mortismachinesid
+    1ffbaa72-eb9a-4750-83fe-b8633e8cb478:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    6c83220a-78a2-4243-878a-ee670bb29aa5:
+      strict: false
+      material: QUARTZ_BLOCK
+      data: minecraft:quartz_block
+      vector: 0, 1, 0
+  AMETHYST_SOUND:
+    core-block:
+      strict: false
+      material: NOTE_BLOCK
+      data: minecraft:note_block[instrument=basedrum,note=0,powered=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinesmessage
+      - mortismachines
+      - mortismachinesid
+    3ad3b340-6469-46a2-900d-1e12811ffdea:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    6b2698dc-45eb-4aff-b4b5-fc80c6e47d85:
+      strict: false
+      material: AMETHYST_BLOCK
+      data: minecraft:amethyst_block
+      vector: 0, 1, 0
+  LAPIS_SOUND:
+    core-block:
+      strict: false
+      material: NOTE_BLOCK
+      data: minecraft:note_block[instrument=basedrum,note=0,powered=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinesmessage
+      - mortismachines
+      - mortismachinesid
+    410c152e-2ff6-4a35-82c7-36701e19dcdb:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    60cb599b-cf9f-483d-9da5-7b54b078b218:
+      strict: false
+      material: LAPIS_BLOCK
+      data: minecraft:lapis_block
+      vector: 0, 1, 0
+  IRON_SOUND:
+    core-block:
+      strict: false
+      material: NOTE_BLOCK
+      data: minecraft:note_block[instrument=basedrum,note=0,powered=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinesmessage
+      - mortismachines
+      - mortismachinesid
+    87dc669f-c6a8-45f5-b5d2-329df5b57c8d:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    eacc309d-d759-46a3-ba4a-91fb4404e4c0:
+      strict: false
+      material: IRON_BLOCK
+      data: minecraft:iron_block
+      vector: 0, 1, 0
+  TIMER:
+    core-block:
+      strict: false
+      material: AMETHYST_BLOCK
+      data: minecraft:amethyst_block
+      vector: 0, 0, 0
+    238c41c5-f0ec-4d40-aa19-bfbb21c3d28f:
+      strict: false
+      material: QUARTZ_PILLAR
+      data: minecraft:quartz_pillar[axis=y]
+      vector: 0, -1, 0
+  ID_CARD:
+    core-block:
+      strict: false
+      material: OBSERVER
+      data: minecraft:observer[facing=down,powered=false]
+      vector: 0, 0, 0
+    65223bf6-931d-4c78-ae2f-7bea5e3be853:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+  REMOTE_CONTROL_RT:
+    core-block:
+      strict: false
+      material: REDSTONE_LAMP
+      data: minecraft:redstone_lamp[lit=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinespulse
+      - mortismachines
+      - mortismachinesid
+    37553fb3-1caa-4785-8ed9-7d9d3a25081e:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    41de6c8d-424f-4525-b5c7-71b7aa9c72f9:
+      strict: false
+      material: REDSTONE_TORCH
+      data: minecraft:redstone_torch[lit=true]
+      vector: 0, 1, 0
+  REMOTE_CONTROL_LR:
+    core-block:
+      strict: false
+      material: REDSTONE_LAMP
+      data: minecraft:redstone_lamp[lit=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinespulse
+      - mortismachines
+      - mortismachinesid
+    ffc6fc9c-7484-4f97-abea-63252da63396:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    bdf83337-3790-4eed-a63d-c987ee202602:
+      strict: false
+      material: LIGHTNING_ROD
+      data: minecraft:lightning_rod[facing=up,powered=false,waterlogged=false]
+      vector: 0, 1, 0
+  REMOTE_CONTROL_ER:
+    core-block:
+      strict: false
+      material: REDSTONE_LAMP
+      data: minecraft:redstone_lamp[lit=false]
+      vector: 0, 0, 0
+      keys:
+      - mortismachinesstructureid
+      - mortismachinespulse
+      - mortismachines
+      - mortismachinesid
+    afbcbfdf-a83d-41ad-9925-cc999a16f45c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    69e0be08-5f93-467d-848f-400a66cc2356:
+      strict: false
+      material: END_ROD
+      data: minecraft:end_rod[facing=up]
+      vector: 0, 1, 0
+  IRON_AUTOCRAFTER:
+    core-block:
+      strict: false
+      material: CRAFTING_TABLE
+      data: minecraft:crafting_table
+      vector: 0, 0, 0
+    87b39411-0e46-4cad-9127-f1e3d37ea5b4:
+      strict: false
+      material: IRON_BLOCK
+      data: minecraft:iron_block
+      vector: -1, -1, -1
+    45bc7266-0ead-4830-9ac1-b8e2be2dbd84:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, -1, 0
+    03174ef6-2b49-46b5-90a4-4c7c856cb12b:
+      strict: false
+      material: IRON_BLOCK
+      data: minecraft:iron_block
+      vector: -1, -1, 1
+    0cfe7e1e-7892-4621-b2c6-5a99b37a35fc:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, -1
+    1e00d586-f29a-4a4f-9c65-9760389d927f:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 0, 1
+    4ccd9d70-9b7b-464e-9478-296611973f86:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, -1
+    bf15cef4-c71c-477f-8d54-a0b39212728b:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 0
+    bbd94c0a-1d63-4ad1-939a-db8f4f00b8d2:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: -1, 1, 1
+    dafb7ce1-4891-407b-8c85-ededa944f89c:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, -1
+    01c9024a-4875-4328-b9b5-18405b0b12ee:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 0
+    24805b62-74db-42ef-ae1e-5663bb8beb66:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, -1, 1
+    67dd5949-4298-4f0b-ac28-e61b9cd3c7ca:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, -1
+    e2179781-1c19-4925-9a57-06989d3eb64a:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 0
+    1acbf654-ea91-4de3-b61a-b970726fc449:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 0, 1, 1
+    c9540178-c80a-4d31-af38-0918fb2c5771:
+      strict: false
+      material: IRON_BLOCK
+      data: minecraft:iron_block
+      vector: 1, -1, -1
+    e55a6ec3-05c7-4a1a-b236-95e649f4dfa9:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, -1, 0
+    11a3af7e-7f90-4979-8631-9036f8cdea4e:
+      strict: false
+      material: IRON_BLOCK
+      data: minecraft:iron_block
+      vector: 1, -1, 1
+    0e548573-221a-443e-ba6a-d4c00b485e41:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, -1
+    18052da2-0c0c-4a82-becc-38e5c2604e20:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 0, 1
+    803780fd-13c1-41bc-a7e9-0e846be51667:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, -1
+    71e523bc-d565-424b-99e3-f190acce509e:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 0
+    aeb2f00d-47d5-4369-ad59-454a51449d24:
+      strict: false
+      material: POLISHED_DEEPSLATE
+      data: minecraft:polished_deepslate
+      vector: 1, 1, 1

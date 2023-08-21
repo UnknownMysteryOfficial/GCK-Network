@@ -1,0 +1,48 @@
+id-card-machine:
+  enabled: true
+  messages:
+    machine-build: "&aThe id card machine has been created"
+    invalid-time: "&aPlease enter a valid time"
+    timer-set: "&aThe timer has been changed for this machine"
+    invalid-target: "&aPlease enter a valid target"
+    editor-added: "&aThe editor has been added"
+    editor-removed: "&aThe editor has been removed"
+    pulse-mode: "&aThe machine has been set to pulse mode"
+    constant-mode: "&aThe machine has been set to constant mode"
+    no-key-card: "&aPlease insert the key card"
+    editor-limit-reached: "&aYou have reached the limit for max editors"
+    add-editor: "&aPlease enter a player name to add a editor"
+    add-editor-expired: "&aThe editor adding time has been expired"
+    remove-editor: "&aPlease enter a player name to remove a editor"
+    remove-editor-expired: "&aThe editor removing time has been expired"
+    no-editors: "&aThere are no editors"
+    key-card-inserted: "&aInserted the key card"
+    key-card-removed: "&aRemoved the key card"
+    wrong-key-card: "&aPlease enter a valid key card"
+    set-timer: "&aPlease enter a time(number) in seconds that you want to set"
+    set-timer-expired: "&aThe timer setting time has been expired"
+    null-item: "&aYou can not assign a null item"
+    item-in-blacklist: "&aYou can not assign a item which is blacklisted"
+    key-card-already-inserted: "&aPlease remove the current key card in order to assign a new one"
+    editor-permission: "&aYou need to be the editor in order to use this"
+    key-card-assigned: "&aAssigned the key card"
+    switch: "&6[Towny] &cOutsiders aren't allowed to Switch"
+  menu:
+    title: "&aId Card Machine"
+    filter: FILTER
+    constant-mode: CONSTANT_MODE
+    pulse-mode: PULSE_MODE
+    assigner: ID_CARD_ASSIGNER
+    inserter: INSERTER
+    timer: TIMER
+    editor-adder: EDITOR_ADDER
+    editor-remover: EDITOR_REMOVER
+  machines:
+    ID_CARD:
+      pulse: 3 # in ticks
+      default-time: 10 # in seconds
+      structures:
+        - ID_CARD
+      blacklist:
+        - BLACKLIST
+        - BLACKLIST_2

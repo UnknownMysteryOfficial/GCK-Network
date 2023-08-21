@@ -1,0 +1,81 @@
+remote-control-machine:
+  enabled: true
+  messages:
+    machine-build: "&aThe remote control machine has been created"
+    pulse-mode: "&aThe machine has been set to pulse mode"
+    constant-mode: "&aThe machine has been set to constant mode"
+    null-item: "&aYou can not assign a null item"
+    limit-reached: "&aYou have reached the limit for detonators"
+    invalid-remote: "&aYou can not assign this detonator"
+    assigned: "&aAssigned the detonator"
+    removed: "&aRemoved the detonators"
+    not-in-range: "&aYou are not in range"
+    remote-use: "&aActivated the remote"
+    detonator-armed: "&aThe deadman remote has been armed"
+    detonator-unarmed: "&aThe deadman remote has been unarmed"
+    switch: "&6[Towny] &cOutsiders aren't allowed to Switch"
+  menu:
+    title: "&aRemote Control Machine"
+    filter: FILTER
+    pulse-mode: PULSE_MODE
+    constant-mode: CONSTANT_MODE
+    assigner: REMOTE_CONTROL_ASSIGNER
+    remover: REMOVER
+  machines:
+    REDSTONETORCH_RC:
+      pulse: 3 # in ticks
+      structures:
+        - REMOTE_CONTROL_RT
+      remotes:
+        FLIPPER:
+          type: FLIP_FLOP # FLIP_FLOP | CLICKER | DEADMAN
+          remote: FLIPFLOPREMOTE
+          range: 50
+        CLICKER:
+          type: CLICKER # FLIP_FLOP | CLICKER | DEADMAN
+          remote: CLICKREMOTE
+          range: 50
+          time: 5 #in seconds
+        DEADMAN:
+          type: DEADMAN # FLIP_FLOP | CLICKER | DEADMAN
+          remote: DEADMANREMOTE
+          range: 100
+          time: 5 #in seconds
+    LIGHTNINGROD_RC:
+      pulse: 3 # in ticks
+      structures:
+        - REMOTE_CONTROL_LR
+      remotes:
+        FLIPPER:
+          type: FLIP_FLOP # FLIP_FLOP | CLICKER | DEADMAN
+          remote: FLIPFLOPREMOTE
+          range: 200
+        CLICKER:
+          type: CLICKER # FLIP_FLOP | CLICKER | DEADMAN
+          remote: CLICKREMOTE
+          range: 200
+          time: 5 #in seconds
+        DEADMAN:
+          type: DEADMAN # FLIP_FLOP | CLICKER | DEADMAN
+          remote: DEADMANREMOTE
+          range: 250
+          time: 5 #in seconds
+    ENDROD_RC:
+      pulse: 3 # in ticks
+      structures:
+        - REMOTE_CONTROL_ER
+      remotes:
+        FLIPPER:
+          type: FLIP_FLOP # FLIP_FLOP | CLICKER | DEADMAN
+          remote: FLIPFLOPREMOTE
+          range: 400
+        CLICKER:
+          type: CLICKER # FLIP_FLOP | CLICKER | DEADMAN
+          remote: CLICKREMOTE
+          range: 400
+          time: 5 #in seconds
+        DEADMAN:
+          type: DEADMAN # FLIP_FLOP | CLICKER | DEADMAN
+          remote: DEADMANREMOTE
+          range: 500
+          time: 5 #in seconds

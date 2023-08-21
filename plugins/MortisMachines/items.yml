@@ -1,0 +1,250 @@
+items:
+  REDSTONE_MODE:
+    material: REDSTONE_TORCH
+    amount: 1
+    name: "&cRedstone Mode"
+    lore:
+      - "&7Currently in redstone mode"
+  MANUAL_MODE:
+    material: SOUL_TORCH
+    amount: 1
+    name: "&bManual Mode"
+    lore:
+      - "&7Currently in manual mode"
+  PULSE_MODE:
+    material: REDSTONE_TORCH
+    amount: 1
+    name: "&cPulse Mode"
+    lore:
+      - "&7Currently in pulse mode"
+  CONSTANT_MODE:
+    material: SOUL_TORCH
+    amount: 1
+    name: "&bConstant Mode"
+    lore:
+      - "&7Currently in constant mode"
+  ID_CARD_ASSIGNER:
+    material: WRITABLE_BOOK
+    amount: 1
+    name: "&bAssign Key Card"
+    lore:
+      - "&7Click to assign a key card"
+  INSERTER:
+    material: BOOK
+    amount: 1
+    name: "&bInsert Key Card"
+    lore:
+      - "&7Click to insert a key card"
+  EDITOR_ADDER:
+    material: NAME_TAG
+    amount: 1
+    name: "&bAdd Editor"
+    lore:
+      - "&7Click to add a editor"
+  EDITOR_REMOVER:
+    material: NAME_TAG
+    amount: 1
+    name: "&bRemove Editor"
+    lore:
+      - "&7Click to remove a editor"
+  TIMER:
+    material: CLOCK
+    amount: 1
+    name: "&bTimer"
+    lore:
+      - "&7Time: &b%time%"
+  OUTPUT_TIMER:
+    material: CLOCK
+    amount: 1
+    name: "&bOutput Timer"
+    lore:
+      - "&7Output Time: &b%time%"
+  FILTER:
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+  REMOTE_CONTROL_ASSIGNER:
+    material: LIGHTNING_ROD
+    amount: 1
+    name: "&bAssign Detonator"
+    lore:
+      - "&7Click to assign a detonator"
+  REMOVER:
+    material: BARRIER
+    amount: 1
+    name: "&bRemove Detonators"
+    lore:
+      - "&7Click to remove the detonators"
+  NO_TIMER:
+    material: CLOCK
+    amount: 1
+    name: "&bTimer"
+    lore:
+      - "&7The timer is not set yet"
+  BLACKLIST:
+    material: WRIABLE_BOOK
+    amount: 1
+  BLACKLIST_2:
+    material: WRITTEN_BOOK
+    amount: 1
+  FLIPFLOPREMOTE:
+    material: STONE_SWORD
+    custom-model-data: 2
+    amount: 1
+    name: "&aRemote"
+    lore:
+      - "&7Right Click to use"
+  CLICKREMOTE:
+    material: STONE_SWORD
+    custom-model-data: 4
+    amount: 1
+    name: "&aRemote"
+    lore:
+      - "&7Right Click to use"
+  DEADMANREMOTE:
+    material: STONE_SWORD
+    custom-model-data: 2
+    amount: 1
+    name: "&aRemote"
+    lore:
+      - "&7Right Click to use"
+  REMOTE_4:
+    material: SOUL_TORCH
+    amount: 1
+    name: "&aRemote"
+    lore:
+      - "&7Right Click to use"
+  ONLINE:
+    material: DIAMOND_BLOCK
+    amount: 1
+    name: "&bOnline"
+  OFFLINE:
+    material: REDSTONE_BLOCK
+    amount: 1
+    name: "&cOffline"
+  NO_FUEL:
+    material: RED_STAINED_GLASS_PANE
+    amount: 1
+    name: "&cNo Fuel"
+    lore:
+      - "&7Click to enter a fuel"
+  PROGRESS:
+    material: WHITE_STAINED_GLASS_PANE
+    amount: 1
+    name: "&aProgress"
+  RECIPE:
+    material: CRAFTING_TABLE
+    amount: 1
+    name: "&aRecipe Inserter"
+  DEFAULT_GRID:
+    material: CRAFTING_TABLE
+    amount: 1
+    name: "&a3x3 Recipe"
+  MAX_GRID:
+    material: CRAFTING_TABLE
+    amount: 1
+    name: "&aMax Recipe"
+  CANCEL:
+    material: REDSTONE_BLOCK
+    amount: 1
+    name: "&cCancel"
+  ACCEPT:
+    material: EMERALD_BLOCK
+    amount: 1
+    name: "&aAccept"
+  ANIMATION:
+    material: YELLOW_STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+  ANIMATION_2:
+    material: GREEN_STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+  ANIMATION_3:
+    material: RED_STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+  AIR:
+    material: AIR
+    amount: 1
+  COAL:
+    material: COAL
+    amount: 1
+  STICK:
+    material: STICK
+    amount: 1
+  REDSTONE:
+    material: REDSTONE
+    amount: 1
+  REDSTONE_TORCH:
+    material: REDSTONE_TORCH
+    amount: 1
+  RESULT:
+    material: DIAMOND_BLOCK
+    amount: 1
+  HAZMAT_HELMET:
+    material: GOLDEN_HELMET
+    amount: 1
+    name: "&aHazmat Helmet"
+    lore:
+      - "&7Provides protection from radiation"
+  HAZMAT_CHESTPLATE:
+    material: GOLDEN_CHESTPLATE
+    amount: 1
+    name: "&aHazmat Chestplate"
+    lore:
+      - "&7Provides protection from radiation"
+  HAZMAT_LEGGINGS:
+    material: GOLDEN_LEGGINGS
+    amount: 1
+    name: "&aHazmat Boots"
+    lore:
+      - "&7Provides protection from radiation"
+  HAZMAT_BOOTS:
+    material: GOLDEN_BOOTS
+    amount: 1
+    name: "&aHazmat Boots"
+    lore:
+      - "&7Provides protection from radiation"
+  GOLD_BLOCK:
+    material: GOLD_BLOCK
+    amount: 1
+  EXAMPLE_HELMET:
+    material: DIAMOND_HELMET
+    amount: 1
+    name: "&cExample Helmet"
+    lore:
+      - "&7Increases your radiation"
+  EXAMPLE_CHESTPLATE:
+    material: DIAMOND_CHESTPLATE
+    amount: 1
+    name: "&cExample Chestplate"
+    lore:
+      - "&7Increases your radiation"
+  EXAMPLE_LEGGINGS:
+    material: DIAMOND_LEGGINGS
+    amount: 1
+    name: "&cExample Leggings"
+    lore:
+      - "&7Increases your radiation"
+  EXAMPLE_BOOTS:
+    material: DIAMOND_BOOTS
+    amount: 1
+    name: "&cExample Boots"
+    lore:
+      - "&7Increases your radiation"
+  DIAMOND_BLOCK:
+    material: DIAMOND_BLOCK
+    amount: 1
+  FUEL_NOT_REQUIRED:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    name: "&bFuel Not Required"
+  MYSTIC_SHRINE:
+    material: QUARTZ_BLOCK
+    amount: 1
+    name: "&aMystic Shrine"
+  CRYSTAL_PRISM:
+    material: DIAMOND_BLOCK
+    amount: 1
+    name: "&aCrystal Prism"

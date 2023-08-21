@@ -1,0 +1,49 @@
+sound-machine:
+  enabled: true
+  messages:
+    machine-build: "&aThe sound machine has been created."
+    set-message: "&aType the message in chat that you want to set to this machine"
+    set-message-expired: "&aYour message setting time has been expired"
+    message-set: "&aThe message has been changed for this machine"
+    switch: "&6[Towny] &cOutsiders aren't allowed to Switch"
+  machines:
+    QUARTZSOUND:
+      structures:
+        - QUARTZ_SOUND
+      range: 200
+      cooldown: 30 # in Seconds
+      blacklist: # Blacklisted words
+        - "nigger"
+        - "faggot"
+        - "coon"
+        - "shitter"
+    AMETHYSTSOUND:
+      structures:
+        - AMETHYST_SOUND
+      range: 350
+      cooldown: 30 # in Seconds
+      blacklist: # Blacklisted words
+        - "nigger"
+        - "faggot"
+        - "coon"
+        - "shitter"
+    IRONSOUND:
+      structures:
+        - IRON_SOUND
+      range: 100
+      cooldown: 30 # in Seconds
+      blacklist: # Blacklisted words
+        - "nigger"
+        - "faggot"
+        - "coon"
+        - "shitter"
+    LAPISSOUND:
+      structures:
+        - LAPIS_SOUND
+      range: 50
+      cooldown: 30 # in Seconds
+      blacklist: # Blacklisted words
+        - "nigger"
+        - "faggot"
+        - "coon"
+        - "shitter"
