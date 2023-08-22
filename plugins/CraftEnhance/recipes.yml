@@ -38,3 +38,24 @@ GLOWINKSAC:
   page: -1
   slot: -1
   shapeless: true
+WRENCH:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: §aWrench
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - IRON_NUGGET
+  - null
+  - IRON_NUGGET
+  - null
+  - STICK
+  - null
+  - null
+  - IRON_INGOT
+  - null
+  permission: null
+  page: -1
+  slot: -1
+  shapeless: false
+
