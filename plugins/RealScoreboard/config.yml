@@ -1,0 +1,96 @@
+#✦------------------------------------------------------✦
+#|                      Main Config                     |
+#✦------------------------------------------------------✦
+#RealScoreboard created by JoseGamerPT and maintained by Neziw
+#
+#Useful links:
+#SpigotMC - https://www.spigotmc.org/resources/realscoreboard-1-13-to-1-19-2.22928/
+#Discord Server - https://discord.gg/t7gfnYZKy8
+#bStats - https://bstats.org/plugin/bukkit/RealScoreboard/10080
+#HEX Color Formats: https://github.com/Iridium-Development/IridiumColorAPI
+#API for Developers: https://github.com/JoseGamerPT/RealScoreboard/blob/master/api.md
+Debug: false
+Config:
+  ItemAdder-Support: false
+  mcMMO-Support: false
+  Check-for-Updates: true
+  Prefix: '&2MMCGCK&9Network &7| &r'
+  Reloaded: '&fThe config has been &areloaded&f.'
+  Use-Placeholders-In-Scoreboard-Titles: false
+  RealScoreboard-Disabled-By-Default: false
+  Hours:
+    Formatting: HH:mm:ss
+    Offset: 0
+  Messages:
+    Scoreboard-Toggle:
+      ON: '&fScoreboard turned &aON&f.'
+      OFF: '&fScoreboard turned &cOFF&f.'
+  Animations:
+    Title-Delay: 20
+    Loop-Delay: 20
+  Scoreboard-Refresh: 10
+  Disabled-Worlds:
+  - testWorld
+  - ExampleWorld2
+  Bypass-Worlds:
+  - skywarsLobby
+  Scoreboard:
+    world:
+      special:
+        Switch-Timer: 50
+        Boards:
+          Board1:
+            Title:
+            - '&2>&2MODERNMC'
+            - '&2>&2MODERNMC&7_'
+            Lines:
+            - '%blank%'
+            - ' &2USER: &7%playername% &8| &d%ping%'
+            - '%blank%'
+            - ' &2&lBalance: &7&f%vault_eco_balance_formatted% Pesos'
+            - '%blank%'
+            - ' &2&lTown: &7&f%townyadvanced_town_unformatted%'
+            - '%blank%'
+            - ' &2&lNation: &7&f%townyadvanced_nation_unformatted%'
+            - '%blank%'
+            - ' &2&lOnline: &4%online%&8/&1%maxplayers%'
+            - '%blank%'
+            - '  &2play.modernmc.net'
+      default:
+        Switch-Timer: 35
+        Boards:
+          Board1:
+            Title:
+            - '&2>&2MODERNMC'
+            - '&2>&2MODERNMC&7_'
+            Lines:
+            - '%blank%'
+            - ' &2USER: &7%playername% &8| &d%ping%'
+            - '%blank%'
+            - ' &2&lBalance: &7&f%vault_eco_balance_formatted% Pesos'
+            - '%blank%'
+            - ' &2&lTown: &7&f%townyadvanced_town_unformatted%'
+            - '%blank%'
+            - ' &2&lNation: &7&f%townyadvanced_nation_unformatted%'
+            - '%blank%'
+            - ' &2&lOnline: &4%online%&8/&1%maxplayers%'
+            - '%blank%'
+            - '  &2play.modernmc.net'
+          Board2:
+            Title:
+            - '&2>&2MODERNMC'
+            - '&2>&2MODERNMC&7_'
+            Lines:
+            - '%blank%'
+            - ' &2USER: &7%playername% &8| &d%ping%'
+            - '%blank%'
+            - ' &2&lBalance: &7&f%vault_eco_balance_formatted% Pesos'
+            - '%blank%'
+            - ' &2&lTown: &7&f%townyadvanced_town_unformatted%'
+            - '%blank%'
+            - ' &2&lNation: &7&f%townyadvanced_nation_unformatted%'
+            - '%blank%'
+            - ' &2&lOnline: &4%online%&8/&1%maxplayers%'
+            - '%blank%'
+            - '  &2play.modernmc.net'
+Version: 14
