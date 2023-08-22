@@ -1,0 +1,87 @@
+1.108
+
+Fix camera recoil causing entity dismount
+Added 1.19.3 support
+
+1.107
+
+Fix monkey bomb issue
+
+1.106
+
+Updated to 1.19
+Improved trail final catch a bit
+Fixed give command with attachments
+
+1.105
+
+Damage attachments can now use multiple conditions at same time (headshot, hit, crit, ...)
+
+
+1.104
+
+Added 1.18.2 support
+Fixed scope attachment sometimes causing the effect to stay
+Fixed custom weapon durability using multiple durability points with weapons which have projectile amount more than 1
+
+1.103
+
+Added 1.18 support
+Dropped 1.8 R1 and R2 support. R3 still works (1.8.8)
+
+1.102
+
+Added 1.17.1 support
+
+1.101
+
+Added 1.17 support
+
+1.100
+
+Fixed damage increase based on armor not working for other than players
+
+1.99
+
+Refix for reset hit cooldown...
+Changed custom bullet spread sneaking priority
+
+1.98
+
+Fixed issue with reset hit cooldown fix
+
+1.97
+
+Fixed null when shooting with energy weapons
+
+1.96
+
+Added 1.16 R3 support
+Fixed null in block regen
+Fixed reload bar disappearing when using bouncing projectiles
+Ran some IntelliJ code cleanups for CSP's old code (hopefully didn't break anything)
+
+1.95
+
+1.16 R2 support
+
+1.94
+
+Fixed custom sound issue in 1.9 R1
+Fixed attachment NBTs in 1.16
+Made some optimizations from CrackShotPlus side to 1.16
+  Sadly I can't utilize this to CrackShot as I can't modify its main class methods
+
+1.93
+
+Fixed attribute issue in 1.16
+Found out that CrackShot weapon identification doesn't work properly anymore
+  Perhaps something to do with hex colors
+  Anyway these will NOT work as Item_Name "&7&eAK-12 &7[&eAuto&7]" and Item_Name "&7AK-12 &7[&eAuto&7]&8"
+  While this WILL work Item_Name "&7AK-12 &7[&eAuto&7]"
+  Basically having more than 1 color symbols in row will break weapon and if you have color symbol at end of weapon name will also break it
+
+1.92
+
+Updated resource pack
+Updated to 1.16

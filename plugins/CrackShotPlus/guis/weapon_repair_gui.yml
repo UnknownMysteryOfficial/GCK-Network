@@ -1,0 +1,44 @@
+Weapon_Repair_Item:
+  Consume_Per_Durability: true
+  Item:
+    Item_Type: "GOLD_NUGGET"
+    Item_Name: "&c<-> &7Weapon Repair &c<->"
+    Item_Lore:
+      - "&7Click type based repair amount"
+      - "&7LEFT &c- &71"
+      - "&7SHIFT LEFT &c- &75"
+      - "&7RIGHT &c- &71"
+      - "&7SHIFT RIGHT &c- &75"
+      - "&7OTHER &c- &7ALL"
+      - " "
+      - "&cHow to repair weapon?"
+      - "&c1) &7Take this item to your cursor (just click it)"
+      - "&c2) &7Click weapon while this item is in your cursor"
+      - "&c3) &7If weapon has durability enabled"
+      - "   &7-> Weapon will be repaired with given amount"
+  Crafting:
+    Amount: 5
+    Shaped_Recipe: false
+    Recipe: "GOLD_NUGGET,GOLD_NUGGET,GOLD_NUGGET"
+
+# Remaining click types will repair with all possible items
+Weapon_Repair_Amount_Per_Type:
+  LEFT: 1
+  RIGHT: 1
+  SHIFT_LEFT: 5
+  SHIFT_RIGHT: 5
+
+Weapon_Repair_Command:
+  Enable_Command: false
+  Commands:
+    - "weaponrepair"
+    - "repairweapon"
+
+Weapon_Repaired:
+  Sound: "BLOCK_ANVIL_USE-1-1"
+  Message: "&7Successfully repaired weapon with amount of &c#AMOUNT#&7!"
+
+Not_Able_To_Repair_Weapon:
+  Sound: "ENTITY_VILLAGER_NO-1-1"
+  Because_Of_No_Repair_Enabled: "&7This weapon doesn't support repairing!"
+  Because_Of_Full_Durability: "&7This weapon already has full durability!"
