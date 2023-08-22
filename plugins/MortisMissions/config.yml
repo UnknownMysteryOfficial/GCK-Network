@@ -1,0 +1,1489 @@
+messages:
+  no-permission: "&cYou don't have permission to use this"
+  invalid-target: "&cPlease enter a valid target"
+  invalid-mission: "&cPlease enter a valid mission"
+  mission-complete-title: "&c&lMission Complete!"
+  mission-complete-subtitle: "&fCompleted %mission_name%"
+  mission-received: "&a&lMission Received!"
+  reloaded: "&aMortis Missions Reloaded"
+  give-usage: "&cUsage: /missions give <player_name> <mission-id>"
+  random-usage: "&cUsage: /missions random <player_name>"
+  mission-not-found: "&c unable to locate mission"
+
+# Mission Types
+# COLLECT - requires material type objects
+# SWIM
+# WALK
+# BREAK - requires material type objects
+# PLACE - requires material type objects
+# CRAFT - requires material type objects
+# ENCHANT - requires material type objects
+# FISH - requires material type objects
+# HARVEST - requires material type objects
+# GLIDE - requires material type objects
+# SHEAR - requires material type objects
+# RIDE - requires material type objects
+# DAMAGE_CRACKSHOT
+# KILL_MYTHIC
+# KILL - requires entity type objects
+# RIDE_QAV
+# TAME - requires entity type objects
+# INTERACT_ENTITY - requires entity type objects
+# HORSE_JUMP
+# EXP_GAIN
+# DEATH
+# BUCKET_FILL - requires material type objects
+# BUCKET_EMPTY - requires material type objects
+# BREED - requires entity type objects
+# DAMAGE_WM
+# BREWERY
+
+categories:
+  EASY: 50
+  NORMAL: 30
+  HARD: 20
+
+missions:
+
+# Easy Missions
+
+    COLLECTING_COBBLE_MISSION_EASY:
+      title: "&aCollector"
+      category: EASY
+      type: COLLECT
+      min-requirement: 100
+      max-requirement: 150
+      objects:
+        - COBBLESTONE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCollect %amount% Cobblestone: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+ 
+    COLLECTING_SAND_MISSION_EASY:
+      title: "&aCollector"
+      category: EASY
+      type: COLLECT
+      min-requirement: 100
+      max-requirement: 150
+      objects:
+        - SAND
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCollect %amount% Cobblestone: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    BREAK_ANYTHING_MISSION_EASY:
+      title: "&aBreaker"
+      category: EASY
+      type: BREAK
+      min-requirement: 30
+      max-requirement: 50
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreak %amount% Blocks: %progress%"
+      rewards:
+      - "eco give %player_name% 200"
+      
+    CRAFT_ANYTHING_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 128
+      max-requirement: 256
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Blocks or Items: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    SWIMMING_MISSION_EASY:
+      title: "&aSwimmer"
+      category: EASY
+      type: SWIM
+      min-requirement: 200
+      max-requirement: 300
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eSwim %amount% blocks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    WALKING_MISSION_EASY:
+      title: "&aWalker"
+      category: EASY
+      type: WALK
+      min-requirement: 800
+      max-requirement: 1200
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eWalk %amount% blocks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    BREAK_LOGS_MISSION_EASY:
+      title: "&aBreaker"
+      category: EASY
+      type: BREAK
+      min-requirement: 20
+      max-requirement: 30
+      objects:
+        - OAK_LOG
+        - BIRCH_LOG
+        - ACACIA_LOG
+        - SPRUCE_LOG
+        - DARK_OAK_LOG
+        - JUNGLE_LOG
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreak %amount% Logs: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    PLACE_SANDSTONE_MISSION_EASY:
+      title: "&aPlacer"
+      category: EASY
+      type: PLACE
+      min-requirement: 20
+      max-requirement: 30
+      objects:
+        - SANDSTONE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &ePlace %amount% SANDSTONE: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    CRAFT_PLANKS_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 64
+      max-requirement: 128
+      objects:
+        - ACACIA_PLANKS
+        - BIRCH_PLANKS
+        - DARK_OAK_PLANKS
+        - JUNGLE_PLANKS
+        - OAK_PLANKS
+        - SPRUCE_PLANKS
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Planks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    CRAFT_STONE_BRICKS_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 48
+      max-requirement: 96
+      objects:
+        - STONE_BRICKS
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Stone Bricks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_SANDSTONE_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 32
+      max-requirement: 64
+      objects:
+        - SANDSTONE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Stone Bricks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_CAKE_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - CAKE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Cakes: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_ANVIL_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - ANVIL
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Anvils: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_GOLDEN_APPLE_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - GOLDEN_APPLE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Golden Apples: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_GOLDEN_CARROT_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - GOLDEN_CARROT
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Golden Carrots: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_ANVIL_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - ANVIL
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Anvils: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    BREED_SHEEP_MISSION_EASY:
+      title: "&aBreed"
+      category: EASY
+      type: BREED
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - SHEEP
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreed %amount% Sheeps: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+   
+    BREED_PIG_MISSION_EASY:
+      title: "&aBreed"
+      category: EASY
+      type: BREED
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - PIG
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreed %amount% pigs: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    BREED_COW_MISSION_EASY:
+      title: "&aBreed"
+      category: EASY
+      type: BREED
+      min-requirement: 3
+      max-requirement: 6
+      objects:
+        - COW
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreed %amount% Cows: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    BREED_CHICKEN_MISSION_EASY:
+      title: "&aBreed"
+      category: EASY
+      type: BREED
+      min-requirement: 3
+      max-requirement: 6
+      objects:
+        - CHICKEN
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eBreed %amount% Chickens: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    ENCHANT_IRON_HELMET_MISSION_EASY:
+      title: "&aEnchanter"
+      category: EASY
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - IRON_HELMET
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Iron Helmets: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    ENCHANT_IRON_CHESTPLATE_MISSION_EASY:
+      title: "&aEnchanter"
+      category: EASY
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - IRON_CHESTPLATE
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Iron Chestplates: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    ENCHANT_IRON_LEGGINGS_MISSION_EASY:
+      title: "&aEnchanter"
+      category: EASY
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - IRON_LEGGINGS
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Iron Leggings: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    ENCHANT_IRON_BOOTS_MISSION_EASY:
+      title: "&aEnchanter"
+      category: EASY
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - IRON_BOOTS
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Iron Boots: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_ANYTHING_MISSION_EASY:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 8
+      max-requirement: 10
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Fish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_COD_MISSION_EASY:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - COD
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Cods: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_SALMON_MISSION_EASY:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - SALMON
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Salmons: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    FISH_TROPICAL_FISH_MISSION_EASY:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - TROPICAL_FISH
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Tropical Fish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    FISH_PUFFER_MISSION_EASY:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - PUFFERFISH
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Pufferfish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    HARVEST_WHEAT_MISSION_EASY:
+      title: "&aHarvester"
+      category: EASY
+      type: HARVEST
+      min-requirement: 16
+      max-requirement: 32
+      objects:
+        - WHEAT
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Wheat: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    HARVEST_CARROT_MISSION_EASY:
+      title: "&aHarvester"
+      category: EASY
+      type: HARVEST
+      min-requirement: 32
+      max-requirement: 64
+      objects:
+        - CARROT
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Carrot: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    HARVEST_POTATO_MISSION_EASY:
+      title: "&aHarvester"
+      category: EASY
+      type: HARVEST
+      min-requirement: 32
+      max-requirement: 64
+      objects:
+        - POTATO
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Potato: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    HARVEST_MELON_MISSION_EASY:
+      title: "&aHarvester"
+      category: EASY
+      type: HARVEST
+      min-requirement: 48
+      max-requirement: 64
+      objects:
+        - MELON
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Melon: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    HARVEST_PUMPKIN_MISSION_EASY:
+      title: "&aHarvester"
+      category: EASY
+      type: HARVEST
+      min-requirement: 16
+      max-requirement: 32
+      objects:
+        - PUMPKIN
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Pumpkin: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+
+# Normal Missions
+
+    DAMAGE_CRACKSHOT_MISSION:
+      title: "&aDamager"
+      category: NORMAL
+      type: DAMAGE_CRACKSHOT
+      min-requirement: 200
+      max-requirement: 500
+      objects:
+        - Desert_Eagle_CSP
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eDamage %amount% using Deags: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_ANYTHING_MISSION_EASY:
+      title: "&aCrafter"
+      category: EASY
+      type: CRAFT
+      min-requirement: 128
+      max-requirement: 256
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Blocks or Items: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    SHEAR_MISSION_NORMAL:
+      title: "&aShearer"
+      category: NORMAL
+      type: SHEAR
+      min-requirement: 5
+      max-requirement: 7
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eShear %amount% sheep: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    RIDE_MISSION_NORMAL:
+      title: "&aRider"
+      category: NORMAL
+      type: RIDE
+      min-requirement: 150
+      max-requirement: 400
+      objects:
+        - HORSE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eRide horse %amount% blocks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_ANYTHING_MISSION_NORMAL:
+      title: "&aFisher"
+      category: EASY
+      type: FISH
+      min-requirement: 12
+      max-requirement: 16
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Fish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_COD_MISSION_NORMAL:
+      title: "&aFisher"
+      category: NORMAL
+      type: FISH
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - COD
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Cods: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_SALMON_MISSION_NORMAL:
+      title: "&aFisher"
+      category: NORMAL
+      type: FISH
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - SALMON
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Salmons: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    FISH_TROPICAL_FISH_MISSION_NORMAL:
+      title: "&aFisher"
+      category: NORMAL
+      type: FISH
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - TROPICAL_FISH
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Tropical Fish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    FISH_PUFFER_MISSION_NORMAL:
+      title: "&aFisher"
+      category: NORMAL
+      type: FISH
+      min-requirement: 3
+      max-requirement: 6
+      objects:
+        - PUFFERFISH
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Pufferfish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    ENCHANT_DIAMOND_HELMET_MISSION_NORMAL:
+      title: "&aEnchanter"
+      category: NORMAL
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - DIAMOND_HELMET
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Diamond Helmets: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    ENCHANT_DIAMOND_CHESTPLATE_MISSION_NORMAL:
+      title: "&aEnchanter"
+      category: NORMAL
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - DIAMOND_CHESTPLATE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Diamond Chestplates: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    ENCHANT_DIAMOND_LEGGINGS_MISSION_NORMAL:
+      title: "&aEnchanter"
+      category: NORMAL
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - DIAMOND_LEGGINGS
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Diamond Leggings: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    ENCHANT_DIAMOND_BOOTS_MISSION_NORMAL:
+      title: "&aEnchanter"
+      category: NORMAL
+      type: ENCHANT
+      min-requirement: 2
+      max-requirement: 4
+      objects:
+        - DIAMOND_BOOTS
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eEnchant %amount% Diamond Boots: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_ENCHANTING_TABLE_MISSION_NORMAL:
+      title: "&aCrafter"
+      category: NORMAL
+      type: CRAFT
+      min-requirement: 1
+      max-requirement: 3
+      objects:
+        - ENCHANTING_TABLE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Enchanting Tables: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_GOLDEN_APPLE_MISSION_NORMAL:
+      title: "&aCrafter"
+      category: NORMAL
+      type: CRAFT
+      min-requirement: 6
+      max-requirement: 10
+      objects:
+        - GOLDEN_APPLE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Golden Apples: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    HARVEST_MELON_MISSION_NORMAL:
+      title: "&aHarvester"
+      category: NORMAL
+      type: HARVEST
+      min-requirement: 96
+      max-requirement: 128
+      objects:
+        - MELON
+      material: PAPER
+      amount: 1
+      name: "&a&lEasy Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Melon: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    HARVEST_PUMPKIN_MISSION_NORMAL:
+      title: "&aHarvester"
+      category: NORMAL
+      type: HARVEST
+      min-requirement: 48
+      max-requirement: 80
+      objects:
+        - PUMPKIN
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eHarvest %amount% Pumpkin: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    TAME_HORSE_MISSION_NORMAL:
+      title: "&aTamer"
+      category: NORMAL
+      type: TAME
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - HORSE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eTame %amount% horses: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    TAME_WOLF_MISSION_NORMAL:
+      title: "&aTamer"
+      category: NORMAL
+      type: TAME
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - WOLF
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eTame %amount% wolves: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    KILL_ZOMBIE_MISSION_NORMAL:
+      title: "&aKiller"
+      category: NORMAL
+      type: KILL
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - ZOMBIE
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Zombies: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+    KILL_SKELETON_MISSION_NORMAL:
+      title: "&aKiller"
+      category: NORMAL
+      type: KILL
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - SKELETON
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Skeletons: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    KILL_SPIDER_MISSION_NORMAL:
+      title: "&aKiller"
+      category: NORMAL
+      type: KILL
+      min-requirement: 5
+      max-requirement: 8
+      objects:
+        - SPIDER
+      material: PAPER
+      amount: 1
+      name: "&a&lNormal Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Spider: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+
+#    GLIDE_MISSION_NORMAL:
+#      title: "&aGlider"
+#      category: NORMAL
+#      type: GLIDE
+#      min-requirement: 250
+#      max-requirement: 400
+#      material: PAPER
+#      amount: 1
+#      name: "&a&lNormal Mission"
+#      lore:
+#        - "&fComplete the mission to"
+#        - "&fearn a reward."
+#        - "&fRight click the item to advance."
+#        - ""
+#        - "&6&lObjective:"
+#        - "&f■ &eGlide %amount% blocks: %progress%"
+#      rewards:
+#        - "eco give %player_name% 200"
+
+# Hard Missions
+
+    KILL_MARTIAN_MISSION_HARD:
+      title: "&aMythic Killer"
+      category: HARD
+      type: KILL_MYTHIC
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - Martian
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Martians: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+#      disabled-worlds:
+#        - world
+
+    KILL_ALIEN_MISSION_HARD:
+      title: "&aMythic Killer"
+      category: HARD
+      type: KILL_MYTHIC
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - Alien
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Aliens: %progress%"
+      rewards:
+         - "eco give %player_name% 200"
+#      disabled-worlds:
+#        - world
+
+    KILL_BITER_MISSION_HARD:
+      title: "&aMythic Killer"
+      category: HARD
+      type: KILL_MYTHIC
+      min-requirement: 6
+      max-requirement: 12
+      objects:
+        - Biter
+        - Spitter
+        - Bomber
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Biters: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+#      disabled-worlds:
+#        - world
+
+    KILL_MEDDLER_MISSION_HARD:
+      title: "&aMythic Killer"
+      category: HARD
+      type: KILL_MYTHIC
+      min-requirement: 3
+      max-requirement: 5
+      objects:
+        - MeddlerCaptain
+        - MeddlerSoldier
+        - Drone
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eKill %amount% Meddlers: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+#      disabled-worlds:
+#        - world
+
+    RIDE_QAV_MISSION:
+      title: "&aDriver"
+      category: HARD
+      type: RIDE_QAV
+      min-requirement: 150
+      max-requirement: 300
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eRide %amount% using vehicles: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    EXP_GAIN_MISSION_HARD:
+      title: "&aExp Gain"
+      category: HARD
+      type: EXP_GAIN
+      min-requirement: 500
+      max-requirement: 2000
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eGain %amount% experience: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    CRAFT_ANYTHING_MISSION_HARD:
+      title: "&aCrafter"
+      category: HARD
+      type: CRAFT
+      min-requirement: 500
+      max-requirement: 1000
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lHard Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eCraft %amount% Blocks or Items: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    SWIMMING_MISSION_HARD:
+      title: "&aSwimmer"
+      category: HARD
+      type: SWIM
+      min-requirement: 500
+      max-requirement: 1500
+      material: PAPER
+      amount: 1
+      name: "&a&lHARD Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eSwim %amount% blocks: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+
+    FISH_ANYTHING_MISSION_HARD:
+      title: "&aFisher"
+      category: HARD
+      type: FISH
+      min-requirement: 20
+      max-requirement: 30
+      objects:
+        - ANYTHING
+      material: PAPER
+      amount: 1
+      name: "&a&lHARD Mission"
+      lore:
+        - "&fComplete the mission to"
+        - "&fearn a reward."
+        - "&fRight click the item to advance."
+        - ""
+        - "&6&lObjective:"
+        - "&f■ &eFish %amount% Fish: %progress%"
+      rewards:
+        - "eco give %player_name% 200"
+        
+#    DAMAGE_WM_MISSION:
+#      title: "&aDamage WM"
+#      category: EASY
+#      type: DAMAGE_WM
+#      min-requirement: 100
+#      max-requirement: 500
+#      objects:
+#        - AK_47
+#      material: PAPER
+#      amount: 1
+#      name: "&a&lEasy Mission"
+#      lore:
+#        - "&fComplete the mission to"
+#        - "&fearn a reward."
+#        - "&fRight click the item to advance."
+#        - ""
+#        - "&6&lObjective:"
+#        - "&f■ &eDamage %amount% using ak-47: %progress%"
+#      rewards:
+#        - "say You won! %player_name%"
+
+
+#    BREWERY_MISSION:
+#      title: "&aBrewery"
+#      category: EASY
+#      type: BREWERY
+#      min-requirement: 10
+#      max-requirement: 50
+#      material: PAPER
+#      amount: 1
+#      name: "&a&lEasy Mission"
+#      lore:
+#        - "&fComplete the mission to"
+#        - "&fearn a reward."
+#        - "&fRight click the item to advance."
+#        - ""
+#        - "&6&lObjective:"
+#        - "&f■ &eDrink %amount% alcohol: %progress%"
+#      rewards:
+#        - "say You won! %player_name%"
