@@ -78,8 +78,8 @@ general:
     # Enable a cooldown to prevent invite spam
     # You can choose to set a cooldown for every invite (global) or individual players, in seconds
     cooldown:
-      enable: true
-      global: 30
+      enable: false
+      global: 60
       individual: 0
       # A cooldown to prevent to invite a player when he recently left a party
       on-leave:
@@ -163,13 +163,13 @@ additional:
   # Enable the command "/party ask <party>"
   # You can accept/deny the request with "/party accept/deny"
   ask:
-    enable: true
+    enable: false
     # Ask timeout in seconds
     timeout: 30
     # Enable a cooldown to prevent ask request spam
     # You can choose to set a cooldown for every ask request (global) or individual players, in seconds
     cooldown:
-      enable: true
+      enable: false
       global: 60
       individual: 0
 
@@ -267,12 +267,12 @@ additional:
   # [Join system]
   # Enable join system, allows players to join a party via command
   join:
-    enable: true
+    enable: false
 
     # Enable open and close commands
     # Let users open or close their party to let other players join
     open-close:
-      enable: true
+      enable: false
       # Hide open command if already open, viceversa for close command
       hide-opposite-command: true
       open-by-default: false
@@ -298,16 +298,16 @@ additional:
     # You can choose to set a cooldown for every join request (global) or individual parties, in seconds
     # With 'start-cooldown-on-leave' you can force the cooldown to start if the player leaves a party
     cooldown:
-      enable: true
+      enable: false
       start-cooldown-on-leave: false
-      global: 30
+      global: 60
       individual: 0
 
   # [Kills system]
   # Enable a counter of how many kills a party did
   # Choose to count neutral/hostile mobs or players
   kills:
-    enable: true
+    enable: false
     which-save:
       neutral-mobs: false
       hostile-mobs: false
@@ -351,7 +351,7 @@ additional:
   # This will enable "/party nickname"
   # Use the placeholder %player_nickname% to show it
   nickname:
-    enable: true
+    enable: false
     minimum-length: 3
     maximum-length: 16
     allowed-characters: '[a-zA-Z0-9\ \.\,\-\_]+'

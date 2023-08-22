@@ -1,0 +1,18 @@
+# Plugin by xDeetz_
+# MOTD PLUGINS !
+
+#Messages !
+prefix: '&8► &fModernMC GCK'
+permission: "&cYou don't have permission !"
+reload: '&aPlugin Reloaded !'
+
+# Chat MOTD 
+motd:
+  - '&3 ModernMC GCK'
+  - ''
+  - '&6Welcome to the ModernMC GCK'
+  - '&6Enjoy your stay!'
+  
+#Server MOTD !
+Line1: '       &2>ModernMC&7_   &5[1.8-1.19]       '
+Line2: '  &7>> The modern Modern Warfare experience.'
