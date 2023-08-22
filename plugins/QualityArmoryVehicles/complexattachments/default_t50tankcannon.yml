@@ -1,0 +1,11 @@
+name: t50tankcannon
+id: 39
+material: RABBIT_HIDE
+action:
+  down: RotateDown
+  left: RotateLeft
+  lmb: FIreCannon
+  right: Rotate_Right
+  up: RotateUp
+  rmb: none
+lastModifiedByQA: 1690505050689

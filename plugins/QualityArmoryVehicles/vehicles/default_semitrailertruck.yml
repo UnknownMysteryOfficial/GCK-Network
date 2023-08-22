@@ -1,0 +1,77 @@
+vehicle_type: Car
+name: semitrailertruck
+id: 11
+displayname: Semi-Trailer Truck
+center:
+  ==: Vector
+  x: -1.5
+  y: 0.0
+  z: 0.8
+front_vector_offset: 4.2
+back_vector_offset: 4.0
+model:
+  ModelSize: ADULT_ARMORSTAND_HEAD
+maxAcceleration: 2.0
+baseAcceleration: 0.045
+vehicle_texture_material: RABBIT_HIDE
+activation_radius: 3.0
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 2.0
+  z: 1.0
+- ==: Vector
+  x: -2.0
+  y: 2.0
+  z: 0.3
+- ==: Vector
+  x: -2.0
+  y: 2.0
+  z: 1.0
+- ==: Vector
+  x: -3.0
+  y: 2.0
+  z: 0.3
+- ==: Vector
+  x: -3.0
+  y: 2.0
+  z: 1.0
+- ==: Vector
+  x: -4.0
+  y: 2.0
+  z: 0.3
+- ==: Vector
+  x: -4.0
+  y: 2.0
+  z: 1.0
+useStaticTurning: false
+RequiresFuel: false
+trunksize: 27
+widthOffset: 1.4
+heightOffset: 4.0
+maxHealth: 200.0
+cost: 2500
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+TurnSpeedInRadians: 0.039269908169872414
+allowedInShop: false
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470831

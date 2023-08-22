@@ -1,0 +1,52 @@
+vehicle_type: Car
+name: shoppingcart
+id: 12
+displayname: Shopping Cart
+activation_radius: 1.0
+center:
+  ==: Vector
+  x: 0.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 2.0
+back_vector_offset: 1.0
+maxAcceleration: 2.0
+baseAcceleration: 0.04
+passagers:
+- ==: Vector
+  x: 1.0
+  y: 1.0
+  z: 0.0
+useStaticTurning: false
+RequiresFuel: false
+enablePlayerBodyDirectionFix: true
+widthOffset: 0.45
+heightOffset: 1.0
+maxHealth: 20.0
+cost: 100
+vehicle_texture_material: RABBIT_HIDE
+playDrivingSounds: false
+TurnSpeedInRadians: 0.039269908169872414
+trunksize: 9
+allowedInShop: false
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+model:
+  ModelSize: BABY_ARMORSTAND_HEAD
+InputManager:
+  keys:
+    F: none
+    LMB: none
+    RMB: none
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505050694

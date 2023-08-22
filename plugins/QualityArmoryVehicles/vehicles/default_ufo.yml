@@ -1,0 +1,55 @@
+vehicle_type: Plane
+name: ufo
+id: 26
+displayname: UFO
+vehicle_texture_material: RABBIT_HIDE
+center:
+  ==: Vector
+  x: -1.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 4.5
+back_vector_offset: 4.5
+passagers:
+- ==: Vector
+  x: -1.5
+  y: 2.0
+  z: 0.0
+trunksize: 54
+stopMeleeDamage: true
+RequiresFuel: false
+widthOffset: 4.5
+heightOffset: 4.2
+maxHealth: 1050.0
+cost: 42069
+model:
+  ModelSize: ADULT_ARMORSTAND_HEAD
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+playDrivingSounds: false
+ItemLore:
+- '&7Press [Space] to start flying'
+- '&7 Press [LMB] to make a mysterious sound.'
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+activation_radius: 2
+allowedInShop: false
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470839

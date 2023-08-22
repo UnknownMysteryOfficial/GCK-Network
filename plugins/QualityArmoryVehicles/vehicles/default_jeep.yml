@@ -1,0 +1,61 @@
+vehicle_type: Car
+name: jeep
+id: 4
+displayname: Jeep
+center:
+  ==: Vector
+  x: -0.8
+  y: 0.0
+  z: 0.5
+front_vector_offset: 3.1
+back_vector_offset: 1.1
+vehicle_texture_material: RABBIT_HIDE
+maxAcceleration: 2.0
+baseAcceleration: 0.064
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 1.0
+  z: 1.0
+- ==: Vector
+  x: -1.0
+  y: 1.0
+  z: 0.0
+- ==: Vector
+  x: -1.0
+  y: 1.0
+  z: 1.0
+useStaticTurning: false
+RequiresFuel: false
+trunksize: 18
+widthOffset: 0.74
+heightOffset: 1.6
+maxHealth: 100.0
+cost: 2000
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+TurnSpeedInRadians: 0.039269908169872414
+activation_radius: 2
+allowedInShop: true
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+model:
+  ModelSize: BABY_ARMORSTAND_HEAD
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470827

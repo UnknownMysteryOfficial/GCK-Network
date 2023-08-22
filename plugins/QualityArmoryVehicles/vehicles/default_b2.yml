@@ -1,0 +1,55 @@
+vehicle_type: Plane
+name: b2
+id: 16
+displayname: B-2 Stealth Bomber
+center:
+  ==: Vector
+  x: -2.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 4.0
+back_vector_offset: 5.0
+vehicle_texture_material: RABBIT_HIDE
+passagers:
+- ==: Vector
+  x: -1.5
+  y: 2.0
+  z: 0.0
+trunksize: 27
+stopMeleeDamage: true
+RequiresFuel: false
+widthOffset: 3.5
+heightOffset: 4.2
+maxHealth: 1050.0
+cost: 12000
+model:
+  ModelSize: ADULT_ARMORSTAND_HAND
+InputManager:
+  keys:
+    F: TNT_BOMBER
+    LMB: BULLETS_556
+    RMB: none
+ItemLore:
+- '&7Press [Space] to start flying'
+- '&7Press [F] to drop TNT (from the vehicle''s trunk)'
+- ''
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+activation_radius: 2
+allowedInShop: false
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470834

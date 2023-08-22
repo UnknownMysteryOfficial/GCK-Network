@@ -1,0 +1,31 @@
+COAL%null:
+  data: 0
+  fuelevel: 500
+  shouldBeInShop: false
+  cost: 0
+COAL_BLOCK%null:
+  data: 0
+  fuelevel: 4500
+  shouldBeInShop: false
+  cost: 0
+BLAZE_POWDER%null:
+  data: 0
+  fuelevel: 500
+  shouldBeInShop: false
+  cost: 0
+BLAZE_ROD%null:
+  data: 0
+  fuelevel: 1000
+  shouldBeInShop: false
+  cost: 0
+LAVA_BUCKET%null:
+  data: 0
+  fuelevel: 10000
+  shouldBeInShop: false
+  cost: 0
+RABBIT_HIDE%§6Fuel Canister:
+  data: 39
+  lore:
+  - '§7Fuel for: 500 seconds'
+  fuelevel: 10000
+  shouldBeInShop: false

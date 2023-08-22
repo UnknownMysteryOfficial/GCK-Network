@@ -1,0 +1,81 @@
+vehicle_type: Plane
+name: privateplane
+id: 17
+displayname: Private Plane
+center:
+  ==: Vector
+  x: -2.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 4.0
+back_vector_offset: 4.0
+passagers:
+- ==: Vector
+  x: -1.5
+  y: 2.0
+  z: -0.3
+- ==: Vector
+  x: -1.5
+  y: 2.0
+  z: 0.3
+- ==: Vector
+  x: -2.6
+  y: 2.0
+  z: -0.3
+- ==: Vector
+  x: -2.6
+  y: 2.0
+  z: 0.3
+- ==: Vector
+  x: -4.0
+  y: 2.0
+  z: -0.3
+- ==: Vector
+  x: -4.0
+  y: 0.0
+  z: 0.3
+- ==: Vector
+  x: -2.7
+  y: 0.0
+  z: 0.3
+- ==: Vector
+  x: -1.5
+  y: 0.0
+  z: 0.3
+trunksize: 45
+stopMeleeDamage: true
+RequiresFuel: false
+widthOffset: 3.5
+heightOffset: 4.2
+maxHealth: 1050.0
+cost: 8000
+model:
+  ModelSize: ADULT_ARMORSTAND_HAND
+vehicle_texture_material: RABBIT_HIDE
+ItemLore:
+- '&7Press [Space] to start flying'
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+activation_radius: 2
+allowedInShop: false
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+InputManager:
+  keys:
+    F: none
+    LMB: none
+    RMB: none
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470834

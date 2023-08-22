@@ -1,0 +1,54 @@
+vehicle_type: Car
+name: firetruck
+id: 23
+displayname: FireTruck
+activation_radius: 3.0
+center:
+  ==: Vector
+  x: 0.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 2.0
+back_vector_offset: 7.0
+maxAcceleration: 1.4
+baseAcceleration: 0.055
+vehicle_texture_material: RABBIT_HIDE
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 2.0
+  z: 1.2
+widthOffset: 1.5
+heightOffset: 4.0
+maxHealth: 500.0
+cost: 15000
+InputManager:
+  keys:
+    LMB: HONK
+    F: SIREN
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+- '&7Press [F] to activate sirens.'
+driverseat:
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 2.0
+    z: 0.0
+  UseOffsetSeatFromModel: false
+model:
+  ModelSize: ADULT_ARMORSTAND_HEAD
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+RequiresFuel: false
+trunksize: 9
+allowedInShop: false
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+lastModifiedByQA: 1690505470838

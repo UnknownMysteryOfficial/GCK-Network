@@ -1,0 +1,62 @@
+vehicle_type: Car
+name: hearse
+id: 25
+displayname: Hearse
+vehicle_texture_material: RABBIT_HIDE
+center:
+  ==: Vector
+  x: -0.8
+  y: 0.0
+  z: 0.5
+front_vector_offset: 3.25
+back_vector_offset: 2.45
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 1.0
+  z: 1.0
+- ==: Vector
+  x: -1.3
+  y: 1.0
+  z: 0.5
+- ==: Vector
+  x: -2.3
+  y: 1.0
+  z: 0.5
+stopMeleeDamage: true
+useStaticTurning: false
+RequiresFuel: false
+widthOffset: 0.74
+heightOffset: 2.0
+maxHealth: 150.0
+cost: 3000
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+TurnSpeedInRadians: 0.039269908169872414
+activation_radius: 2
+trunksize: 9
+allowedInShop: false
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+model:
+  ModelSize: BABY_ARMORSTAND_HEAD
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470838

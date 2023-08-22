@@ -1,0 +1,17 @@
+###########################
+#         F  A  Q         #
+###########################
+-
+I edit a vehicle's YML file, and it changes back to the default values. Is this a bug?
+---It is not! There is a setting called "AllowUserModifications" which determines whether QA can edit the file. Before making any changes to the file, set this to true.
+
+-I can enter vehicles, but cannot move them!
+--- This could be one of two things: Either the car does not have any fuel, or your version of ProtocolLib is conflicting with this plugin.
+--- For the former, check to make sure there is fuel in the engine by Shift+RMB towards the vehicle, and select the fuel option. From there, add coal, blazerods, or another fuel source
+--- For the Pl issue, you can try downgrading the version of protocol lib. I have yet to figure out why this happens.
+
+-How do I delete default vehicles?
+--- Set "Enable_Creation_Of_Default_Files" to false in the config.yml and delete all vehicles you do not want.
+
+
+TODO: Add more FAQ stuff. lol

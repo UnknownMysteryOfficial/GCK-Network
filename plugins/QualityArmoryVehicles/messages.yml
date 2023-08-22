@@ -1,0 +1,89 @@
+Commands:
+  spawnvehicle: ' <car> <?:player>: Gives you or another player a car'
+  removenearby: ' <distance> : Removes all cars nearby'
+  setAsPassagers: ' <id> : Sets the player as a passager for the closest car. (Seats
+    start at 0)'
+  Shop: ' : Opens the vehicle shop'
+  garage: ' : Opens the player''s garage'
+  callbackAll: ' <radius> : Callsback all vehicles you own in the world'
+  callback: ' <radius> : Callsback all vehicles you own within a radius'
+  addToWhitelist: ' <player>: Adds the player to the vehicle''s whitelist'
+  removeFromWhitelist: ' <player>: Removes the player to the vehicle''s whitelist'
+  RegisterFuels: ' <ticks of fuel>: Registers the item in the player''s main hand
+    as a fuel'
+  debug: ' : ADMIN ONLY: Starts the debug messages.'
+Menu:
+  Overview:
+    Title: '&6%cartype%:&f Overview'
+  Add_Whitelist:
+    Title: '&6%cartype%:&f Add To Whitelist'
+  Remove_Whitelist:
+    Title: '&6%cartype%:&f Remove From Whitelist'
+  Check_FuelTank:
+    Title: '&6%cartype%:&f Check Fuel'
+  Shop:
+    Title: '&6Vehicle shop'
+  Garage:
+    Title: '&6Your vehicles'
+  setAsPassager:
+    Title: '&6%cartype%:&f Empty Seats'
+Icon:
+  Add_Whitelist:
+    Title: '&9Add player to whitelist'
+    Lore: '&fCurrently whitelisted:'
+  Remove_Whitelist:
+    Title: '&9Remove player from whitelist'
+  CheckFueltank:
+    Title: '&9Check Fueltank'
+  Public_Status:
+    Title: '&9Open To The Public = %public%'
+    Lore_Format: '&fPublic vehicles allow all players to ride as passagers.'
+  Trunk:
+    Title: '&8Open Trunk'
+    Lore_Contains: '&fContains:'
+  Pickup:
+    Title: '&9Pickup Vehicle'
+    Lore_Owner: '&fOnly available for owner'
+    Lore_Trunk: '&fAll items in trunk will be given to the player or dropped'
+  Health:
+    Title: '&8Vehicle''s Health:'
+    Lore_Format: '&f%health% / %maxhealth%'
+  Remove_Ownership:
+    Title: '&9Remove Ownership'
+    Lore: '&fCurrent owner: %owner%'
+  SetAsPassager:
+    Title: '&9Enter a Passager Seat'
+  PASSAGER:
+    EMPTY:
+      Title: '&aEmpty'
+    TAKEN:
+      Title: '&aSeat taken by %name%'
+    DRIVERSEAT:
+      Lore_Format: '&aDriver Seat'
+  Check_FuelTank:
+    Lore: '&fFuel In tank: '
+Messages:
+  addplayertowhitelist: '&fAdded player %name% to whitelist'
+  removeplayerfromwhitelist: '&fRemoved player %name% from whitelist'
+  pickup:
+    dropped: '&fThere were too many items in the trunk. Some items have been dropped
+      to the floor.'
+    full: '&fYour inventory is full!'
+  Not_enough_money: '&aYou do not have enough money!'
+  Ownership_Removed: '&fThis vehicle is now public. Anyone can drive it or pick it
+    up.'
+  Cannot_Pickup_Vehicle_While_Driving: '&fYou cannot pickup vehicles that are being
+    driven.'
+  NewOwnerMessage: '&fYou are now the owner of this %car%'
+  InputChangeSpeed: '&fSpeed setting set to %speed%'
+  ToManyVehicles: '&fYou have too many vehicles spawned! Pick up some of your vehicles
+    to use this one.'
+  ToManyVehiclesType: '&fThis vehicle has already been spawned!'
+  BlacklistedWorld_StopPlace: '&aYou are not allowed to place vehicles in this world.'
+  NoPermissionToDrive: '&fyou do not have permission to drive this vehicle.'
+  sign:
+    QAVShop: '[QAV-Shop]'
+    QAVGarage: '[QAV-Garage]'
+MessagesHotbar:
+  OutOfFuel: '&fYour vehicle is out of fuel. Find coal and Shift-click the car'
+  Bought_car: '&fYou have bought %car% for $%price%'

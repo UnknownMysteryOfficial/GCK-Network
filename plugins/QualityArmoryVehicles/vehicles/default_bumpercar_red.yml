@@ -1,0 +1,54 @@
+vehicle_type: Car
+name: bumpercar_red
+id: 22
+displayname: BumperCar
+activation_radius: 1.4
+center:
+  ==: Vector
+  x: 0.0
+  y: 0.0
+  z: 0.0
+front_vector_offset: 2.0
+back_vector_offset: 1.5
+maxAcceleration: 1.4
+baseAcceleration: 0.055
+passagers:
+- ==: Vector
+  x: -1.0
+  y: 0.0
+  z: 0.0
+useStaticTurning: true
+RequiresFuel: false
+enablePlayerBodyDirectionFix: true
+widthOffset: 0.45
+heightOffset: 1.0
+maxHealth: 50.0
+cost: 1000
+vehicle_texture_material: RABBIT_HIDE
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+driverseat:
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  UseOffsetSeatFromModel: false
+TurnSpeedInRadians: 0.039269908169872414
+trunksize: 9
+allowedInShop: false
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+model:
+  ModelSize: BABY_ARMORSTAND_HEAD
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+lastModifiedByQA: 1690505470837

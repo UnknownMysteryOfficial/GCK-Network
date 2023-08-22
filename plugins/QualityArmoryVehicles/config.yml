@@ -1,0 +1,40 @@
+QAMini:
+  resourcepackurl_override: false
+  variantPrefix: Variant
+  sendResourcepack: false
+  sendResourcepackTitleOnJoin: false
+  sendResourcepackOnJoin: false
+  kickIfRejectResourcepack: false
+  verboseItemLogging: false
+USE_1_13_MODEL_SYSTEM: false
+enable_VehicleLimiter: true
+enable_PickupVehicles: true
+enable_UnlockableVehicles: true
+enable_RequirePermsToDriveType: false
+enable_SetOwnerOnVehicleSpawn: true
+enable_VehicleDamage: true
+enable_Debug_RemoveFuelChecks: false
+enable_SetOwnerOfVehicleIfUnowned: false
+Enable_Creation_Of_Default_Files: false
+enable_RemoveVehiclesOnPlayerQuit: true
+enable_DestroyVehiclesOnPlayerQuit: true
+enable_StopCreativeDuplication: false
+enable_VehiclePlayerCollision: true
+enable_SwapEndermiteWithCheckenForLowRider: false
+enable_FuelCarsWhenSpawnedFromGarage: false
+enable_PushCarsOnCrash: true
+enable_PushEntityOnCollide: true
+enable_UseHeadsForGUI: true
+enable_RequirePermToBuyVehicle: false
+ENABLE_DEBUG: false
+enable_VehiclesHaveTrunks: true
+blockAccelerationReduction:
+  BLOCK_NAME: 1.0
+enable_RemoveVehiclesOnEmpty: true
+BlacklistedWorlds:
+- venus
+- mars
+- moon
+- europa
+maxYHeight: 320
+enable_useChatForOutOfdFuelMessage: false

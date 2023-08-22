@@ -1,0 +1,63 @@
+vehicle_type: Helicopter
+name: helicopterorange
+id: 30
+displayname: Helicopter[Orange]
+center:
+  ==: Vector
+  x: -0.8
+  y: 0.0
+  z: 0.5
+front_vector_offset: 2.3
+back_vector_offset: 2.8
+vehicle_texture_material: RABBIT_HIDE
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 2.0
+  z: 1.0
+- ==: Vector
+  x: -1.0
+  y: 2.0
+  z: 0.0
+- ==: Vector
+  x: -1.0
+  y: 2.0
+  z: 1.0
+stopMeleeDamage: true
+RequiresFuel: false
+trunksize: 18
+widthOffset: 0.74
+heightOffset: 3.0
+model:
+  ModelSize: ADULT_ARMORSTAND_HEAD
+maxHealth: 250.0
+cost: 4000
+InputManager:
+  keys:
+    F: TOGGLE_HELI_SPEED
+    LMB: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to start flying'
+- '&7 Press [F] to toggle the accent/decent speed'
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+activation_radius: 2
+allowedInShop: false
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+canDeconstructByEnvironment: true
+descentSpeed: -0.1
+sound: entity.player.attack.sweep
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470841

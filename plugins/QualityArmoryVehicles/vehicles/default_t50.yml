@@ -1,0 +1,71 @@
+vehicle_type: Car
+name: t50
+id: 1
+displayname: T50
+center:
+  ==: Vector
+  x: -1.5
+  y: 0.0
+  z: 0.0
+front_vector_offset: 4.0
+back_vector_offset: 4.0
+passagers:
+- ==: Vector
+  x: -2.0
+  y: 2.0
+  z: 0.0
+- ==: Vector
+  x: -2.0
+  y: 2.0
+  z: 1.0
+- ==: Vector
+  x: -2.0
+  y: 2.0
+  z: -1.0
+stopMeleeDamage: true
+stopProjectileDamage: true
+RequiresFuel: false
+trunksize: 18
+widthOffset: 2.0
+heightOffset: 3.0
+maxHealth: 300.0
+cost: 5000
+vehicle_texture_material: RABBIT_HIDE
+model:
+  ModelSize: ADULT_ARMORSTAND_HEAD
+complexadditions:
+  '0':
+    name: t50tankcannon
+    offset:
+      ==: Vector
+      x: 0.0
+      y: 0.0
+      z: 0.0
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Enter the passager seat to firte the cannons.'
+TurnSpeedInRadians: 0.039269908169872414
+useStaticTurning: true
+activation_radius: 2
+allowedInShop: true
+maxAcceleration: 1.1
+baseAcceleration: 0.065
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+InputManager:
+  keys:
+    F: none
+    LMB: none
+    RMB: none
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+driverseat:
+  UseOffsetSeatFromModel: false
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 1.0
+    z: 0.0
+lastModifiedByQA: 1690505470825

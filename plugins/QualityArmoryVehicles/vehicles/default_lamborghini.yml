@@ -1,0 +1,54 @@
+vehicle_type: Car
+name: lamborghini
+id: 33
+displayname: Lamborghini
+vehicle_texture_material: RABBIT_HIDE
+center:
+  ==: Vector
+  x: -0.8
+  y: 0.0
+  z: 0.5
+front_vector_offset: 3.25
+back_vector_offset: 2.45
+passagers:
+- ==: Vector
+  x: 0.0
+  y: 0.0
+  z: 1.0
+driverseat:
+  Offset:
+    ==: Vector
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  UseOffsetSeatFromModel: false
+stopMeleeDamage: true
+useStaticTurning: false
+RequiresFuel: false
+widthOffset: 0.74
+heightOffset: 2.0
+maxHealth: 250.0
+cost: 30000
+maxAcceleration: 1.4
+baseAcceleration: 0.075
+InputManager:
+  keys:
+    LMB: HONK
+    F: none
+    RMB: none
+ItemLore:
+- '&7Press [Space] to break'
+- '&7Press [LMB] to honk'
+TurnSpeedInRadians: 0.039269908169872414
+activation_radius: 2
+trunksize: 9
+allowedInShop: false
+maxReverseAcceleration: 0.45
+canJumpOnBlocks: true
+jumpHeight: 0.55
+model:
+  ModelSize: BABY_ARMORSTAND_HEAD
+canDeconstructByEnvironment: true
+sound: driving
+soundVolume: 1
+lastModifiedByQA: 1690505470842
