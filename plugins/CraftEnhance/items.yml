@@ -18,3 +18,27 @@ GLOWSTONE_DUST:
   ==: org.bukkit.inventory.ItemStack
   v: 2975
   type: GLOWSTONE_DUST
+§aWrench:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: IRON_NUGGET
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"color":"green","text":"Wrench"}'
+    lore:
+    - '{"color":"gray","text":"Right-click a hopper to"}'
+    - '{"color":"gray","text":"change its filter settings."}'
+    custom-model-data: 2
+IRON_NUGGET:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: IRON_NUGGET
+STICK:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: STICK
+IRON_INGOT:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: IRON_INGOT
