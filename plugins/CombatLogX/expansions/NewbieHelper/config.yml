@@ -1,0 +1,34 @@
+# Should new players be protected from attacks by other players?
+# Default: true
+new-player-protection: true
+
+# Should new player protection be removed from a player if they attack someone?
+# Default: true
+remove-protection-on-attack: true
+
+# How long does protection last on a player (in milliseconds)?
+# Default: 30,000 (30 seconds)
+protection-time: 18,000,000
+
+# Should new players also be protected from mob attacks?
+# Default: true
+mob-protection: false
+
+# (This is for the `/togglepvp` command, protection options are above.)
+# What is the default PVP status for players?
+# Default: true (PVP allowed)
+pvp-toggle-default-status: false
+
+# How long (in seconds) must players wait before using the pvp toggle command again?
+# Default: 0 (no cooldown)
+pvp-toggle-cooldown: 3000
+
+# What permission is required to bypass the pvp toggle cooldown?
+# Set this to "" to disable the bypass permission.
+# Default: "combatlogx.bypass.pvp-toggle.cooldown"
+pvp-toggle-cooldown-bypass-permission: "combatlogx.bypass.pvp-toggle.cooldown"
+
+# Should the expansion prevent non-admin pvp-toggle from being used
+# in worlds that are disabled in the main config?
+# Default: true
+prevent-pvp-toggle-in-disabled-worlds: true
