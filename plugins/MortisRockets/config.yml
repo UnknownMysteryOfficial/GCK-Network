@@ -1,0 +1,75 @@
+config:
+  item:
+    material: RABBIT_HIDE
+    custom-model-data: 38
+  rocket:
+    launch:
+      time: 5 #in seconds
+      speed: 2
+    land:
+      distance: 50
+    messages:
+      no_space: "&cThere are blocks above you"
+      land_near_town: "&cThe landing location is near a town"
+      launch_near_town: "&cThe launching location is near a town"
+      outside_range: "&cThe specified location is outside the range"
+      not_safe: "&cThe landing location is not safe"
+      could_not_find: "&cCould not find a suitable location"
+
+
+  EARTH:
+    launching-message: "&aYou are launching to Earth"
+    landing-message: "&bYou have landed on Earth"
+    world: world
+    location: -36800,-18368
+    location2: 36799,18367
+    specific-location: true
+    cost: 100
+    launching-radius: 8
+    landing-radius: 6
+    ocean-checker: true
+  MARS:
+    launching-message: "&aYou are launching to Mars"
+    landing-message: "&bYou have landed on Mars"
+    world: mars
+    location: 64,64
+    location2: 9663,4799
+    specific-location: true
+    cost: 100
+    launching-radius: 8
+    landing-radius: 6
+    ocean-checker: true
+  VENUS:
+    launching-message: "&aYou are launching to Venus"
+    landing-message: "&bYou have landed on Venus"
+    world: venus
+    location: 64,64
+    location2: 10175,5055
+    specific-location: true
+    cost: 100
+    launching-radius: 8
+    landing-radius: 6
+    ocean-checker: true
+  MOON:
+    launching-message: "&aYou are launching to Moon"
+    landing-message: "&bYou have landed on the Moon"
+    world: moon
+    location: 64,64
+    location2: 10175,5055
+    specific-location: true
+    cost: 100
+    launching-radius: 8
+    landing-radius: 6
+    ocean-checker: true  
+  EUROPA:
+    launching-message: "&aYou are launching to Europa"
+    landing-message: "&bYou have landed on Europa"
+    world: europa
+    location: 64,64
+    location2: 9359,4655
+    specific-location: true
+    cost: 100
+    launching-radius: 8
+    landing-radius: 6
+    ocean-checker: true 
+    

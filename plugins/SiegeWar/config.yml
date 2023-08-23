@@ -1,0 +1,877 @@
+  
+version:
+  # This is the current version.  Please do not edit.
+  version: 2.8.0
+  # This is for showing the changelog on updates.  Please do not edit.
+  last_run_version: 2.8.0
+  
+  
+war:
+  
+  
+  ############################################################
+  # +------------------------------------------------------+ #
+  # |                   Siege-War settings                 | #
+  # +------------------------------------------------------+ #
+  ############################################################
+  
+  siege:
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                       Switches                       | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    switches:
+  
+      # If true, the Siege-War system is enabled.
+      # if false, the Siege-War system is disabled.
+      enabled: 'true'
+  
+      # If true, then nations can start conquest sieges.
+      conquest_sieges_enabled: 'true'
+  
+      # If true, then towns can start revolt sieges.
+      revolt_sieges_enabled: 'true'
+  
+      # If true, then attackers can abandon sieges.
+      abandon_enabled: 'true'
+  
+      # If true, then defenders can surrender sieges.
+      town_surrender_enabled: 'true'
+  
+      # If true, then invasions are enabled.
+      invade_enabled: 'true'
+  
+      # If true, then a king can pay their soldiers using '/sw nation paysoldiers <total amount>'.
+      # The amount will be distributed among the soldiers according to their ranks.
+      # The permission of siegewar.nation.siege.pay.grade.x, determines how much a rank is paid. x=100 is a normal share, x=200 is double
+      military_salary_enabled: 'true'
+  
+      # If true, then land cannot be claimed near a siege zone.
+      # This setting is generally considered critical, otherwise one side could wall off the siege zone.
+      claiming_disabled_near_siege_zones: 'true'
+  
+      # If this setting is true, then during Battle Sessions, only town residents are permitted to spawn into Siege-Zones OR besieged towns.
+      # This setting is recommended to protect players from accidentally spawning into a PVP-active-area while unprepared.
+      non_resident_spawn_into_siegezones_or_besieged_towns_disabled: 'true'
+  
+      # If this value is true, then a town under active siege cannot recruit new residents.
+      #  This setting is recommended because it helps discourage 'fake' sieges just for the purpose of of gifting immunity.
+      besieged_town_recruitment_disabled: 'true'
+  
+      # If this value is true, then a town under active siege cannot claim new plots.
+      #  This setting is recommended because it helps discourage 'fake' sieges just for the purpose of of gifting immunity.
+      besieged_town_claiming_disabled: 'true'
+  
+      # If this value is true, then a town under active siege cannot unclaim.
+      #  This setting is recommended if invasion/occupation is enabled, to avoid occupation escape exploits.
+      besieged_town_unclaiming_disabled: 'true'
+  
+      # If this value is true, then a town which is a capital of a nation that is under siege, cannot
+      # change capital to another city via /n set king|capital.
+      besieged_capitals_cannot_change_kings: 'false'
+  
+      # If this setting is true, then Siegewar statistics will be shown on nation status screens.
+      nation_statistics_enabled: 'true'
+  
+      # When true, if an attackers wins the battlesession against a sieged town, that
+      # town's jailed players that belong to the attacking nation will be freed from the town's jail.
+      unjail_residents_when_attackers_win_battle_session: 'false'
+  
+      # When true, players will have a glowing effect.
+      enabled_glowing_on_players: 'true'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                       Money                          | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    money:
+  
+      # This value determines the money amount of the 'upfront' siege cost.
+      # Any nation/town which wants to initiate a siege, must pay this money.
+      # This money is paid to the server.
+      # TIP 1: This cost helps deter fake sieges.
+      # TIP 2: Be aware that unlike the warchest, the money is removed from the in-game economy.
+      upfront_cost_per_plot: '0.0'
+  
+      # This value determines the money amount of the siege 'warchest'.
+      # In Conquest sieges, this money is a 'deposit' paid by the attacking nation.
+      # If the attacking nation wins the siege, the warchest is returned to the nation bank.
+      # If the defending town wins the siege, the warchest is recovered by the defenders.
+      warchest_cost_per_plot: '20.0'
+  
+  
+      plunder:
+  
+        # This is the amount which an attacking nation will plunder if they choose to do so after a siege victory.
+        amount_per_plot: '40.0'
+  
+        # When true, plunder will function differently, when a town cannot afford to pay the full plunder costs.
+        # Initially the money is paid to the plunderer in full, from either the Towny server-account (used in closed_economies),
+        # or else from thin air.
+        # The money is then paid back on a daily basis from the plundered town, using the set number of days.
+        # The goal of this system is to make sure that attackers get paid, while giving plundered towns a 
+        # chance to pay their debt over time.
+        plunder_paid_over_time: 'false'
+  
+        # When plunder_paid_over_time is true, how many days will the plunder debt be paid over?
+        number_of_payments: '7'
+  
+      # The percentage to increase the cost of sieging capitals by.
+      # Example: If set to 50, with an attack cost of 20/plot, each plot would be 30.
+      capital_siege_cost_increase_percentage: '0'
+  
+      # This value increases the monetary costs & gains of sieges, depending on town level.
+      # 
+      # The value is useful to ensure that larger towns/nations will not feel unaffected by war moneys.
+      # The value is applied to attack cost (war-chest) and plunder.
+      # The value is appropriate in servers where town wealth does not correspond linearly to number of plots.
+      # Example: On server x, small towns tend to have 10 plots + 100 gold, and large towns tend to have 100 plots + 999,999 gold.
+      #          Clearly on this server, wealth is heavily concentrated in larger towns. Thus this value should be high 
+      # 
+      # Example of how this value would affect attack cost (@20/plot), if the value was set to 50 : 
+      # 
+      # Level 1 (1 resident), 5 plots. Cost = (20 * 5) + 0% = 100
+      # Level 2 (3 residents), 15 plots. Cost = (20 * 15) + 50% = 450
+      # Level 3 (8 residents), 50 plots. Cost = (20 * 50) + 100% = 2000
+      # Level 4 (12 residents), 80 plots. Cost = (20 * 80) + 150% = 4000
+      # 
+      # If the value is 0, then money amounts are not modified.
+      extra_money_percentage_per_town_level: '0'
+  
+      # The maximum that a nation can set for its occupation-tax, using /n set occupationtax.
+      # Each nation's occupation tax will always track the above value, unless they use the above command.
+      # This tax is applied to all the nation's occupied towns.
+      max_occupation_tax_per_plot: '1.0'
+  
+      # The value specifies what proportion of the initial nation cost is refunded, when the nation is deleted or defeated.
+      # This feature supports nations which actively participate in geopolitics but are ultimately defeated by stronger opponents.
+      # Set to 0.0 to disable
+      nation_cost_refund_percentage_on_delete: '80.0'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |              Non-Monetary Quantities                 | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    quantities:
+  
+      # The value specifies the maximum number of active conquest-attack sieges allowed per nation.# A low setting will generally reduce the aggression level on the server.
+      # A low setting will also rebalance the system in favour of smaller nations.
+      # This is because it will prevent larger nations from conducting as many sieges as their resources would otherwise allow.
+      max_active_siege_attacks_per_nation: '3'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                    Siege-Assemblies                  | #
+    # + Siege-Assemblies precede Sieges, when a banner is    | #
+    # + first placed. By default a 10 minute session in which| #
+    # + the attacking town must score a given number of      | #
+    # + points in order to begin a siege. This feature is    | #
+    # + meant to mitigate towns creating mock-sieges, and    | #
+    # + using the resulting immunity to avoid sieges by real | #
+    # + enemies                                              | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    siege_assemblies:
+  
+      # When true, SiegeWar will begin each attempted Siege with a Siege-Assembly.
+      assemblies_enabled: 'false'
+  
+      # When an attacker fails a Siege-Assembly, how long until they can attempt to attack the town again?
+      failed_siege_assembly_cooldown: 12h
+  
+      # How many points an attacker must score in a Siege-Assembly to start a siege.
+      points_required_to_succeed: '50'
+  
+      # How many points an attacker town gets per minute, when they are present at the Siege-Assembly TimedPointZone.
+      points_per_minute: '7'
+  
+      # How many minutes does a Siege-Assembly last?
+      duration_in_minutes: '10'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                         Times                        | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    times:
+  
+      # The duration of a siege, in battle sessions.
+      # TIP 1: The higher this value, the more your server will experience aggression and toxicity.
+      # TIP 2: The higher this value, the more your geopolitics will be dominated by ultra-hardcore gamers, who will find it easier to defeat players with normal/healthy hours-online-per-week.
+      # The default value is 7.
+      duration_battle_sessions: '7'
+  
+      # This value determines how long a town is safe from sieges, after the town is founded.
+      # A high value allows more time to fortify new towns, but community engagement by mayors will be slower.
+      # A low value allows less time to fortify new towns, but community engagement by mayors will be faster.
+      # The default value is 168 (7 days).
+      siege_immunity_time_new_town_hours: '120'
+  
+      # This value determines how long a town is safe from sieges, after a siege finishes.
+      # The default value is 168 (7 days).
+      siege_immunity_post_siege_hours: '168'
+  
+      # This value determines how long a town must wait before it can revolt against an occupying nation.
+      # Revolt immunity begins after a town is defeated in a siege.
+      # The configured value should be less than the configured post siege immunity hours (to ensure a town always gets the chance to revolt).
+      # NOTE: A revolt siege breaks through siege immunity.
+      # The default value is 72 (3 days).
+      revolt_immunity_post_siege_hours: '72'
+  
+      # This value determines the duration of each banner control session.
+      banner_control_session_duration_minutes: '7'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                      Distances                       | #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    distances:
+  
+      # The radius of the 'siege zone'.
+      # This radius applies only horizontally, so players can never get above a siegezone (e.g. to place lava there or something).
+      # Various siege related effects can apply in this zone e.g. lose points on death, cannot TP in, cannot claim.
+      siegezone_radius_blocks: '200'
+  
+  
+    ############################################################
+    # +------------------------------------------------------+ #
+    # |                   Points Balancing                     #
+    # +------------------------------------------------------+ #
+    ############################################################
+  
+    points_balancing:
+  
+  
+      # +------------------------------------------------------+ #
+      # |                    Base Points                         #
+      # +------------------------------------------------------+ #
+  
+      base_points:
+  
+  
+        banner_control:
+  
+          # This value determines the number of battle points awarded every SiegeWar-tick (20 seconds) to an attacker with banner-control.
+          # TIP: Always keep this value at 10, for easier comparison with other server configurations.
+          attacker: '10'
+  
+          # This value determines the number of battle points awarded every SiegeWar-tick (20 seconds) to a defender with banner-control.
+          defender: '10'
+  
+  
+        deaths:
+  
+          # This value determines the number of battle points awarded if an attacker dies in a siege zone.
+          # TIP: Set this value low enough so as not to exclude weak players from sieges, and high enough to avoid banner control being considered too OP.
+          attacker: '150'
+  
+          # This value determines the number of battle points awarded if defender dies in a siege zone.
+          # TIP: Set this value low enough so as not to exclude weak players from sieges, and high enough to avoid banner control being considered too OP.
+          defender: '150'
+  
+  
+      # +------------------------------------------------------+ #
+      # |           Banner Control Reversal Bonus              | #
+      # +------------------------------------------------------+ #
+  
+      banner_control_reversal_bonus:
+  
+        # If this setting is true, then the Banner Control Reversal Bonus is enabled:
+        # If enabled, and a team reverses banner control during a battle,
+        # the base generation rate of timed points is then multiplied by the configured value below (e.g. x3).
+        # Subsequent reversals increase the rate further by that amount.
+        # TIP: This feature grants small skilled armies a tactic to win battles against larger unskilled armies,
+        # Tactic: Wait for the large army to cap the banner, then ambush/counterattack them, grabbing the reversal bonus, and holding the area to net an enhanced cap-point score.
+        enabled: 'true'
+  
+        # This setting determines the strength of the bonus multiplier.
+        # Example: 
+        # - Assuming this value is 3,
+        # - If team A reverses banner control, any cap-points they get after that will be multiplied by 3.
+        # - If team B re-reverses banner control, any cap-points they get after that will be multiplied by 6.
+        multiplier_value: '3'
+  
+  
+      # +------------------------------------------------------+ #
+      # |               Counter-Attack Booster                 | #
+      # +------------------------------------------------------+ #
+  
+      counterattack_booster:
+  
+        # If this setting is true, then if a player from the banner controlling side dies,
+        # the death points are increased by a certain percentage.
+        # TIP: This feature delivers extra balance to battles in which one side is outnumbered by the other.
+        enabled: 'false'
+  
+        # If the counterattack booster is enabled, this value determines the strength of the boost.
+        # Example: If this value is 10.0, and there are 3 players on the banner control list, and a player from the banner-controlling side dies,
+        # then the death points awarded to the attacker will be increased by +30%.
+        extra_death_points_per_player_percentage: '10.0'
+  
+  
+      # +------------------------------------------------------+ #
+      # |                  Siege Balance Cap                     | #
+      # +------------------------------------------------------+ #
+  
+      siege_balance_cap:
+  
+        # This value determines the siege balance cap.
+        # Set to -1 to disable the cap.
+        # The value applies to both positive and negative balances e.g. 20000 means a lower limit of -20000 and an upper limit of 20000.
+        # TIP: Set this value HIGH to give advantage to big nations, and LOW to give advantage to small nations.
+        value: '20000'
+  
+  
+      # +------------------------------------------------------+ #
+      # |         End-Of-Battle Point Distribution             | #
+      # +------------------------------------------------------+ #
+  
+      end_of_battle_points_distribution:
+  
+        # If true, at the end of a battle, only the battle points of the winner are applied to the siege balance.
+        # If false, the battle points of the losing side are also applied to the siege balance.
+        winner_takes_all: 'false'
+    death:
+  
+      # If enabled, a firework will get spawned whenever a player dies inside a siege zone.
+      spawn_firework: 'true'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |              Siege Material Restrictions             | #
+# +------------------------------------------------------+ #
+############################################################
+  
+siege_material_restrictions:
+  
+  # This setting is useful to help prevent extreme siege-zone grief such as obsidian forts.
+  # The list is used to indicate the list of blocks which cannot be placed in the wilderness area of siegezones.
+  # WARNING: Avoid putting 'common' blocks on this list as that may cause lag.
+  wilderness_block_placement_prevention_materials: obsidian, ice
+  
+  # This setting is useful to help prevent extreme siege-zone grief such as obsidian forts or cobble monsters.
+  # The list is used to indicate the list of forbidden buckets
+  wilderness_bucket_usage_prevention_materials: lava_bucket, water_bucket, cod_bucket, pufferfish_bucket, salmon_bucket, tropical_fish_bucket, axolotl_bucket
+  
+  # This setting is useful to prevent the dropping of explosive tnt and tnt-minecarts onto the timed-point-zone.
+  # This setting is used to indicate the list of entity types which will not explode in the wilderness area of siegezones
+  wilderness_explosion_prevention_entity_types: primed_tnt, minecart_tnt
+neutral_towns:
+  enabled: 'true'
+  capitals_allowed_neutrality: 'true'
+  confirmation_requirement_days: '5'
+  new_town_confirmation_requirement_days: '2'
+  subvert_enabled: 'true'
+  revolt_enabled: 'true'
+  sickness_warning_duration_seconds: '20'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                   Occupied Towns                     | #
+# +------------------------------------------------------+ #
+############################################################
+  
+occupied_towns:
+  
+  # If this value is true, then a town under occupation cannot unclaim.
+  #  This setting is recommended, to avoid occupation escape exploits.
+  occupied_town_unclaiming_disabled: 'true'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |        Punishing unofficial siege participants       | #
+# +------------------------------------------------------+ #
+############################################################
+  
+punish_non_siege_participants_in_siege_zones:
+  
+  # If true, players that are not participating in a siege will receive war sickness
+  # A non-participant is a player who does not have a military rank, is not allied to either the attacker or the defender, or is neutral.
+  # There are two types of war sickness, full and special.
+  # Special war sickness is only given if a non-participant is at his town that happened to be in a siege zone
+  #   - Effects: Weakness V
+  # Full sickness is given to all players that are not allied to either side, do not have a military rank, or is neutral, and are not in their own town.
+  #   - Effects: Health 1, Nausea V, Poison V, Weakness V, Slowness III, Mining Fatigue III
+  enable_sickness: 'true'
+  
+  # This is how many seconds a player has to leave the siege zone before he gets war sickness
+  # If this is set to 0, no warn will be given and non-participants will receive war sickness instantly, if enabled
+  seconds_warning: '20'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                   Beacon Markers                     | #
+# +------------------------------------------------------+ #
+############################################################
+  
+beacon_markers:
+  
+  # If enabled, client-side beacons will be shown for players at the siege banner while they are in a siege zone.
+  enabled: 'true'
+  
+  # The color that the beacon will be while a player is capturing it. Only visible to the player.
+  # Accepts any of the following colors (case insensitive): White, Orange, Magenta, LightBlue, Yellow, Lime, Pink, Gray, LightGray, Cyan, Purple, Blue, Brown, Green, Red & Black.
+  # Defaults to yellow if no valid color is entered.
+  capture_color: yellow
+  
+  # The color that the beacon will be for a player when their side has control of the banner.
+  # See above for valid colors.
+  # Defaults to green if no valid color is entered.
+  captured_color: green
+  
+  # The color that the beacon will be for a player when the enemy side has control of the banner.
+  # See above for valid colors.
+  # Defaults to red if no valid color is entered.
+  enemy_color: red
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                   Banner XYZ Text                    | #
+# +------------------------------------------------------+ #
+############################################################
+  
+banner_xyz_text:
+  # The banner xyz text is an alternative to beacon markers for siege banners (but they can also be used together).
+  # If enabled, besieged towns will show the XYZ of the siege banner on their town screens.
+  enabled: 'false'
+nation_siege_immunity:
+  enabled: 'false'
+  duration_modifier: '0.5'
+  home_town_contribution_to_attack_cost: '0.1'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                    BANNER CONTROL                    | #
+# +------------------------------------------------------+ #
+#                                                          #
+# FYI: Most banner-control-related settings are above,     #
+# and not in this section.                                 #
+############################################################
+  
+banner_control:
+  
+  # This setting determines the color of the boss bar message,
+  # which players see while they are capturing the banner.
+  capturing_message_color: yellow
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |              SIEGE START DAY LIMITER                 | #
+# +------------------------------------------------------+ #
+#                                                          #
+# The feature allows a server to limit the days when       #
+# players can start sieges.                                #
+############################################################
+  
+siege_start_day_limiter:
+  
+  # This setting determines the days (in server timezone) when players can start sieges.
+  # Multiple entries should be separated by a comma.
+  # Permitted values: monday, tuesday, wednesday, thursday, friday, saturday, sunday.
+  # By default, sieges are started only on Thursday
+  allowed_siege_start_days: thursday
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |               Battle Session Scheduler               | #
+# +------------------------------------------------------+ #
+############################################################
+  
+battle_session_scheduler:
+  
+  # The entries in this section determine the start times (in server timezone), of battle sessions.
+  # By default, battle sessions start only on Saturday and Sunday, except for one early morning Monday entry to accommodate Sunday evening in later timezones.
+  # Each entry is in the format HOUR:MINUTE.
+  # TIP 1: Less battles is bigger battles --> A handful of well placed battle session times will generate bigger battles, by allowing multiple players to synchronize their online fight times.
+  # TIP 2: Less fight-time is less-toxic players --> With default settings, an individual player can fight in sieges for a total of 7 hours a week. Be wary of making more fight time available, as it can increase toxicity.
+  start_times:
+    saturday: 03:00,11:00,19:00
+    sunday: 03:00,11:00,19:00
+    monday: 03:00
+    tuesday: ''
+    wednesday: ''
+    thursday: ''
+    friday: ''
+  
+  # This value determines the duration in minutes of each battle session.
+  # The default value is 60
+  session_duration_minutes: '60'
+  
+  # Should sessions be cancelled when there are no active sieges?
+  cancel_session_when_no_active_sieges: 'true'
+capping_limiter:
+  weekday_battle_sessions: '3'
+  weekend_day_battle_sessions: '6'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |               PVP Protection Overrides               | #
+# +------------------------------------------------------+ #
+#                                                          #
+# Other plugins, including Towny, can protect players      #
+# from PVP, even when those players are in Siege-Zones.    #
+#                                                          #
+# This section allows server owners to stop those          #
+# protections from working in Siege-Zones during           #
+# Battle Sessions                                          #
+############################################################
+  
+pvp_protection_overrides:
+  
+  # If true, then Towny plot protection is disabled in Siege-Zones during Battle Sessions.
+  # TIP: This value is generally set to true, to avoid having unnatural safe claims within Siege-Zones.
+  stop_towny_plot_protection: 'true'
+  
+  # If true, then Towny friendly-fire protection is disabled in Siege-Zones during Battle Sessions.
+  stop_towny_friendly_fire_protection: 'false'
+  
+  # If true, then all PVP protections are disabled within Siege-Zones during Battle Sessions, including from non-TownyAdvanced plugins.
+  # WARNING : This setting may result in incorrect pvp-protection messaging information!.
+  stop_all_protection: 'false'
+trap_warfare_mitigation:
+  enabled: 'true'
+  radius_blocks: '32'
+  upper_height_limit: '10'
+  lower_height_limit: '0'
+  wilderness:
+    enabled: 'true'
+    radius: '32'
+    upper_height_limit: '10'
+    lower_height_limit: '0'
+domination_awards:
+  artefact_offers:
+    default_0_8_0_official:
+      tier1: '{cobble_eater, 1, diamond_pickaxe, efficiency:7}{tree_feller, 1, diamond_axe, efficiency:7}{ground_digger, 1, diamond_shovel, efficiency:7}{sword_of_searing, 1, golden_sword, fire_aspect:4}{poison_blade, 1, golden_sword, custom_effect:poison_on_hit}{potion_of_enhanced_regeneration, 3, potion, regeneration:3:60:true:true:true}{potion_of_enhanced_strength, 3, potion, increase_damage:3:120:true:true:true}{potion_of_enhanced_absorbtion, 3, potion, absorption:3:120:true:true:true}'
+      tier2: '{potion_of_true_invisibility, 3, potion, invisibility:1:180:false:false:true}{splash_potion_of_enhanced_regeneration, 3, splash_potion, regeneration:3:60:true:true:true}{splash_potion_of_enhanced_strength, 3, splash_potion, increase_damage:3:120:true:true:true}{splash_potion_of_enhanced_absorbtion, 3, splash_potion, absorption:3:120:true:true:true}'
+      tier3: '{arrow_of_enhanced_hunger, 5, tipped_arrow, hunger:12:50:true:true:true}{potion_of_great_resistance, 3, potion, damage_resistance:4:30:true:true:true}{splash_potion_of_true_invisibility, 3, splash_potion, invisibility:1:180:false:false:true}{arrow_of_knockup, 5, tipped_arrow, levitation:20:1:true:true:true}{super_spiky_helmet, 1, golden_helmet, thorns:8, unbreaking:2}{bountiful_pickaxe, 1, diamond_pickaxe, fortune:5, efficiency:8}'
+      tier4: '{sword_of_immolation, 1, golden_sword, fire_aspect:7}{axe_of_the_berserker, 1, golden_axe, sharpness:10, efficiency:10}{bow_of_displacement, 1, bow, punch: 7}{blade_of_the_viper, 1, golden_sword, custom_effect:strong_poison_on_hit, custom_effect:slow_on_hit}'
+      tier5: '{arrow_of_doom, 5, tipped_arrow, harm:20:1:true:true:true}{vorpal_sword, 1, golden_sword, sharpness:15}{chicago_typewriter, 1, crossbow, quick_charge:5}{trident_of_zeus, 1, trident, channeling:1, loyalty:2, custom_effect:lightning_strike_on_hit}{trident_of_poseidon, 1, trident, riptide:12}{chestplate_of_mars, 1, golden_chestplate, protection:10}{antimatter_potion, 1, potion, poison:1:7:true:true:true, custom_effect:delayed_massive_self_explosion_on_consume}'
+    custom:
+      tier1: ''
+      tier2: ''
+      tier3: ''
+      tier4: ''
+      tier5: ''
+    legacy: ''
+  artefact_chest_signs: artefacts, artifacts
+  artefact_expiry:
+    lifetime_days: '7'
+    percentage_chance_per_short_tick: '10'
+    explosions:
+      enabled: 'true'
+      base_power: '4'
+      extra_power_per_expired_artefact: '1'
+      max_power: '9'
+  global:
+    enabled: 'true'
+    assessment_criterion: num_residents
+    assessment_period_hours: '150'
+    grant_day_of_week: Saturday
+    granted_money: 2000,1500,1250,1000,750,500,250
+    granted_artefact_offers: '{8,7,5,3,2} {7,6,4,2,1} {6,5,3,1,0} {5,4,2,0,0} {4,3,1,0,0} {3,2,0,0,0} {2,1,0,0,0}'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                   Peaceful Towns                      | #
+# +------------------------------------------------------+ #
+############################################################
+  
+peaceful_towns:
+  
+  # If this is true, then a town can toggle peacefulness using /t toggle peaceful,
+  # 
+  # By activating peacefulness, a town receives complete immunity from attack.
+  # 
+  # EFFECTS:
+  # - Town is immune to siege attack (but not to SiegeZone-forced-PVP from nearby sieges).
+  # - Residents cannot get nation military ranks.
+  # - Town is vulnerable to getting instantly subverted (captured and occupied).
+  #   (see user guide for full details)
+  #
+  enabled: 'true'
+  
+  # If this is true, a nation capital can be a peaceful town. If false, any capital will not be able to turn peaceful.
+  nation_capital_can_be_peaceful: 'false'
+  
+  # If this is true, all new towns will be peaceful when created.
+  new_town_peacefulness: 'false'
+  
+  # This value determines how long it takes to confirm a town peacefulness status change.
+  confirmation_requirement_time_days: '7'
+  
+  # This setting applies only in the first week after a town is founded.
+  # The value determines the countdown duration to be applied to any peacefulness switch.
+  new_town_confirmation_requirement_days: '2'
+  
+  # If this is true, peaceful towns have a public spawn.
+  # 
+  # TIP 1:
+  # In Towny in 2023, many peaceful-builder players have a Critical Requirement to own public spawns,
+  # so that they can run-shops/demonstrate-builds.
+  # In Servers configured for public /n spawns, but no public /t spawns, players often create 'Shell Nations',
+  # which they use just for the /n spawns.
+  # SiegeWar cannot/will-not protect 'Shell Nations',
+  # Thus, if your server is configured as indicated, set this value to 'true' to meet a critical requirement for peaceful-builder players.
+  #
+  # TIP 2:
+  # In Towny in 2023, the reason some servers disable public /t spawns, is to encourage 'infastructure' between towns.
+  # While this is an interesting goal, it is probably not as important as meeting the critical player requirement outlined above,
+  # Thus although this feature could potentially interfere with infrastructure,
+  # the problems it solves are probably more important than the problems it creates
+  public_spawn_enabled: 'true'
+  
+  # If this setting is true, then subversion (instant capture and occupation) of peaceful towns is enabled.
+  subvert_enabled: 'true'
+  
+  # Given any peaceful town, the largest-by-townblock, non-peaceful, non-sieged town, in this radius around the homeblock, is considered to be the guardian town.
+  # If a nation owns the guardian town, that nation can instantly subvert & occupy the peaceful town
+  guardian_town_search_radius: '1200'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                    SURFACE WARFARE                   | #
+# +------------------------------------------------------+ #
+# + This feature does 4 things:                          + #
+# +                                                      + #
+# + 1. Mostly prevents Safe-Claim Ganks.                 + #
+# + 2. Rewards towns for building walls / towers /gates. + #
+# + 3. Encourages surface combat (rather than in holes). + #
+# + 4. Reduces terrain destruction during sieges.        + #
+# +------------------------------------------------------+ #
+############################################################
+  
+surface_warfare:
+  
+  
+  # +------------------------------------------------------+ #
+  # |            SURFACE WARFARE - BESIEGED TOWN           | #
+  # +------------------------------------------------------+ #
+  
+  besieged_town:
+  
+    # If this setting is true, then:
+    # 1. Safe-claim Ganks are mostly prevented, because defenders cannot build near the siege banner.
+    # 2. Defenders are compensated, by forcing the siege banner to be right on the town border, which encourages walls / towers / gates.
+    enabled: 'true'
+  
+    # The protected area consists of every location which is both within this radius around the siege banner, and within the besieged town.
+    # This protection applies at all heights.
+    radius: '32'
+  
+    # If true, the siege banner must be placed right at the border of the target town.
+    banner_at_border_enabled: 'true'
+  
+  
+  # +------------------------------------------------------+ #
+  # |              SURFACE WARFARE - WILDERNESS            | #
+  # +------------------------------------------------------+ #
+  
+  wilderness:
+  
+    # If this setting is true, then :
+    # 1. Traditional surface combat is encouraged, rather than fighting in holes.
+    # 2. Terrain destruction during sieges is reduced.
+    # 
+    # TIP: If this feature is enabled, then it is recommended to also have a server rule requiring attackers to remove all holes in the area before the banner is placed.
+    enabled: 'true'
+  
+    # The protected area consists of every location which is both within this radius around the siege banner, and in the wilderness.
+    radius: '32'
+  
+    # Within the protection radius, players cannot build above this height.
+    # The height is relative to the siege banner height
+    upper_height_limit: '10'
+  
+    # Within the protection radius, players cannot build below this height.
+    # The height is relative to the siege banner height
+    lower_height_limit: '0'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |         KEEP INVENTORY ON SIEGEZONE DEATH            | #
+# +------------------------------------------------------+ #
+############################################################
+  
+keep_inventory_on_siegezone_death:
+  
+  # If this value is true, all players who die IN ACTIVE SIEGEZONES keep inventory.
+  # TIP 1: This makes battles less stressful, as a death doesn't mean gifting a 'god set' to the enemy.
+  # TIP 2: This makes battles more welcoming to new players, as they will be the most likely to die.
+  # TIP 3: This help keep the server geopolitics sustainable, as powerful nations will snowball less.
+  # TIP 4: It may seem surprising to grant this benefit to non-siege-participants, but remember that non-belligerent towns may have their PVP protections turned off by the Siege-Zone.
+  enabled: 'true'
+  
+  # The percentage by which a player's tools (including swords & armour) degrade when they die.
+  # TIP: If this is set too high, new / casual / prone-to-dying players will be effectively excluded from sieges.
+  # The default value is 5.0
+  tool_degrade_percentage: '5.0'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |             Special Victory Effects                  | #
+# +------------------------------------------------------+ #
+############################################################
+  
+special_victory_effects:
+  
+  # If the siege ends without surrender/abandon, and if the siege points are at this threshold (positive or negative),
+  # then a decisive victory is declared, otherwise a close victory is declared.
+  decisive_victory_threshold: '5000'
+  
+  # After a close victory, where a warchest is applicable, the warchest will be reduced by this amount.
+  # The losing side will receive the remainder.
+  warchest_reduction_percentage_on_close_victory: '50'
+  
+  # After a close victory, where plunder is applicable, plunder will be reduced by this amount.
+  plunder_reduction_percentage_on_close_victory: '50'
+  
+  # After a decisive defender victory in a revolt siege,
+  # the former occupying nation is subject to a starting-siege-balance-penalty to any conquest sieges it initiates.
+  # If another such defeat occurs, the penalty is increased by this amount
+  siege_balance_penalty_on_decisive_rebel_victory: '-1500'
+  
+  # this value determines the duration of the starting-siege-balance-penalty.
+  # If another such defeat occurs, the the duration is refreshed.
+  siege_balance_penalty_duration_days: '7'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                  TOXICITY REDUCTION                  | #
+# +------------------------------------------------------+ #
+############################################################
+  
+toxicity_reduction:
+  
+  # If this value is true, the following chat effects apply:
+  # 1. Local Chat is not possible in Siege-Zones.
+  # 2. General Chat is not possible during Battle Sessions (and for 10 mins after).
+  # TIP 1: This feature reduces aggression and toxicity among siege participants.
+  # TIP 2: This feature also helps save the rest of the server from being spammed with siege-related smack-talk.
+  enabled: 'true'
+  
+  # This value determines when the general chat will be restored after each battle session.
+  # The default value is 10.
+  general_chat_restoration_after_battle_session_minutes: '10'
+  
+  # If this value is not blank,
+  # Then players attempting general chat during battle sessions, will be directed towards the server discord.
+  discord_link: ''
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                  DISCORD WEBHOOK                     | #
+# +------------------------------------------------------+ #
+############################################################
+  
+discord_webhook:
+  
+  # If this value is true, and a valid webhook is supplied, siegewar notifications will be announced in your discord server!
+  enabled: 'false'
+  
+  # See discord docs https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+  url: https://discord.com/api/webhooks/SECRET
+  
+  # If a color cannot be determined from a nation or the notification isn't associated with a nation (battle session notifications) the embed will use this color instead.
+  fallback_color: '#FF0000'
+  # Announce when a battle session starts. Uses msg_war_siege_battle_session_started
+  notifcation_session_start: 'true'
+  # Announce when a battle session ends. Uses msg_war_siege_battle_session_ended_*
+  notifcation_session_end: 'true'
+  # Announce when a siege camp starts. Uses attacker_has_begun_a_siegecamp_session
+  notifcation_siegecamp_start: 'true'
+  # Announce when a siege starts. Uses msg_conquest_siege_started_*
+  notifcation_siege_start: 'true'
+  # Announce when a siege ends. Uses msg_war_siege_battle_session_ended_*
+  notifcation_siege_end: 'true'
+  # Announce when a siege is removed. Uses msg_swa_remove_siege_success
+  notifcation_siege_remove: 'true'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                 BAD CONFIG WARNINGS                  | #
+# +------------------------------------------------------+ #
+############################################################
+  
+bad_config_warnings:
+  
+  # If this value is true, then whenever the server starts, or whenever a SiegeWarAdmin logs in,
+  # a warning will be displayed if any important configs are set badly.
+  # 
+  # NOTE: 
+  # If you have 'test/debug' towns or nations, make sure their bank balances are not too high, 
+  # otherwise the warnings will be inaccurate.
+  feature_enabled: 'true'
+  
+  # This setting determines the tolerance of the bad-config-warnings.
+  # Example: If the 'ideal plunder rate' is set to 15%....then if the actual plunder config works out at below 10% or over 20%, a warning will be given.
+  tolerance_percentage: '5.0'
+  
+  # This value determines the ideal configured plunder value.
+  # Example: If the ideal percentage is 15%, then on plunder, we want to take 15% of the estimated town value.
+  # NOTE: The estimated town value is calculated by estimating all the money in the economy, dividing by total-num-townblocks on the server, then multiplying by num-townblocks in the town.
+  # The default value for this config is 15.0
+  ideal_plunder_percentage: '15.0'
+  
+  # This value determines the ideal configured warchest value.
+  # Example: If the ideal percentage is 7.5%, then on siege-start, we want to take 7.5% of the estimated town value.
+  # The default value is 7.5
+  ideal_warchest_percentage: '7.5'
+  
+  # This value determines the ideal configured upfront-cost value.
+  # Example: If the ideal percentage is 3.75%, then on siege-start, we want to take 3.75% of the estimated town value.
+  # The default value is 3.75
+  ideal_upfrontcost_percentage: '3.75'
+  
+  # This value determines the ideal configured occupation-tax value.
+  # Example: If the ideal percentage is 0.375, then on each new day, we want to take 0.375% of the estimated town value.
+  # TIP: Generally you want to keep this low enough so that fake sieges for immunity purposes are not worthwhile.
+  # The default value is 0.375
+  ideal_occupationtax_percentage: '0.375'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                  BATTLE COMMANDERS                   | #
+# +------------------------------------------------------+ #
+############################################################
+  
+battle_commanders:
+  
+  # If this value is true, then the Battle Commander feature is enabled.
+  # When a battle sessions starts, then for each siege, one player from each side may be designated as the Battle Commander.
+  # To qualify as a battle commander, a player must be an official participant with general or king rank, and be online and in the Siege-Zone.
+  # If one side has a battle commander, then any member can run /sw spawn <town> to spawn on the commander.
+  enabled: 'true'

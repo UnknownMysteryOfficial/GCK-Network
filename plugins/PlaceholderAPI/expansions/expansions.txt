@@ -1,0 +1,1 @@
+please download luckperms, player, server, townychat, and vault expansions to the server using /papi ecloud download 

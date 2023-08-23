@@ -1,0 +1,18 @@
+interactive:
+  - WRENCH
+
+exact-lore:
+  - "&4&l[&r&cExact Matching&4&l]"
+  - "&cMatches only exact items"
+  - "&c(Name, lore, enchantments, ...)"
+
+menu:
+  title: "&aMortis Hoppers"
+  filter: FILTER
+  disabled: DISABLED
+  enabled: ENABLED
+  whitelist: WHITELIST
+  blacklist: BLACKLIST
+
+messages:
+  switch: "&6[Towny] &cOutsiders aren't allowed to Switch"

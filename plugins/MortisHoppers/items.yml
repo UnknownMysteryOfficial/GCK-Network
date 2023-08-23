@@ -1,0 +1,37 @@
+items:
+  WRENCH:
+    material: IRON_NUGGET
+    amount: 1
+    custom-model-data: 2
+    name: "&aWrench"
+    lore:
+      - "&7Right-click a hopper to"
+      - "&7change its filter settings."
+  FILTER:
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+  DISABLED:
+    material: RED_WOOL
+    amount: 1
+    name: "&6&lStatus: &aDisabled"
+    lore:
+      - "&7Click here to &aenable&7 all filters"
+  ENABLED:
+    material: GREEN_WOOL
+    amount: 1
+    name: "&6&lStatus: &r&aEnabled"
+    lore:
+      - "&7Click here to &adisable&7 all filters"
+  WHITELIST:
+    material: WHITE_WOOL
+    amount: 1
+    name: '&6&lMode: &aWhitelist'
+    lore:
+      - "&7Click here to switch to the &ablacklist"
+  BLACKLIST:
+    material: BLACK_WOOL
+    amount: 1
+    name: '&6&lMode: &aBlacklist'
+    lore:
+      - "&7Click here to switch to the &awhitelist"
