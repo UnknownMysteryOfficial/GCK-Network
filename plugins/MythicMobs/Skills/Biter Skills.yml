@@ -20,7 +20,7 @@ SpitterSkill_End:
   - potion{t=SLOW;d=20;l=10;force=true;p=false;icon=false} @EntitiesNearOrigin{r=3}
   - effect:blockmask{m=slime_block;d=45;dv=13;r=1} @origin
   - effect:sound{s=entity.slime.squish;v=1;p=1.75} @origin
-  - damage{a=5;ia=true;pi=true;pkb=true;repeat=1;repeatInterval=1} @EntitiesNearOrigin{r=3}
+  - damage{a=4;ia=true;pi=true;pkb=true;repeat=1;repeatInterval=1} @EntitiesNearOrigin{r=3}
   
 Flaming:
   Cooldown: 0
