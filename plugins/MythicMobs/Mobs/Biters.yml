@@ -71,7 +71,7 @@ Biter:
   - '<target.name> was killed by <mob.name>'
   Skills:
   - mounttarget @trigger ~onAttack
-  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:40 
+#  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:40 
 
 Bomber:
   Type: CAVE_SPIDER
@@ -110,7 +110,7 @@ Bomber:
   - mounttarget @trigger ~onAttack
   - skill{s=Flaming} @trigger ~onAttack
   - skill{skill=YouAreAboutToDie;delay=55} @target ~onAttack
-  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:30 
+#  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:30 
 
 QueenBiter:
   Type: SPIDER
