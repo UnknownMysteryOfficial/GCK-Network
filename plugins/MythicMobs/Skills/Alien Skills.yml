@@ -1,8 +1,8 @@
 AlienTeleportSkill:
   Cooldown: 10
   TargetConditions:
-  - distance{d=>13} #insert a value distance that you want
-  - incombat true
+  - distance{d=>10} #insert a value distance that you want
+#  - incombat true
   Skills:
   - teleport{spreadh=0;spreadv=0} @targetLocation{forwardOffset=3}
   - blackscreen{d=15} @target
