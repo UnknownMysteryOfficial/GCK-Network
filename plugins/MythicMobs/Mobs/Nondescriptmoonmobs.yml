@@ -1,0 +1,118 @@
+Alien:
+  Type: SKELETON
+  Display: '&bAlien'
+  Health: 45
+  Damage: 8
+  Faction: Alien  #If you want to Aliens has a faction and want to attack anything, then activate this line and 11, 12, 13, 14
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+  AITargetSelectors:
+  - clear 
+  - players 
+  - otherfaction 
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RlN2I4YmFmNzg1ODdiNzQ0MjdlYjBjNzMxMzc0N2Y1OGM0MTgzMDVhMTQ3Mjc4Yjc3MzE1YTljOTdmZDkifX19} HEAD
+  - IRON_PICKAXE HAND
+#  Equipment: (Alien with a ciggie)
+#  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RlN2I4YmFmNzg1ODdiNzQ0MjdlYjBjNzMxMzc0N2Y1OGM0MTgzMDVhMTQ3Mjc4Yjc3MzE1YTljOTdmZDkifX19} HEAD
+#  - CorazzaAlien CHEST
+#  - GambaliAlien LEGS  #If you don't like Alien equipment, then put an # in 17,18 and 19 line
+#  - StivaliAlien FEET  #If you prefer my Alien Head than yours, cancel 16th big line and write - AlienHead HEAD
+  Drops:  
+  - cmd{c="mortisheads drop Alien <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
+  KillMessage:
+  - '<target.name> was killed by <mob.name>'
+  Skills:
+  - skill{s=AlienTeleportSkill} @target ~onTimer:80
+  - sound{s=entity.shulker.death;v=1;p=2} @self ~onDamaged
+  - sound{s=entity.elder_guardian.curse;v=1;p=1.4} @self ~onDeath
+  - sound{s=entity.strider.death;v=1;p=1.4} @self ~onDeath
+# - arrowvolley{a=20;s=145;v=25;f=50;rd=200} @Target ~onTimer:80  #if you doesn't want precedent skills in alien and keep only my Teleport skill, then put an # in 29, 30, 31, 32 and 33 lines
+  - freeze{ticks=100} @trigger ~onAttack
+  - damage{amount=2;ignoreArmor=true} @trigger ~onAttack
+  - throw{velocity=10;velocityY=8} @trigger ~onAttack
+  - damagepercent{percent=0.55} @target ~onAttack
+  - particles{p=ash;a=25;hS=0.3;vS=0.4;speed=0.001;yoffset=0.8} @self ~onTimer:20
+  - particles{p=ash;a=20;hS=0.4;vS=0.7;speed=0.001;yoffset=0.8} @self ~onTimer:20
+
+LunarSpirit:
+  Type: VEX
+  Display: '&bLunar Spirit'
+  Health: 6
+  Damage: 4
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 8
+    PreventOtherDrops: true
+  Drops:
+  - glowstone_dust 8 80%
+  - exp 4-6 1
+   
+Mite:
+  Type: SILVERFISH
+  Display: '&bMite'
+  Health: 1
+  Damage: 0
+  Faction: Mite
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+  Drops:
+  - exp 2-3 1
+  - redstone 3 60%
+  - raw_iron 2 30%
+  - diamond 1 10%
+  AIGoalSelectors:
+  - clear
+  - fleefaction Critter
+  - randomlookaround
+  - randomstroll
+  AITargetSelectors:
+  - clear
+
+Critter:
+  Type: CAVE_SPIDER
+  Display: '&bCritter'
+  Health: 6
+  Damage: 3
+  Faction: Critter
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.5
+    PreventOtherDrops: true
+  Drops:
+  - exp 5-7 1
+  AIGoalSelectors:
+  - 0 clear
+  - 1 spiderattack
+  - 2 randomstroll
+  - 3 randomlookaround
+  AITargetSelectors:
+  - 0 clear
+  - 1 SpecificFaction Mite
+
+
+
+#OLDAlien:
+#  Type: SKELETON
+#  Display: '&bAlien'
+#  Health: 45
+#  Damage: 8
+#  Options:
+#    AlwaysShowName: true
+#    MovementSpeed: 0.3
+#    PreventOtherDrops: true
+#  Equipment:
+#    - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RlN2I4YmFmNzg1ODdiNzQ0MjdlYjBjNzMxMzc0N2Y1OGM0MTgzMDVhMTQ3Mjc4Yjc3MzE1YTljOTdmZDkifX19} HEAD
+#  Drops:
+#    - cmd{c="mortisheads drop Alien <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
+#  Skills:
+#    - arrowvolley{a=20;s=145;v=25;f=50;rd=200} @Target ~onTimer:80
+#    - freeze{ticks=100} @trigger ~onAttack
+#    - damage{amount=2;ignoreArmor=true} @trigger ~onAttack
+#    - throw{velocity=10;velocityY=8} @trigger ~onAttack
+#    - damagepercent{percent=0.55} @target ~onAttack
+
