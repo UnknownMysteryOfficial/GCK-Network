@@ -175,11 +175,6 @@ rewards:
     type: ITEM # ITEM | COMMAND
     material: ZOMBIE_VILLAGER_SPAWN_EGG
     amount: 1
-  EXAMPLE_COMMAND:
-    type: COMMAND # ITEM | COMMAND
-    command: "give %player_name% cooked_beef 10" #Use %player_name% for the player
-    material: COOKED_BEEF
-    amount: 10
   ECO50:
     type: COMMAND # ITEM | COMMAND
     command: "eco give %player_name% 50" #Use %player_name% for the player
@@ -187,6 +182,7 @@ rewards:
     name: "&f50 Pesos"
     lore:
       - "&7Gives you 50 Pesos"
+    amount: 1
   ECO100:
     type: COMMAND # ITEM | COMMAND
     command: "eco give %player_name% 100" #Use %player_name% for the player
@@ -194,24 +190,31 @@ rewards:
     name: "&f100 Pesos"
     lore:
       - "&7Gives you 100 Pesos"
+    amount: 1
   ECO150:
     type: COMMAND # ITEM | COMMAND
+    material: PAPER
     command: "eco give %player_name% 150" #Use %player_name% for the player
     name: "&f150 Pesos"
     lore:
       - "&7Gives you 150 Pesos"
+    amount: 1
   ECO70:
     type: COMMAND # ITEM | COMMAND
+    material: PAPER
     command: "eco give %player_name% 70" #Use %player_name% for the player
     name: "&f70 Pesos"
     lore:
       - "&7Gives you 70 Pesos"
+    amount: 1
   ECO20:
     type: COMMAND # ITEM | COMMAND
+    material: PAPER
     command: "eco give %player_name% 20" #Use %player_name% for the player
     name: "&f20 Pesos"
     lore:
       - "&7Gives you 20 Pesos"
+    amount: 1
   AKGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give AK-47_CSP %player_name%"
@@ -220,6 +223,7 @@ rewards:
     name: "&fAK-47"
     lore:
       - "&7Gives you AK-47"
+    amount: 1
   M4GIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give M4A1_CSP %player_name%"
@@ -228,6 +232,7 @@ rewards:
     name: "&fM4A1"
     lore:
       - "&7Gives you M4A1"
+    amount: 1
   TYPE95GIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Type95_CSP %player_name%"
@@ -236,6 +241,7 @@ rewards:
     name: "&fType-95"
     lore:
       - "&7Gives you Type-95"
+    amount: 1
   CARBGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Carbine_CSP %player_name%"
@@ -244,6 +250,7 @@ rewards:
     name: "&fCarbine"
     lore:
       - "&7Gives you Carbine"
+    amount: 1
   DEAGGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Desert_Eagle_CSP %player_name%"
@@ -252,6 +259,7 @@ rewards:
     name: "&fDessert Eagle"
     lore:
       - "&7Gives you Dessert Eagle"
+    amount: 1
   PYGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give python_CSP %player_name%"
@@ -260,6 +268,7 @@ rewards:
     name: "&fPython"
     lore:
       - "&7Gives you Python"
+    amount: 1
   OlYMPIAGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Olympia_CSP %player_name%"
@@ -268,6 +277,7 @@ rewards:
     name: "&fOlympia"
     lore:
       - "&7Gives you Olympia"
+    amount: 1
   P90GIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give P90_CSP %player_name%"
@@ -276,6 +286,7 @@ rewards:
     name: "&fP90"
     lore:
       - "&7Gives you P90"
+    amount: 1
   PUMPGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Pump_Shotgun_CSP %player_name%"
@@ -284,6 +295,7 @@ rewards:
     name: "&fTrench Broom"
     lore:
       - "&7Gives you Trench Broom"
+    amount: 1
   SPASGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give SPAS_CSP %player_name%"
@@ -292,6 +304,7 @@ rewards:
     name: "&fSpas 12"
     lore:
       - "&7Gives you Spas 12"
+    amount: 1
   HUNTINGGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Hunting_CSP %player_name%"
@@ -300,6 +313,7 @@ rewards:
     name: "&fHunting Rifle"
     lore:
       - "&7Gives you Hunting Rifle"
+    amount: 1
   GRENREVOLVEGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Grenade_Revolver_CSP %player_name%"
@@ -308,6 +322,7 @@ rewards:
     name: "&fGrenade Revolver"
     lore:
       - "&7Gives you Grenade Revolver"
+    amount: 1
   BAZOOKAGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give BAZOOKA_CSP %player_name%"
@@ -316,6 +331,7 @@ rewards:
     name: "&fBazooka"
     lore:
       - "&7Gives you Bazooka"
+    amount: 1
   FLASHGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Flashbang_CSP %player_name%"
@@ -324,6 +340,7 @@ rewards:
     name: "&fFlashbang"
     lore:
       - "&7Gives you Flashbang"
+    amount: 1
   GRENGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Grenade_CSP %player_name%"
@@ -332,6 +349,7 @@ rewards:
     name: "&fGrenade"
     lore:
       - "&7Gives you Grenade"
+    amount: 1
   COCOGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give CocoPops_CSP %player_name%"
@@ -340,6 +358,7 @@ rewards:
     name: "&fCoco Pops"
     lore:
       - "&7Gives you Coco Pops"
+    amount: 1
   PUTTYGIVE:
     type: COMMAND # ITEM | COMMAND
     command: "csp give Putty_CSP %player_name%"
@@ -348,3 +367,4 @@ rewards:
     name: "&fPutty"
     lore:
       - "&7Gives you Putty"
+    amount: 1
