@@ -1,7 +1,7 @@
 crates:
   SUPPLY:
     rolls: 3 #The number of rewards it will give player upon opening this crate
-    re-roll: true #Whether a loot can have multiple of the same items
+    re-roll: true #Whether a loot can have multiple of the same items, ask xero to make an option for preventing reroll of categories at some point.
     crate-item: #The virtual crate item
       material: CHEST
       amount: 1
