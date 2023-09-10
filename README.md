@@ -1,6 +1,8 @@
 # GCK-Network
 Please note: This is a GEOPOL CREATION KIT, it is designed to act as a template for a new geopol. Therefore, it is incomplete in some aspects (dynmap, voting, ddos protection, monetization, etc.) and some details may not be to your needs. Please review every config and the luckperms permissions so that everything currently provided is acceptable to you, feel free to fork it with your changes.
 
+Credits can be found in the mortiscitations plugin config or other places throughout the project
+
 # Basic setup
 Create a folder and add the server jar (built with paper 1.18.2 in mind). 
 Download github zip and unzip the project.
@@ -8,9 +10,7 @@ Add plugin config folders and server properties files to the server. Review the 
 Download and add the earth map (linked in the maps text document) along with using worldpainter to build the custom planet maps (provided in the planets folder). 
 Run a server startup script and let server unpack. Make necessary config changes and add new plugins or features at will.
 
-Credits can be found in the mortiscitations plugin config or other places throughout the project
-
-# making server cracked
+# Making server cracked
 
 To run offline simply set server properties online-mode to false, then install Nlogin and skinsrestorer. If you are not running the server offline said plugins will not be necessary.
 
@@ -25,7 +25,7 @@ Look up tutorials regarding dynmap for installation, should take a few days to f
 
 The server is designed with missions being the source of income so for voting consider setting it so every vote but the 5th gets a mission, then on the 5th vote a vote crate is given. You can alternatively tie voting to a virtual currency and then set up a vote shop gui to buy crates and missions. In the current config default permissions have the ability to spawn random missions so disable that by setting mortismissions.random to false.
 
-# server protection
+# Server protection
 
 consider either using cloudflare or TCPshield for the server itself
 https://tcpshield.com/
