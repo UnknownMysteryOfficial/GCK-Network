@@ -1,0 +1,22 @@
+general:
+  version-check: true
+  language: english
+  language-save: false
+  time-zone: ''
+  pvp-on-cool-down: 10
+protect:
+  after-join: true
+  realtime:
+    enable: true
+    time: 259200
+  playtime:
+    enable: false
+    time: 300
+schedule:
+  pvp-update-time: 5
+  player-warn:
+    enable: true
+    time: 30
+unprotected:
+  worlds: []
+  regions: []
