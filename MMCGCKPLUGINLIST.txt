@@ -1,0 +1,68 @@
+Free:
+  - https://www.spigotmc.org/resources/blueslimecore.83189/ BlueSlimeCore: dependency plugin for combatlogx. Version 2.9.3.371
+  - https://www.spigotmc.org/resources/censor-reloaded-advanced-chat-filter.14752/ CensorReloaded: chat moderation plugin. Version 4.3.5
+  - https://www.spigotmc.org/resources/chunky.81534/ Chunky: Chunk preloader plugin: Version 1.3.92
+  - https://www.spigotmc.org/resources/chunkyborder.84278/ ChunkyBorder: world border plugin attaching to Chunky. Version 1.1.50
+  - https://www.spigotmc.org/resources/combatlogx.31689/ CombatLogX: Combat tag plugin. Version 11.4.0.0.1156
+  - https://www.spigotmc.org/resources/coreprotect.8631/ Coreprotect: Anti Grief moderation plugin. 22.0
+  - https://www.spigotmc.org/resources/crackshot-guns.48301/ Crackshot: firearm plugin abandonware. Version 0.98.11
+  - https://www.spigotmc.org/resources/1-9-1-19-custom-recipes-and-crafting-craftenhance.65058/ CraftEnhance: custom crafting plugin. Version 2.4.45
+  - https://www.spigotmc.org/resources/decentholograms-1-8-1-20-1-papi-support-no-dependencies.96927/ DecentHolograms: dependency for MortisSupplyCrate. Version 2.7.9
+  - https://www.spigotmc.org/resources/deluxemenus.11734/ Deluxemenus: GUI menus. Version 1.13.7-Release
+  - https://www.spigotmc.org/resources/enchantcontrol-reforged.85691/ EnchantControl Reforged: Enchant control plugin. Version 1.2.5
+  - https://dev.bukkit.org/projects/enderpearl-cooldown EnderPearl-Cooldown: Adds an cooldown to prevent EPearl spam. Version 1.5.0
+  - https://www.spigotmc.org/resources/essentialsx.9089/ Essentials: various uses. Version 2.19.7
+  - https://ci.athion.net/job/FastAsyncWorldEdit/ FAWE: World edit but Async. Required for MortisStructures, can work with worldguard. Version Bukkit-2.7.1-SNAPSHOT-545
+  - https://www.spigotmc.org/resources/graves.74208/ Graves: Death Chests. Version 4.9
+  - https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-1-20.62325/ GSit: sitting and crawling plugin. Version 1.4.10
+  - https://github.com/iconomy5legacy/iConomy/releases/tag/5.21 Iconomy: towny compatible economy plugin. Version: 5.21
+  - https://www.spigotmc.org/resources/dupe-fixes-illegal-stack-remover.44411/ IllegalStack: anti dupe plugin. Version 2.9.5
+  - https://dev.bukkit.org/projects/imageonmap Image On Map: Puts images on maps. Version 4.2.2
+  - https://luckperms.net/ Luckperms: Permissions plugin. Version 5.4.40
+  - https://dev.bukkit.org/projects/mobsmanager MobsManager: mob management plugin. Version 5.3.0
+  REMEMBER TO ADD MORTIS PLUGINS
+  - https://github.com/None030/Mortis-Citations MortisCitations: Citation plugin. Version 1.0
+  - https://github.com/None030/Mortis-Heads MortisHeads: Head plugin. Version 3.1 
+  - https://github.com/None030/MortisHoppers MortisHoppers: filtered hoppers plugin compatible with mortis machines and mortis nuclearcraft. Version 1.0
+  - https://github.com/None030/Mortis-Machines Mortis Machines: Redstone quality of life plugin.
+  - https://www.spigotmc.org/resources/multiverse-core.390/ MultiVerse Core: Planets. Version 4.3.1-b861
+  - https://mythiccraft.io/index.php?pages/official-mythicmobs-download/&version=5.3.3 Mythicmobs: Custom Mobs. Version 5.3.5-64893d49  
+  - https://www.spigotmc.org/resources/parties-an-advanced-parties-manager.3709/ Parties: player ran parties. Version 3.2.9
+  - https://www.spigotmc.org/resources/placeholderapi.6245/ PlaceholderAPI: Placeholders. Install Vault and Player placeholders (/papi ecloud download). Version: 2.11.2 
+  - https://www.spigotmc.org/resources/plugmanx.88135/ PlugmanX: in game plugin manager. Version 2.3.4
+  - https://www.spigotmc.org/resources/protocollib.1997/history ProtocolLib: Dependency plugin. Version 5.0.0
+  - https://www.spigotmc.org/resources/qualityarmory-vehicles-2.59129/ QAV: Vehicle plugin. Version legacy. Unique plugin in that it isnt on spigot, purchast QAV on spigot and ask lorenzo for the legacy (1.0.81c) version that was updated to 1.18.2.
+  - https://www.spigotmc.org/resources/quickshop-reremake-1-20-1-ready-multi-currency.62575/ Quickshop: chest shop plugin. Version 5.1.0.9
+  - https://www.spigotmc.org/resources/realscoreboard-1-13-to-1-20-1.22928/ RealScoreboard: scoreboard plugin. Version 1.0
+  - https://github.com/TownyAdvanced/SiegeWar/releases/tag/2.8.0 SiegeWar: Towny war plugin. Version 2.8.0
+  - https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance.29999/ StackMob: mob efficiency plugin. Version 5.8.7
+  - https://www.spigotmc.org/resources/superbvote.11626/ SuperbVote: Voting plugin. Version 0.5.5
+  - https://www.spigotmc.org/resources/supervanish-be-invisible.1331/ Supervanish: invisibility plugin. Version 6.2.14
+  - https://www.spigotmc.org/resources/tab-1-5-1-20-1.57806/ TAB: Tab plugin (NEZNAMY edition). Version 4.0.3
+  REMEMBER TO ADD TOWNY
+  - https://www.spigotmc.org/resources/ultimate-motd.56797/ Ultimate MOTD: MOTD modification plugin. Version 1.3
+  - https://www.spigotmc.org/resources/vault.34315/ Vault: Economy depend. Version 1.7.3-b131
+  - https://www.spigotmc.org/resources/viaversion.19254/ ViaVersion: future version compatibility. Version 4.7.0
+  - https://github.com/None030/Mortis-Switch-Cooldown/releases WeaponSwitchCooldown: cooldown for crackshot guns. Version 2.0
+  - https://dev.bukkit.org/projects/worldguard/files WorldGuard: Guards worlds. Version 7.0.7
+  - https://github.com/TownyAdvanced/WorldGuard-Towny WorldGuard-Towny: towny integration for worldguard. Version: 1.3.0
+
+Premium:
+  - https://www.spigotmc.org/resources/%E2%96%91-crackshotplus-%E2%96%91-abandoned-%E2%96%91.18085/ Crackshot addon plugin. Abandonware and might be impossible to acquire. Suggest using wm instead. Version 1.107.
+  - https://www.spigotmc.org/resources/litebans.3715/ Litebans: moderation plugin. Version 2.12.5
+  - https://www.spigotmc.org/resources/trade-%E2%9C%B1-trade-items-money-tokens-protection-blocks-and-more-in-an-elegant-gui.23138/ Tradeplus: Trade GUI plugin. Abandonware. Version 3.84.3
+
+
+Cracking server:
+set server to offline in server.properties
+  - https://www.spigotmc.org/resources/skinsrestorer.2124/ SkinRestorer: gives cracked players the ability to use skins, restores premium skins. Version 14.2.12
+  - https://www.nickuc.com/en/#plugins nLogin: simple login system for cracked players. Version 10.2.17
+  - https://github.com/nickuc/OpeNLogin OpeNLogin: addon to nLogin. Version: 1.6.3
+
+Not implemented (still of note):
+  - https://www.spigotmc.org/resources/bannermaker.4380/ Bannermaker: Banner creation GUI.
+  - https://www.spigotmc.org/resources/brewery.3082/ Brewery: alcohol plugin.
+  - https://www.spigotmc.org/resources/procosmetics-300-cosmetics-treasurechests-eula-compliant-1-13-1-20-support.49106/ Procosmetics: Cosmetics plugin for players.
+  - https://www.spigotmc.org/resources/townyflight.50360/ TownyFlight: lets players fly in their town, good as a ranked feature.
+  - https://www.spigotmc.org/resources/weaponmechanics-guns-in-minecraft-1-12-1-20.99913/ WeaponMechanics: Possible alternative for crackshot and crackshotplus.
+  - https://www.spigotmc.org/resources/weaponmechanicscosmetics-guns-in-minecraft-1-12-2-1-20.104539/ WeaponMechanicsCosmetics: addon to WeaponMechanics.
