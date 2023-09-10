@@ -3,11 +3,35 @@ Please note: This is a GEOPOL CREATION KIT, it is designed to act as a template 
 
 # Basic setup
 Create a folder and add the server jar (built with paper 1.18.2 in mind). 
+Download github zip and unzip the project.
 Add plugin config folders and server properties files to the server. Review the pluginlist text document for the links to all needed plugins and acquire said plugins. 
 Download and add the earth map (linked in the maps text document) along with using worldpainter to build the custom planet maps (provided in the planets folder). 
-Run startup script and let server unpack. Make necessary config changes and add new plugins or features at will.
+Run a server startup script and let server unpack. Make necessary config changes and add new plugins or features at will.
 
+Credits can be found in the mortiscitations plugin config or other places throughout the project
 
+# making server cracked
+
+to run offline simply set server properties online-mode to false, then install Nlogin and skinsrestorer. If you are not running the server offline said plugins will not be necessary.
+
+# Dynmap and voting
+
+Dynmap and voting are too personalized to include in the project, some things to note:
+Consider using liveatlas (https://www.spigotmc.org/resources/liveatlas-alternative-map-ui-dynmap-squaremap-pl3xmap-overviewer.86939/) as a map addon
+Disable being able to use the dynmap to chat ingame to prevent spammers, as chat filter plugins do not respond to the dynmap
+Disable armor and health display on the dynmap to prevent players from being able to see vulnerabilities to eachother on the dynmap
+
+Look up tutorials regarding dynmap for installation, should take a few days to fully render the planets and Earth.
+
+The server is designed with missions being the source of income so for voting consider setting it so every vote but the 5th gets a mission, then on the 5th vote a vote crate is given. You can alternatively tie voting to a virtual currency and then set up a vote shop gui to buy crates and missions. In the current config default permissions have the ability to spawn random missions so disable that by setting mortismissions.random to false.
+
+# server protection
+
+consider either using cloudflare or TCPshield for the server itself
+https://tcpshield.com/
+
+for the dynmap look into cloudflare and nginx:
+https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-22-04
 
 # Misc info:
 Use either noobprotector or the combatlogx newbiehelper expansion for protecting new players
@@ -17,3 +41,5 @@ Mythicmobs mob removal on other planets may not work, perhaps use mob managers a
 gamerule reducedDebugInfo can be set to true to reduce f3 information players can get
 
 if a player is invincible, they probably have an invincibility tag assigned to them, check your player data files and delete their file after they back up their gear.
+
+Consider using the following texture pack (https://www.planetminecraft.com/texture-pack/earth-moon-1-19/) along with a plugin such as (https://www.spigotmc.org/resources/world-resourcepacks.18950/) in order to have the moon show up as an earth while on the moon world. alternatively can make the moon an end dimension.
