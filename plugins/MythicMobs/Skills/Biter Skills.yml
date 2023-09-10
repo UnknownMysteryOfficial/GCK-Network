@@ -59,7 +59,8 @@ QueenBiterSummon:
   Conditions:
   - children{a=<9}
   Skills:
-  - randomskill{skills=QueenBiterSummonSpitters,QueenBiterSummonBiters,QueenBiterSummonBombers} @target
+  - randomskill{skills=QueenBiterSummonSpitters,QueenBiterSummonBiters} @target
+# if you want bombers to spawn, add QueenBiterSummonBombers after the spitters or biters summon skill in the above option.
   
 QueenBiterSummonSpitters:
   Skills:
