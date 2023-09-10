@@ -1,0 +1,37 @@
+citation:
+  execution: TITLE #Either "CHAT" or "TITLE"
+  delay: 200 #in ticks | 20 Ticks = 1 Second
+  citations:
+    CITATION1:
+     - "§eGeneral Configuration"
+     - "§eCredits: MrErrorX"
+    CITATION2:
+      - "§eCustom Plugins"
+      - "§eCredits: ShadedXero"
+    CITATION3:
+      - "§eGun models/configuration"
+      - "§eCredits: SuperTNT20"
+    CITATION4:
+      - "§eGun balancing/mythic mob concepts"
+      - "§eCredits: uss enterprise"
+    CITATION5:
+      - "§eMythic Mobs skills"
+      - "§eCredits: Cendi"
+    CITATION6:
+      - "Rocket Model"
+      - "§eCredits: dheyaa"
+    CITATION7:
+      - "Default server icon"
+      - "§eCredits: Chef Mcgarno"
+    CITATION8:
+      - "Custom planet maps"
+      - "§eCredits: LastHonour/Arkysaw"
+    CITATION9:
+      - "§eVarious support"
+      - "§eCredits: ceedric_"
+       CITATION10:
+      - "§eVarious support"
+      - "§eCredits: DeltaOrion"
+       CITATION11:
+      - "§eVarious support"
+      - "§eCredits: AFlyingPumpkin"
