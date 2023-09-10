@@ -1,0 +1,370 @@
+crates:
+  SUPPLY:
+    rolls: 3 #The number of rewards it will give player upon opening this crate
+    re-roll: true #Whether a loot can have multiple of the same items
+    crate-item: #The virtual crate item
+      material: CHEST
+      amount: 1
+      name: "&eSupply Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    rewards: #Rewards in the crate
+      SUPPLYITEMS:
+        chance: 80
+        rewards:
+          - PEARL:25
+          - APPLES:15
+          - DIAMONDS:30
+          - GOLD:35
+          - LAPIS:30
+          - OBBY:30
+          - REDSTONE:40
+          - PRISMARINESHARD:40
+          - PRISMARINECRYSTAL:40
+          - QUARTZ:40
+          - GLOWSTONE:40
+          - BLAZEROD:10
+          - SHULK:5
+          - TRIDENT:1
+      MONEY:
+        chance: 20
+        rewards:
+          - ECO20:50
+          - ECO50:40
+          - ECO70:20
+          - ECO100:15
+          - ECO150:10
+    commands-on-open: #Commands to run upon opening this crate
+      - "eco give %player_name% 20"
+
+  VOTE:
+    rolls: 3 #The number of rewards it will give player upon opening this crate
+    re-roll: true #Whether a loot can have multiple of the same items
+    crate-item: #The virtual crate item
+      material: CHEST
+      amount: 1
+      name: "&eVote Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    rewards: #Rewards in the crate
+      VOTEITEMS:
+        chance: 80
+        rewards:
+          - PEARL:25
+          - APPLES:15
+          - DIAMONDS:30
+          - GOLD:35
+          - LAPIS:30
+          - OBBY:30
+          - REDSTONE:40
+          - PRISMARINESHARD:40
+          - PRISMARINECRYSTAL:40
+          - QUARTZ:40
+          - GLOWSTONE:40
+          - BLAZEROD:10
+          - SHULK:5
+          - ZOMBIEVILLAGER:1
+      MONEY:
+        chance: 20
+        rewards:
+          - ECO20:50
+          - ECO50:40
+          - ECO70:20
+          - ECO100:15
+          - ECO150:10
+    commands-on-open: #Commands to run upon opening this crate
+      - "eco give %player_name% 50"
+
+  MILITARY:
+    rolls: 1
+    re-roll: false
+    crate-item:
+      material: CHEST
+      amount: 1
+      name: "&eMilitary Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    rewards:
+      MILITARYITEMS:
+        chance: 100
+        rewards:
+          - AKGIVE:20
+          - M4GIVE:20
+          - TYPE95GIVE:20
+          - CARBGIVE:15
+          - DEAGGIVE:30
+          - PYGIVE:15
+          - OLYMPIAGIVE:20
+          - P90GIVE:15
+          - PUMPGIVE:20
+          - SPASGIVE:15
+          - HUNTINGGIVE:4
+          - GRENREVOLVEGIVE:4
+          - BAZOOKAGIVE:4
+          - FLASHGIVE:20
+          - GRENGIVE:20
+          - COCOGIVE:20
+          - PUTTYGIVE:20
+    commands-on-open:
+      - "eco give %player_name% 50"
+rewards:
+  PEARL:
+    type: ITEM # ITEM | COMMAND
+    material: ENDER_PEARL
+    amount: 1
+  3PEARL:
+    type: ITEM # ITEM | COMMAND
+    material: ENDER_PEARL
+    amount: 3
+  APPLES:
+    type: ITEM # ITEM | COMMAND
+    material: GOLDEN_APPLE
+    amount: 3
+  DIAMONDS:
+    type: ITEM # ITEM | COMMAND
+    material: DIAMOND
+    amount: 2
+  GOLD:
+    type: ITEM # ITEM | COMMAND
+    material: GOLD_INGOT
+    amount: 4
+  LAPIS:
+    type: ITEM # ITEM | COMMAND
+    material: LAPIS_LAZULI
+    amount: 8
+  OBBY:
+    type: ITEM # ITEM | COMMAND
+    material: OBSIDIAN
+    amount: 4
+  REDSTONE:
+    type: ITEM # ITEM | COMMAND
+    material: REDSTONE
+    amount: 8
+  PRISMARINESHARD:
+    type: ITEM # ITEM | COMMAND
+    material: PRISMARINE_SHARD
+    amount: 32
+  PRISMARINECRYSTAL:
+    type: ITEM # ITEM | COMMAND
+    material: PRISMARINE_CRYSTALS
+    amount: 16
+  QUARTZ:
+    type: ITEM # ITEM | COMMAND
+    material: QUARTZ
+    amount: 32
+  GLOWSTONE:
+    type: ITEM # ITEM | COMMAND
+    material: GLOWSTONE_DUST
+    amount: 32
+  BLAZEROD:
+    type: ITEM # ITEM | COMMAND
+    material: BLAZE_ROD
+    amount: 3
+  SHULK:
+    type: ITEM # ITEM | COMMAND
+    material: SHULKER_SHELL
+    amount: 1
+  TRIDENT:
+    type: ITEM # ITEM | COMMAND
+    material: TRIDENT
+    amount: 1
+  ZOMBIEVILLAGER:
+    type: ITEM # ITEM | COMMAND
+    material: ZOMBIE_VILLAGER_SPAWN_EGG
+    amount: 1
+  ECO50:
+    type: COMMAND # ITEM | COMMAND
+    command: "eco give %player_name% 50" #Use %player_name% for the player
+    material: PAPER
+    name: "&f50 Pesos"
+    lore:
+      - "&7Gives you 50 Pesos"
+    amount: 1
+  ECO100:
+    type: COMMAND # ITEM | COMMAND
+    command: "eco give %player_name% 100" #Use %player_name% for the player
+    material: PAPER
+    name: "&f100 Pesos"
+    lore:
+      - "&7Gives you 100 Pesos"
+    amount: 1
+  ECO150:
+    type: COMMAND # ITEM | COMMAND
+    material: PAPER
+    command: "eco give %player_name% 150" #Use %player_name% for the player
+    name: "&f150 Pesos"
+    lore:
+      - "&7Gives you 150 Pesos"
+    amount: 1
+  ECO70:
+    type: COMMAND # ITEM | COMMAND
+    material: PAPER
+    command: "eco give %player_name% 70" #Use %player_name% for the player
+    name: "&f70 Pesos"
+    lore:
+      - "&7Gives you 70 Pesos"
+    amount: 1
+  ECO20:
+    type: COMMAND # ITEM | COMMAND
+    material: PAPER
+    command: "eco give %player_name% 20" #Use %player_name% for the player
+    name: "&f20 Pesos"
+    lore:
+      - "&7Gives you 20 Pesos"
+    amount: 1
+  AKGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give AK-47_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 1
+    name: "&fAK-47"
+    lore:
+      - "&7Gives you AK-47"
+    amount: 1
+  M4GIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give M4A1_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 16
+    name: "&fM4A1"
+    lore:
+      - "&7Gives you M4A1"
+    amount: 1
+  TYPE95GIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Type95_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 9
+    name: "&fType-95"
+    lore:
+      - "&7Gives you Type-95"
+    amount: 1
+  CARBGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Carbine_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 4
+    name: "&fCarbine"
+    lore:
+      - "&7Gives you Carbine"
+    amount: 1
+  DEAGGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Desert_Eagle_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 5
+    name: "&fDessert Eagle"
+    lore:
+      - "&7Gives you Dessert Eagle"
+    amount: 1
+  PYGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give python_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 8
+    name: "&fPython"
+    lore:
+      - "&7Gives you Python"
+    amount: 1
+  OlYMPIAGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Olympia_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 19
+    name: "&fOlympia"
+    lore:
+      - "&7Gives you Olympia"
+    amount: 1
+  P90GIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give P90_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 13
+    name: "&fP90"
+    lore:
+      - "&7Gives you P90"
+    amount: 1
+  PUMPGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Pump_Shotgun_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 6
+    name: "&fTrench Broom"
+    lore:
+      - "&7Gives you Trench Broom"
+    amount: 1
+  SPASGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give SPAS_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 14
+    name: "&fSpas 12"
+    lore:
+      - "&7Gives you Spas 12"
+    amount: 1
+  HUNTINGGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Hunting_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 11
+    name: "&fHunting Rifle"
+    lore:
+      - "&7Gives you Hunting Rifle"
+    amount: 1
+  GRENREVOLVEGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Grenade_Revolver_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 25
+    name: "&fGrenade Revolver"
+    lore:
+      - "&7Gives you Grenade Revolver"
+    amount: 1
+  BAZOOKAGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give BAZOOKA_CSP %player_name%"
+    material: STONE_HOE
+    custom-model-data: 3
+    name: "&fBazooka"
+    lore:
+      - "&7Gives you Bazooka"
+    amount: 1
+  FLASHGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Flashbang_CSP %player_name%"
+    material: STONE_SWORD
+    custom-model-data: 5
+    name: "&fFlashbang"
+    lore:
+      - "&7Gives you Flashbang"
+    amount: 1
+  GRENGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Grenade_CSP %player_name%"
+    material: STONE_SWORD
+    custom-model-data: 1
+    name: "&fGrenade"
+    lore:
+      - "&7Gives you Grenade"
+    amount: 1
+  COCOGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give CocoPops_CSP %player_name%"
+    material: STONE_SWORD
+    custom-model-data: 3
+    name: "&fCoco Pops"
+    lore:
+      - "&7Gives you Coco Pops"
+    amount: 1
+  PUTTYGIVE:
+    type: COMMAND # ITEM | COMMAND
+    command: "csp give Putty_CSP %player_name%"
+    material: STONE_SWORD
+    custom-model-data: 5
+    name: "&fPutty"
+    lore:
+      - "&7Gives you Putty"
+    amount: 1
