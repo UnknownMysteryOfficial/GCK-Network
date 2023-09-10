@@ -43,3 +43,6 @@ gamerule reducedDebugInfo can be set to true to reduce f3 information players ca
 if a player is invincible, they probably have an invincibility tag assigned to them, check your player data files and delete their file after they back up their gear.
 
 Consider using the following texture pack (https://www.planetminecraft.com/texture-pack/earth-moon-1-19/) along with a plugin such as (https://www.spigotmc.org/resources/world-resourcepacks.18950/) in order to have the moon show up as an earth while on the moon world. alternatively can make the moon an end dimension.
+
+Possible good tutorial for new players, recommend writing a custom book and adding it to the starter kit (essentialsx config) regarding how to play your version of the GCK.
+https://youtu.be/A8DD8050SUI?list=PLvzvmyk0uI0WsLf4iyJZRhD_T2e-ANCmE&si=RnrJD51VGUeCNGfC
