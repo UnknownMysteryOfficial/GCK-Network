@@ -1,0 +1,15 @@
+AlienTeleportSkill:
+  Cooldown: 10
+  TargetConditions:
+  - distance{d=>10} #insert a value distance that you want
+#  - incombat true
+  Skills:
+  - teleport{spreadh=0;spreadv=0} @targetLocation{forwardOffset=3}
+  - blackscreen{d=15} @target
+  - potion{type=BLINDNESS;d=60;l=4;p=false;icon=false;force=true} @target
+  - sound{s=entity.enderman.teleport;v=1;p=0.8} @self
+  - sound{s=entity.evoker.prepare_summon;v=0.3;p=2} @self
+  - particles{p=portal;a=16;hS=0.25;vS=0.5;yOffset=0.5;speed=2} @self
+  - particles{p=reverse_portal;a=16;hS=0.25;vS=0.5;yOffset=0.5;speed=2} @self
+  - delay 3
+  - teleport{spreadh=0;spreadv=0} @target ?inside

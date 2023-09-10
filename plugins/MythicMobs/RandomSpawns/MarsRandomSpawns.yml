@@ -1,0 +1,65 @@
+RandomHopper:
+  Type: Hopper
+  Worlds: mars
+  Chance: 0.40
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=80} true
+RandomSandcat:
+  Type: Sandcat
+  Worlds: mars
+  Chance: 0.30
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=80} true
+RandomMartian:
+  Type: Martian
+  Worlds: mars
+  Chance: 0.30
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=80} true
+RandomBiter:
+  Type: Biter
+  Worlds: mars
+  Chance: 0.5
+  Priority: 1
+  Action: ADD
+  Conditions:
+  - heightbelow{h=80} true
+RandomSpitter:
+  Type: Spitter
+  Worlds: mars
+  Chance: 0.5
+  Priority: 1
+  Action: ADD
+  Conditions:
+  - heightbelow{h=80} true
+#DenySkeleton:
+#  Type: SKELETON
+#  Worlds: mars
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyHusk:
+#  Type: HUSK
+#  Worlds: mars
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyCreeper:
+#  Type: CREEPER
+#  Worlds: mars
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenySpider:
+#  Type: SPIDER
+#  Worlds: mars
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+# disabling default mobs on planets doesnt seem to work currently, consider using mobs manager for such a task

@@ -1,0 +1,159 @@
+AlienHead:
+  Id: PLAYER_HEAD
+  Display: "&7Alien Head&r"
+  Lore: 
+  - "An Alien Head"
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE4ODE1OWY0YTZhODExODM4Mjk0ZWEwMWUzM2Y1NDhiMzNlOWFjMzU1ZjA2YzgwZTRjN2MzZTA0YzkwMTBhNSJ9fX0=
+CorazzaAlien:
+  Id: LEATHER_CHESTPLATE
+  Display: "Set Alien Chestplate"
+  Lore:
+  - "Alien Chestplate"
+  Options:
+    Color: 90,104,90	
+  
+GambaliAlien:
+  Id: LEATHER_LEGGINGS
+  Display: "Set Alien Leggings"
+  Lore:
+  - "Alien Leggings"
+  Options:
+    Color: 90,104,90
+
+StivaliAlien:
+  Id: LEATHER_BOOTS
+  Display: "Set Alien Boots"
+  Lore:
+  - "Alien Boots"
+  Options:
+    Color: 90,104,90
+    
+MeddlerHead:
+  Id: PLAYER_HEAD
+  Display: "&7Meddler Head&r"
+  Lore: 
+  - "A Meddler Head"
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY3NGE3ZDBjMjExMTVjZjM4MmQ5YWUxN2YyNjcxZGM1MjA1MTBkNzUwZWM2NTQ5NDJkNWVkMTY0ODg2NTdjOCJ9fX0=   
+
+CaptainMeddlerHead:
+  Id: PLAYER_HEAD
+  Display: "&7Captain Meddler Head&r"
+  Lore: 
+  - "The Captain Meddler Head"
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNkNmU0ZGIyODI5OTI4MThhNjQ5M2RhZGU5MDVlMDNhYmU0ZjY1MWMyZWU5NTQ2NWE5MDI0ZWRmN2EyMzc2MiJ9fX0=
+    
+CorazzaCaptainMeddler:
+  Id: LEATHER_CHESTPLATE
+  Display: "Set Captain Meddler Chestplate"
+  Lore:
+  - "Captain Meddler Chestplate"
+  Options:
+    Color: 225,225,225
+  Enchantments:
+  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+GambaliCaptainMeddler:
+  Id: LEATHER_LEGGINGS
+  Display: "Set Captain Meddler Leggings"
+  Lore:
+  - "Captain Meddler Leggings"
+  Options:
+    Color: 64,64,64
+StivaliCaptainMeddler:
+  Id: LEATHER_BOOTS
+  Display: "Set Captain Meddler Boots"
+  Lore:
+  - "Captain Meddler Boots"
+  Options:
+    Color: 225,225,225
+  Enchantments:
+  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+CaptainMeddlerSword:
+  Id: IRON_SWORD
+  Display: "Captain Meddler Sword"
+  Lore:
+  - "Captain Meddler Sword"
+  Enchantments:
+  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+CaptainMeddlerCrossbow:
+  Id: CROSSBOW
+  Display: "Captain Meddler Crossbow"
+  Lore:
+  - "Captain Meddler Sword"
+  Attributes:
+    All:
+      Damage: 12 #Set here Captain Meddler damages
+
+OrbitalIndicator:
+  Id: REDSTONE_TORCH
+  Display: "&8Orbital signaler"
+  Lore:
+  - "Transmitter that connects to meddler satellites"
+  - "Can possibly be used to hijack satellites to your own needs"
+  
+KevlarHelmet:
+  Id: LEATHER_HELMET
+  Display: "&8Kevlar Helmet"
+  Lore:
+  - "A helmet woven with kevlar"
+  - "Great at stopping bullets, not as great against knives"
+#  Options:
+#    Color: 47,47,47
+  Enchantments:
+  - PROTECTION_PROJECTILE:4
+#  - DURABILITY:10
+  Hide:
+  - ENCHANTS  
+KevlarChestplate:
+  Id: LEATHER_CHESTPLATE
+  Display: "&8Kevlar Chestplate"
+  Lore:
+  - "A chestplate woven with kevlar"
+  - "Great at stopping bullets, not as great against knives"
+#  Options:
+#    Color: 47,47,47
+  Enchantments:
+  - PROTECTION_PROJECTILE:4
+#  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+KevlarLeggings:
+  Id: LEATHER_LEGGINGS
+  Display: "&8Kevlar Leggings"
+  Lore:
+  - "Leggings woven with kevlar"
+  - "Great at stopping bullets, not as great against knives"
+#  Options:
+#    Color: 47,47,47
+  Enchantments:
+  - PROTECTION_PROJECTILE:4
+#  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+KevlarBoots:
+  Id: LEATHER_BOOTS
+  Display: "&8Kevlar Boots"
+  Lore:
+  - "Boots woven with kevlar"
+  - "Great at stopping bullets, not as great against knives"
+#  Options:
+#    Color: 47,47,47
+  Enchantments:
+  - PROTECTION_PROJECTILE:4
+#  - DURABILITY:10
+  Hide:
+  - ENCHANTS
+Kevlar:
+  Id: STRING
+  Display: "&8Kevlar Fiber"
+  Lore:
+  - "Kevlar fibers produced by biters"
+  - "Can be woven into strong materials"

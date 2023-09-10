@@ -1,0 +1,106 @@
+SpitterSkill:
+  Conditions:
+  - incombat true
+  Skills:
+  - projectile{bulletType=ITEM;material=SLIME_BALL;onStart=SpitterSkill_Start;onTick=SpitterSkill_Tick;onHit=SpitterSkill_Hit;onEnd=SpitterSkill_End;v=10;i=1;syo=0.5;tyo=1.5;hR=0.8;vR=0.8;StopAtBlock=true;g=0.1;mr=20} @target
+SpitterSkill_Start:
+  Skills:
+  - sound{s=entity.llama.spit;v=1;p=1.2} @origin
+  - sound{s=entity.slime.squish_small;v=1;p=1.05} @origin
+SpitterSkill_Tick:
+  Skills:
+  - particles{p=block_dust;m=SLIME_BLOCK;a=1;hS=0.1;vs=0.1;speed=0} @origin
+SpitterSkill_Hit:
+  Skills:
+  - potion{t=SLOW;d=20;l=10;force=true;p=false;icon=false} 
+  - effect:blockmask{m=slime_block;d=45;dv=13;r=1} 
+  - effect:sound{s=block.slime_block.place;v=1;p=0.75} 
+SpitterSkill_End:
+  Skills:
+  - potion{t=SLOW;d=20;l=10;force=true;p=false;icon=false} @EntitiesNearOrigin{r=3}
+  - effect:blockmask{m=slime_block;d=45;dv=13;r=1} @origin
+  - effect:sound{s=entity.slime.squish;v=1;p=1.75} @origin
+  - damage{a=5;ia=true;pi=true;pkb=true;repeat=1;repeatInterval=1} @EntitiesNearOrigin{r=3}
+  
+Flaming:
+  Cooldown: 0
+  Skills:
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self
+   - effect:smokeswirl{duration=5;interval=10} @self
+
+#YouAreAboutToDie:
+#  Cooldown: 0
+#  Skills:
+#   - explosion{yield=5} @self
+
+QueenBiterRunAway:
+  Conditions:
+  - children{a=>0} true
+  - stance{s=RunAway} false
+  Skills:
+  - setstance{stance=RunAway} @self
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=fleeplayers}
+  - runaigoalselector{goal=randomtrolls}
+  - runaigoalselector{goal=lookaround}
+  
+QueenBiterAttacks:
+  Conditions:
+  - children{a=<1} true
+  - stance{s=Attacks} false
+  Skills:
+  - setstance{stance=Attacks} @self
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=meleeattack}
+  - runaigoalselector{goal=randomtrolls}
+  - runaigoalselector{goal=lookaround}
+
+QueenBiterSummon:
+  Conditions:
+  - children{a=<9}
+  Skills:
+  - randomskill{skills=QueenBiterSummonSpitters,QueenBiterSummonBiters,QueenBiterSummonBombers} @target
+  
+QueenBiterSummonSpitters:
+  Skills:
+  - sound{s=entity.endermite.step;v=2;p=1.4;repeat=5;repeatInterval=10} @self
+  - sound{s=entity.silverfish.step;v=2;p=0.5;repeat=5;repeatInterval=10} @self
+  - delay 20
+  - summon{type=Spitter;r=3;a=1;repeat=1;repeatInterval=10} @self
+QueenBiterSummonBiters:
+  Skills:
+  - sound{s=entity.endermite.step;v=2;p=1.4;repeat=5;repeatInterval=10} @self
+  - sound{s=entity.silverfish.step;v=2;p=0.5;repeat=5;repeatInterval=10} @self
+  - delay 20
+  - summon{type=Biter;r=3;a=1;repeat=1;repeatInterval=10} @self
+#QueenBiterSummonBombers:
+#  Skills:
+#  - sound{s=entity.endermite.step;v=2;p=1.4;repeat=5;repeatInterval=10} @self
+#  - sound{s=entity.silverfish.step;v=2;p=0.5;repeat=5;repeatInterval=10} @self
+#  - delay 20
+#  - summon{type=Bomber;r=3;a=1;repeat=1;repeatInterval=10} @self
+  
+RagnatelaParty:
+  Skills:
+  - potion{type=SLOW;d=80;l=2;p=false;force=true} @self
+  - sound{s=entity.spider.hurt;v=1;p=0.75;repeat=29;repeatInterval=2} @PIR{r=30}
+  - sound{s=entity.silverfish.hurt;v=0.7;p=0.5;repeat=29;repeatInterval=2} @PIR{r=30}
+  - itemspray{item=cobweb;amount=2;velocity=1;d=40;r=1;repeat=9;repeatInterval=6} @self
+  - particles{p=BLOCK_DUST;m=COBWEB;a=10;hS=0.25;vS=0.5;yOffset=0.3;speed=2;repeat=29;repeatInterval=2} @origin 
+  - delay 80
+  - projectile{onStart=RagnatelaParty_Start;onTick=RagnatelaParty_Tick;onHit=RagnatelaParty_Hit;onEnd=RagnatelaParty_End;v=12;d=100;sfo=0.7;syo=0.7;mr=20;i=1;hR=0.8;vR=0.8;g=0.1;hp=true;hugSurface=false} @PIR{r=20}
+  - projectile{onStart=RagnatelaParty_Start;onTick=RagnatelaParty_Tick;onHit=RagnatelaParty_Hit;onEnd=RagnatelaParty_End;v=10;d=100;sfo=0.7;syo=0.7;tyo=1.7;mr=20;i=1;hR=0.8;vR=0.8;g=0.1;hp=true;hugSurface=false} @RandomLocationsNearOrigin{a=8;r=20;minr=12;yOffset=<random.0to2>}
+RagnatelaParty_Start:
+  Skills:
+  - sound{s=entity.spider.ambient;v=0.25;p=1.75} @PIR{r=30}
+  - sound{s=entity.fox.spit;v=1;p=1.45} @PIR{r=30}
+RagnatelaParty_Tick:
+  Skills:
+  - particles{p=falling_dust;m=COBWEB;a=1;hS=0.25;vS=0.15;speed=0;repeat=2;repeatInterval=1} @origin 
+  - particles{p=BLOCK_DUST;m=COBWEB;a=1;hS=0;vS=0;speed=0} @origin 
+RagnatelaParty_Hit:
+  Skills:
+  - prison{material=COBWEB;duration=200;breakable=true}
+RagnatelaParty_End:
+  Skills:
+  - summon{type=RagnatelaPartyMob;a=1;r=0} @origin

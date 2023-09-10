@@ -1,0 +1,75 @@
+RandomBlimp:
+  Type: Blimp
+  Worlds: venus
+  Chance: 0.40
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=90} true
+RandomPheonix:
+  Type: Pheonix
+  Worlds: venus
+  Chance: 0.40
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=90} true
+RandomToro:
+  Type: Toro
+  Worlds: venus
+  Chance: 0.40
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=65} true
+RandomSpaceSheep:
+  Type: Space_Sheep
+  Worlds: venus
+  Chance: 0.40
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=65} true
+#DenySkeleton:
+#  Type: skeleton
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyHusk:
+#  Type: HUSK
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyCreeper:
+#  Type: CREEPER
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenySpider:
+#  Type: SPIDER
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyPiglin:
+#  Type: PIGLIN
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyZomPiglin:
+#  Type: ZOMBIFIED_PIGLIN
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+#DenyGhast:
+#  Type: GHAST
+#  Worlds: venus
+#  Chance: 1.0
+#  Priority: 1
+#  Action: DENY
+# disabling default mobs on planets doesnt seem to work currently, consider using mobs manager for such a task

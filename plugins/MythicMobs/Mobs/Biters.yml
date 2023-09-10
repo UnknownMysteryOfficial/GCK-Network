@@ -1,0 +1,251 @@
+Spitter:
+  Type: CAVE_SPIDER
+#  Display: '<#228b22>S<#328932>p<#418741>i<#518651>t<#618461>t<#708270>e<#808080>r&r'
+  Display: '&cSpitter'
+  Health: 20
+  Damage: 4
+  Faction: Biter
+  Options:
+    AlwaysShowName: true
+    ApplyInvisibility: false
+    MovementSpeed: 0.3
+    FollowRange: 20
+    Glowing: false
+    DigOutOfGround: true
+    Invisible: false
+    KnockbackResistance: 0
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    Despawn: true
+    ShowHealth: false
+    Silent: false
+  AITargetSelectors:
+  - 0 clear 
+  - 1 otherfaction 
+  - 2 players 
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomtrolls
+  - 3 lookaround
+  Drops:
+  - Kevlar 1-2 0.7
+  - exp 4-6 1
+  KillMessage:
+  - '<target.name> was killed by <mob.name>'
+  Skills:
+  - skill{s=SpitterSkill} @target ~onTimer:20 0.5
+
+Biter:
+  Type: CAVE_SPIDER
+#  Display: '<#B22222>Biter&r'
+  Display: '&4Biter'
+  Health: 25
+  Damage: 3
+  Faction: Biter
+  Options:
+    AlwaysShowName: true
+    ApplyInvisibility: false
+    MovementSpeed: 0.3
+    FollowRange: 20
+    Glowing: false
+    Invisible: false
+    KnockbackResistance: 1
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    Despawn: true
+    DigOutOfGround: false
+    ShowHealth: false
+    Silent: false
+  AITargetSelectors:
+  - 0 clear 
+  - 1 otherfaction 
+  - 2 players 
+  Drops:
+  - Kevlar 1-2 0.7
+  - exp 4-6 1
+  - slime_ball 1 0.4
+  KillMessage:
+  - '<target.name> was killed by <mob.name>'
+  Skills:
+  - mounttarget @trigger ~onAttack
+  - clearpotion{type=poison,repeat=2;repeatInterval=1} @target ~onAttack
+#  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:40
+
+#Bomber:
+# Explosions from them seemingly dont kill the mob or do damage to players currently, disabling for now
+#  Type: CAVE_SPIDER
+##  Display: '<#FF6600>Bomber&r'
+#  Display: '&cBiter'
+#  Health: 15
+#  Damage: 0
+#  Faction: Biter
+#  Options:
+#    AlwaysShowName: true
+#    ApplyInvisibility: false
+#    MovementSpeed: 0.3
+#    FollowRange: 20
+#    Glowing: false
+#    Invisible: false
+#    KnockbackResistance: 0
+#    PreventMobKillDrops: true
+#    PreventOtherDrops: true
+#    PreventItemPickup: true
+#    PreventRandomEquipment: true
+#    PreventRenaming: true
+#    PreventSunburn: true
+#    DigOutOfGround: true
+#    Despawn: true
+#    ShowHealth: false
+#    Silent: false
+#  AITargetSelectors:
+#  - 0 clear 
+#  - 1 otherfaction 
+#  - 2 players 
+#  Drops:
+#  - Kevlar 1-2 0.7
+#  - exp 4-6 1
+#  - Gunpowder 1-2 0.4
+#  - exp 4-6 1
+#  KillMessage:
+#  - '<target.name> was killed by <mob.name>'
+#  Skills:
+#  - mounttarget @trigger ~onAttack
+#  - skill{s=Flaming} @trigger ~onAttack
+#  - clearpotion{type=poison,repeat=2;repeatInterval=1} @target ~onAttack
+#  - skill{skill=YouAreAboutToDie;delay=55} @target ~onAttack
+#  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:30 
+
+QueenBiter:
+  Type: SPIDER
+  Display: '<#A61022>&lQueen Biter&r'
+  Health: 100 #Change this value to set health at QueenBiter 
+  Damage: 8   #Change this value to set a balanced damages for QueenBiter
+  Armor: 0
+  Faction: Biter
+  Options:
+    AlwaysShowName: true
+    ApplyInvisibility: false
+    MovementSpeed: 0.3
+    FollowRange: 25
+    Glowing: false
+    Invisible: false
+    DigOutOfGround: true
+    KnockbackResistance: 0.25
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    Despawn: true
+    ShowHealth: false
+    Silent: false
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomtrolls
+  - 3 lookaround
+  Drops:
+  
+  KillMessage:
+  - '<target.name> was killed by <mob.name>'
+  Skills:
+  - sound{cooldown=1;s=entity.spider.hurt;v=1;p=0.65} @self ~onDamaged
+  - sound{cooldown=1;s=entity.spider.death;v=1;p=0.65} @self ~onDeath
+  - skill{s=QueenBiterSummon} @self ~onTimer:160 0.4 
+  - skill{s=RagnatelaParty} @target ~onDamaged 0.15
+  - skill{s=QueenBiterRunAway} @self ~onTimer:40
+  - skill{s=QueenBiterAttacks} @self ~onTimer:40
+  
+RagnatelaPartyMob:
+  Type: ARMOR_STAND
+  Options:
+    AlwaysShowName: false
+    Invisible: true
+    Collidable: false
+    Invincible: true
+    NoGravity: true
+    Collidable: false
+  Skills:
+  - remove{delay=1} @self ~onSpawn
+  - blockmask{m=cobweb;r=1;d=200;noair=false;onlyair=true} @selfLocation ~onSpawn
+  #- prison{material=COBWEB;duration=200;breakable=true} @self ~onSpawn
+
+
+
+#OLDBiter:
+#  Type: CAVE_SPIDER
+#  Display: '&4Biter'
+#  Health: 25
+#  Damage: 3
+#  Faction: Biter
+#  Options:
+#    MovementSpeed: 0.3
+#    KnockbackResistance: 1
+#    AlwaysShowName: true
+#    DigOutOfGround: true
+#    Despawn: chunk
+#    PreventLeashing: false
+#  Skills:
+#     - mounttarget @trigger ~onAttack
+#  AITargetSelectors:
+#   - clear # Clears the mob's AI
+#   - otherfaction # Targets whatever is not in the 'biter' faction
+#   - players # Targets players
+     
+#OLDBomber:
+#  Type: CAVE_SPIDER
+#  Display: '&cBiter'
+#  Health: 15
+#  Damage: 0
+#  Faction: Biter
+#  Options:
+#    AlwaysShowName: true
+#    MovementSpeed: 0.3
+#    DigOutOfGround: true
+#    Despawn: chunk
+#    PreventLeashing: false
+#  Skills:
+#     - mounttarget @trigger ~onAttack
+#     - skill{s=Flaming} @trigger ~onAttack
+#     - skill{skill=YouAreAboutToDie;delay=55} ~onAttack
+#  AITargetSelectors:
+#   - clear # Clears the mob's AI
+#   - otherfaction # Targets whatever is not in the 'biter' faction
+#   - players # Targets players
+
+#OLDSpitter:
+#  Type: CAVE_SPIDER
+#  Display: '&cSpitter'
+#  Health: 20
+#  Damage: 4
+#  Faction: Biter
+#  Options:
+#    AlwaysShowName: true
+#    MovementSpeed: 0.3
+#    DigOutOfGround: true
+#    Despawn: chunk
+#    PreventLeashing: false
+#  Skills:
+#    - skill{s=Trolling} @target ~onTimer:150
+#  AIGoalSelectors:
+#   - clear
+#   - fleeplayers
+#  AITargetSelectors:
+#   - clear # Clears the mob's AI
+#   - otherfaction # Targets whatever is not in the 'biter' faction
+#   - players # Targets players

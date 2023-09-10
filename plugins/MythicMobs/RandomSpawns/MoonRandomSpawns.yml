@@ -1,0 +1,40 @@
+RandomAlien:
+  Type: Alien
+  Worlds: moon
+  Chance: 0.30
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=95} true
+RandomSpirit:
+  Type: LunarSpirit
+  Worlds: moon
+  Chance: 0.20
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=95} true
+RandomMite:
+  Type: Mite
+  Worlds: moon
+  Chance: 0.30
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightbelow{h=95} true
+RandomCritter:
+  Type: Critter
+  Worlds: moon
+  Chance: 0.10
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightbelow{h=95} true
+RandomMeddler:
+  Type: MeddlerCaptain
+  Worlds: moon
+  Chance: 0.10
+  Priority: 1
+  Action: REPLACE
+  Conditions:
+  - heightabove{h=95} true

@@ -1,0 +1,71 @@
+Martian:
+  Type: WITHER_SKELETON
+  Display: '&4Martian'
+  Health: 60
+  Damage: 8
+  Faction: Martians
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.4
+    PreventOtherDrops: true
+  Equipment:
+    - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1M2RlYTU4MzExZWViNGFlMWY2MmQxZWEwYjlkNzRkNTA5ODU0YzE3MmUxZTMxOTI1NjY3OTUyNGE2ZDE5In19fQ==} HEAD
+  Drops:
+    - cmd{c="mortisheads drop Martian <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
+    - bone 2 0.7
+    - coal 1 0.4
+    - exp 10-12 1
+#    - nether_star 1 0.005
+  Skills:
+   - throw{velocity=5;velocityY=20} @trigger ~onAttack
+   - potion{type=SLOW;duration=100;level=2} @trigger ~onAttack
+
+Hopper:
+  Type: RABBIT
+  Display: '&4Hopper'
+  Health: 4
+  Damage: 0
+  Faction: Hopper
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 1
+    DigOutOfGround: true
+    PreventOtherDrops: false
+  Drops:
+    - nether_wart 2 0.2
+    - beetroot 1 0.15
+    - exp 4-6 1
+  AIGoalSelectors:
+   - 0 clear
+   - 1 fleefaction Sandcat
+   - 2 randomstroll
+   - 3 randomlookaround
+  AITargetSelectors:
+   - 0 clear
+
+Sandcat:
+  Type: OCELOT
+  Display: '&4Sand Cat'
+  Health: 10
+  Damage: 2
+  Faction: Sandcat
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.6
+    PreventOtherDrops: true
+  Drops:
+   - rabbit_hide 1 0.25
+   - rotten_flesh 1 0.35
+   - exp 4-6 1
+  AIGoalSelectors:
+   - 0 clear
+   - 1 meleeattack
+   - 2 float
+   - 3 randomstroll
+   - 4 randomlookaround
+  AITargetSelectors:
+   - 0 clear
+   - 1 attacker
+   - 2 SpecificFaction Hopper
+   - 3 SpecificFaction Biter
+   - 4 SpecificFaction Critter
