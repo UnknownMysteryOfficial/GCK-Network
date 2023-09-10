@@ -12,7 +12,7 @@ Credits can be found in the mortiscitations plugin config or other places throug
 
 # making server cracked
 
-to run offline simply set server properties online-mode to false, then install Nlogin and skinsrestorer. If you are not running the server offline said plugins will not be necessary.
+To run offline simply set server properties online-mode to false, then install Nlogin and skinsrestorer. If you are not running the server offline said plugins will not be necessary.
 
 # Dynmap and voting
 
