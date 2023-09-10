@@ -73,36 +73,36 @@ Biter:
   - mounttarget @trigger ~onAttack
 #  - lunge{velocity=1.2;velocityY=0.5} @SelfEyeLocation ~onTimer:40 
 
-Bomber:
-  Type: CAVE_SPIDER
-#  Display: '<#FF6600>Bomber&r'
-  Display: '&cBiter'
-  Health: 15
-  Damage: 0
-  Faction: Biter
-  Options:
-    AlwaysShowName: true
-    ApplyInvisibility: false
-    MovementSpeed: 0.3
-    FollowRange: 20
-    Glowing: false
-    Invisible: false
-    KnockbackResistance: 0
-    PreventMobKillDrops: true
-    PreventOtherDrops: true
-    PreventItemPickup: true
-    PreventRandomEquipment: true
-    PreventRenaming: true
-    PreventSunburn: true
-    DigOutOfGround: true
-    Despawn: true
-    ShowHealth: false
-    Silent: false
-  AITargetSelectors:
-  - 0 clear 
-  - 1 otherfaction 
-  - 2 players 
-  Drops:
+#Bomber:
+#  Type: CAVE_SPIDER
+##  Display: '<#FF6600>Bomber&r'
+#  Display: '&cBiter'
+#  Health: 15
+#  Damage: 0
+#  Faction: Biter
+#  Options:
+#    AlwaysShowName: true
+#    ApplyInvisibility: false
+#    MovementSpeed: 0.3
+#    FollowRange: 20
+#    Glowing: false
+#    Invisible: false
+#    KnockbackResistance: 0
+#    PreventMobKillDrops: true
+#    PreventOtherDrops: true
+#    PreventItemPickup: true
+#    PreventRandomEquipment: true
+#    PreventRenaming: true
+#    PreventSunburn: true
+#    DigOutOfGround: true
+#    Despawn: true
+#    ShowHealth: false
+#    Silent: false
+#  AITargetSelectors:
+#  - 0 clear 
+#  - 1 otherfaction 
+#  - 2 players 
+#  Drops:
   
   KillMessage:
   - '<target.name> was killed by <mob.name>'
