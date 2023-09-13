@@ -1,0 +1,8 @@
+weapons:
+  Desert_Eagle_CSP:
+    cooldown: 12  # 1 = 5 Ticks | 20 Ticks = 1 Second
+  Hunting_CSP:
+    cooldown: 18
+  Olympia_CSP:
+    cooldown: 8
+deny-message: "&cThis weapon is in cooldown for %cooldown% seconds."
