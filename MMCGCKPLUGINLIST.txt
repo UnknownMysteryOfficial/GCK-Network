@@ -20,11 +20,14 @@ Free:
   - https://dev.bukkit.org/projects/imageonmap Image On Map: Puts images on maps. Version 4.2.2
   - https://luckperms.net/ Luckperms: Permissions plugin. Version 5.4.40
   - https://dev.bukkit.org/projects/mobsmanager MobsManager: mob management plugin. Version 5.3.0
-  REMEMBER TO ADD MORTIS PLUGINS
   - https://github.com/None030/Mortis-Citations MortisCitations: Citation plugin. Version 1.0
+  - https://github.com/None030/Mortis-EnderPhreak Mortis Enderphreaks: hackable echests. Version 2.6
   - https://github.com/None030/Mortis-Heads MortisHeads: Head plugin. Version 3.1 
   - https://github.com/None030/MortisHoppers MortisHoppers: filtered hoppers plugin compatible with mortis machines and mortis nuclearcraft. Version 1.0
-  - https://github.com/None030/Mortis-Machines Mortis Machines: Redstone quality of life plugin.
+  - https://github.com/None030/Mortis-Machines Mortis Machines: Redstone quality of life plugin. Version 1.8
+  - https://github.com/None030/Mortis-Missions Mortis Missions: tasks players can do for money, set to have them be gained by voting. Version 3.1
+  - https://github.com/None030/Mortis-Structures Mortis Structures: spawns structures in the world. Version 2.5.6
+  - https://github.com/None030/Mortis-Supply-Crates Mortis SupplyCrates: crates land and give loot. Version 2.4
   - https://www.spigotmc.org/resources/multiverse-core.390/ MultiVerse Core: Planets. Version 4.3.1-b861
   - https://mythiccraft.io/index.php?pages/official-mythicmobs-download/&version=5.3.3 Mythicmobs: Custom Mobs. Version 5.3.5-64893d49  
   - https://www.spigotmc.org/resources/parties-an-advanced-parties-manager.3709/ Parties: player ran parties. Version 3.2.9
@@ -39,7 +42,10 @@ Free:
   - https://www.spigotmc.org/resources/superbvote.11626/ SuperbVote: Voting plugin. Version 0.5.5
   - https://www.spigotmc.org/resources/supervanish-be-invisible.1331/ Supervanish: invisibility plugin. Version 6.2.14
   - https://www.spigotmc.org/resources/tab-1-5-1-20-1.57806/ TAB: Tab plugin (NEZNAMY edition). Version 4.0.3
-  REMEMBER TO ADD TOWNY
+  - https://github.com/TownyAdvanced/Towny#towny-advanced---developed-by-llmdl Towny: town plugin. Version 0.99.5.0
+  - https://github.com/TownyAdvanced/TownyChat TownyChat: Chat formatter for Towny. Version 0.107
+  - https://github.com/TownyAdvanced/TownyCultures TownyCultures: culture creation in Towny. Version 2.0.0
+  - Found on llmdl's discord after sponsoring. TownyCamps: lets new players make temporary protected camp regions.
   - https://www.spigotmc.org/resources/ultimate-motd.56797/ Ultimate MOTD: MOTD modification plugin. Version 1.3
   - https://www.spigotmc.org/resources/vault.34315/ Vault: Economy depend. Version 1.7.3-b131
   - https://www.spigotmc.org/resources/viaversion.19254/ ViaVersion: future version compatibility. Version 4.7.0
