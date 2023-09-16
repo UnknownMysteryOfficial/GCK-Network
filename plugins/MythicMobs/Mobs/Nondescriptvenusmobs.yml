@@ -69,17 +69,17 @@ Space_Sheep:
     MovementSpeed: 0.4
     PreventOtherDrops: false
   
-Blimp:
-  Type: Ghast
-  Display: '&4Blimp'
-  Health: 30
-  Damage: 7
-  Options:
-    AlwaysShowName: true
-    MovementSpeed: 0.4
-    PreventOtherDrops: false
+#Blimp:
+#  Type: Ghast
+#  Display: '&4Blimp'
+#  Health: 30
+#  Damage: 7
+#  Options:
+#    AlwaysShowName: true
+#    MovementSpeed: 0.4
+#    PreventOtherDrops: false
 
-#Pheonix:
+#OLDPheonix:
 #  Type: PHANTOM
 #  Display: '&4Pheonix'
 #  Health: 30
