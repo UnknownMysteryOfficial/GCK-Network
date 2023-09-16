@@ -17,6 +17,7 @@ MeddlerCaptain:
   Drops:
   - exp 10-12 1
   - OrbitalIndicator 1 0.3
+    - cmd{c="mortisheads drop Meddler <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
   KillMessage:
   - '<target.name> was killed by <mob.name>'
   Skills:
@@ -83,6 +84,7 @@ Drone:
   - exp 4-6 1
   - blaze_rod 1-2 .5
   - blaze_powder 2 .4
+  - cmd{c="mortisheads drop Drone <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
   KillMessage:
   - '<target.name> was killed by <mob.name>'
   Skills:
