@@ -17,7 +17,7 @@ MeddlerCaptain:
   Drops:
   - exp 10-12 1
   - OrbitalIndicator 1 0.3
-    - cmd{c="mortisheads drop Meddler <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
+  - cmd{c="mortisheads drop Meddler <caster.l.w> <caster.l.x> <caster.l.y> <caster.l.z>"} @SelfLocation 1 0.05
   KillMessage:
   - '<target.name> was killed by <mob.name>'
   Skills:
@@ -60,7 +60,7 @@ MeddlerSoldier:
   - IRON_AXE HAND
   Drops:
   - exp 4-6 1
-  - IRON_AXE 1 .4
+  - IRON_AXE 1 .12
   - emerald 1 .4
   KillMessage:
   - '<target.name> was killed by <mob.name>'
