@@ -8,25 +8,26 @@ settings:
 
 schematics:
   BITERNEST:
-    schematic: "biternest3.schem" # schematic file name with extension
+    schematic: "biternest2.schem" # schematic file name with extension
     world: mars
     location1: 122, 110, 841
     location2: 12067, 65, 4975
     type: GROUND # UNDERGROUND | GROUND | SKY
-    unbreakable: true
+    unbreakable: false
     spawn: 4 # amount of structures to spawn at a time
     interval: 3 # in days
     despawn: 1 # in days
     tries: 10
+    offset: 15
     replacement: BARRIER # Material which needs to be replaced to air
     mobs:
-      - ZOMBIE:30
-    mythic-mobs:
-      - MeddlerCaptain:20
+      - Biter_Queen
+      - Biter
+      - Spitter
     command-on-spawn:
-      - "broadcast &aA nest has formed on %world% at %x% %y% %z%"
+      - "say &aA nest has formed on %world% at %x% %y% %z%"
     command-on-despawn:
-      - "broadcast &aA nest just despawned"
+      - "say &aA nest just despawned"
     checks:
       town: true # Stops structure from spawning in a town
       town-range: 100 # The range to look for a town
@@ -41,20 +42,21 @@ schematics:
     location1: 352, 210, 328
     location2: 9360, 200, 4536
     type: SKY # UNDERGROUND | GROUND | SKY
-    unbreakable: true
-    spawn: 2 # amount of structures to spawn at a time
-    interval: 3 # in days
+    unbreakable: false
+    spawn: 1 # amount of structures to spawn at a time
+    interval: 1 # in days
     despawn: 1 # in days
     tries: 10
     replacement: BARRIER # Material which needs to be replaced to air
     mobs:
-      - ZOMBIE:30
-    mythic-mobs:
-      - MeddlerCaptain:20
+      - CaptMeddler
+      - MeddlerBoot
+      - Livestock
+      - Mothership_Drone
     command-on-spawn:
-      - "broadcast &aThe surface grows dark on the %world% at %x% %y% %z%"
+      - "say &aThe surface grows dark on the %world% at %x% %y% %z%"
     command-on-despawn:
-      - "broadcast &aA spaceship has disappeared"
+      - "say &aA spaceship has disappeared"
     checks:
       town: true # Stops structure from spawning in a town
       town-range: 100 # The range to look for a town
@@ -67,20 +69,18 @@ schematics:
     location1: 274, 70, 216
     location2: 9968, 50, 4832
     type: GROUND # UNDERGROUND | GROUND | SKY
-    unbreakable: true
+    unbreakable: false
     spawn: 1 # amount of structures to spawn at a time
     interval: 3 # in days
     despawn: 1 # in days
     tries: 10
     replacement: BARRIER # Material which needs to be replaced to air
     mobs:
-      - ZOMBIE:30
-    mythic-mobs:
-      - MeddlerCaptain:20
+      - Venus_Drone
     command-on-spawn:
-      - "broadcast &aThe surface has shifted on %world% at %x% %y% %z%"
+      - "say &aThe surface has shifted on %world% at %x% %y% %z%"
     command-on-despawn:
-      - "broadcast &aA tree has wilted and died"
+      - "say &aA tree has wilted and died"
     checks:
       town: true # Stops structure from spawning in a town
       town-range: 100 # The range to look for a town
@@ -95,20 +95,18 @@ schematics:
     location1: 274, 70, 216
     location2: 9968, 50, 4832
     type: GROUND # UNDERGROUND | GROUND | SKY
-    unbreakable: true
+    unbreakable: false
     spawn: 1 # amount of structures to spawn at a time
     interval: 3 # in days
     despawn: 1 # in days
     tries: 10
     replacement: BARRIER # Material which needs to be replaced to air
     mobs:
-      - ZOMBIE:30
-    mythic-mobs:
-      - MeddlerCaptain:20
+      - Venus_Drone
     command-on-spawn:
-      - "broadcast &aThe surface has shifted on %world% at %x% %y% %z%"
+      - "say &aThe surface has shifted on %world% at %x% %y% %z%"
     command-on-despawn:
-      - "broadcast &aA tree has wilted and died"
+      - "say &aA tree has wilted and died"
     checks:
       town: true # Stops structure from spawning in a town
       town-range: 100 # The range to look for a town
@@ -117,28 +115,26 @@ schematics:
       must-have-blocks: # Stops structure from spawning if the specified blocks are not near the spawning location
         - NETHERRACK
 
-  EUROPASPHERE:
-    schematic: "europasphere.schem" # schematic file name with extension
-    world: europa
-    location1: 186, 80, 174
-    location2: 9136, -56, 4464
-    type: UNDERGROUND # UNDERGROUND | GROUND | SKY
-    unbreakable: true
-    spawn: 3 # amount of structures to spawn at a time
-    interval: 4 # in days
-    despawn: 2 # in days
-    tries: 10
-    replacement: BARRIER # Material which needs to be replaced to air
-    mobs:
-      - ZOMBIE:10
-    mythic-mobs:
-      - SkeletalKnight:5
-    command-on-spawn:
-      - "broadcast &aA pulse emanated in %world% at %x% %y% %z%"
-    command-on-despawn:
-      - "broadcast &aA mysterious object was lost at sea"
-    checks:
-      town: true # Stops structure from spawning in a town
-      town-range: 100 # The range to look for a town
-      water: false # Stops structure from spawning in water
-      lava: true # Stops structure from spawning in lava
+#  EUROPASPHERE:
+#    schematic: "europasphere.schem" # schematic file name with extension
+#    world: europa
+#    location1: 186, 80, 174
+#    location2: 9136, -56, 4464
+#    type: UNDERGROUND # UNDERGROUND | GROUND | SKY
+#    unbreakable: false
+#    spawn: 1 # amount of structures to spawn at a time
+#    interval: 0 # in days
+#    despawn: 2 # in days
+#    tries: 10
+#    replacement: BARRIER # Material which needs to be replaced to air
+#    mobs:
+#      - DROWN
+#    command-on-spawn:
+#      - "say &aA pulse emanated in %world% at %x% %y% %z%"
+#    command-on-despawn:
+#      - "say &aA mysterious object was lost at sea"
+#    checks:
+#      town: true # Stops structure from spawning in a town
+#      town-range: 100 # The range to look for a town
+#      water: false # Stops structure from spawning in water
+#      lava: true # Stops structure from spawning in lava
