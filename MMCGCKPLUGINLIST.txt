@@ -26,7 +26,7 @@ Free:
   - https://github.com/None030/MortisHoppers MortisHoppers: filtered hoppers plugin compatible with mortis machines and mortis nuclearcraft. Version 1.0
   - https://github.com/None030/Mortis-Machines Mortis Machines: Redstone quality of life plugin. Version 1.8
   - https://github.com/None030/Mortis-Missions Mortis Missions: tasks players can do for money, set to have them be gained by voting. Version 3.1
-  - https://github.com/None030/Mortis-Structures Mortis Structures: spawns structures in the world. Version 2.5.6
+  - https://github.com/None030/Mortis-Structures Mortis Structures: spawns structures in the world. Version 2.6
   - https://github.com/None030/Mortis-Supply-Crates Mortis SupplyCrates: crates land and give loot. Version 2.4
   - https://www.spigotmc.org/resources/multiverse-core.390/ MultiVerse Core: Planets. Version 4.3.1-b861
   - https://mythiccraft.io/index.php?pages/official-mythicmobs-download/&version=5.3.3 Mythicmobs: Custom Mobs. Version 5.3.5-64893d49  
