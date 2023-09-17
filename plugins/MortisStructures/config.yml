@@ -14,7 +14,7 @@ schematics:
     location2: 12067, 65, 4975
     type: GROUND # UNDERGROUND | GROUND | SKY
     unbreakable: false
-    spawn: 4 # amount of structures to spawn at a time
+    spawn: 1 # amount of structures to spawn at a time
     interval: 3 # in days
     despawn: 1 # in days
     tries: 10
@@ -66,8 +66,8 @@ schematics:
   TREERED:
     schematic: "treered.schem" # schematic file name with extension
     world: venus
-    location1: 274, 70, 216
-    location2: 9968, 50, 4832
+    location1: 274, 170, 216
+    location2: 9968, 150, 4832
     type: GROUND # UNDERGROUND | GROUND | SKY
     unbreakable: false
     spawn: 1 # amount of structures to spawn at a time
@@ -86,14 +86,14 @@ schematics:
       town-range: 100 # The range to look for a town
       water: false # Stops structure from spawning in water
       lava: false # Stops structure from spawning in lava
-      must-have-blocks: # Stops structure from spawning if the specified blocks are not near the spawning location
-        - NETHERRACK
+#      must-have-blocks: # Stops structure from spawning if the specified blocks are not near the spawning location
+#        - NETHERRACK
 
   TREEBLUE:
     schematic: "treeblue.schem" # schematic file name with extension
     world: venus
-    location1: 274, 70, 216
-    location2: 9968, 50, 4832
+    location1: 274, 170, 216
+    location2: 9968, 150, 4832
     type: GROUND # UNDERGROUND | GROUND | SKY
     unbreakable: false
     spawn: 1 # amount of structures to spawn at a time
@@ -112,8 +112,8 @@ schematics:
       town-range: 100 # The range to look for a town
       water: false # Stops structure from spawning in water
       lava: false # Stops structure from spawning in lava
-      must-have-blocks: # Stops structure from spawning if the specified blocks are not near the spawning location
-        - NETHERRACK
+#      must-have-blocks: # Stops structure from spawning if the specified blocks are not near the spawning location
+#        - NETHERRACK
 
 #  EUROPASPHERE:
 #    schematic: "europasphere.schem" # schematic file name with extension
