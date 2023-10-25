@@ -1,6 +1,8 @@
 # GCK-Network
 Please note: This is a GEOPOL CREATION KIT, it is designed to act as a template for a new geopol. Therefore, it is incomplete in some aspects (dynmap, voting, ddos protection, monetization, etc.) and some details may not be to your needs. Please review every config and the luckperms permissions so that everything currently provided is acceptable to you, feel free to fork it with your changes.
 
+Special thanks to Cendi and USS Enterprise for mythicmobs configs, gabrielito294 for structure builds, Dheyaa and Supertnt20 for models, and ArkySaw for custom planet worldpainter maps.
+
 Credits can be found in the mortiscitations plugin config or other places throughout the project
 
 # Basic setup
@@ -9,10 +11,6 @@ Download github zip and unzip the project.
 Add plugin config folders and server properties files to the server. Review the pluginlist text document for the links to all needed plugins and acquire said plugins. 
 Download and add the earth map (linked in the maps text document) along with using worldpainter to build the custom planet maps (provided in the planets folder). 
 Run a server startup script and let server unpack. Make necessary config changes and add new plugins or features at will.
-
-# Making server cracked
-
-To run offline simply set server properties online-mode to false, then install Nlogin and skinsrestorer. If you are not running the server offline said plugins will not be necessary.
 
 # Dynmap and voting
 
